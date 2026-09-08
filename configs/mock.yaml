@@ -1,0 +1,6 @@
+mode: mock
+offline: true
+require_human_verified: false
+dataset: data/benchmark/entity_cases.jsonl
+mock_candidates: tests/fixtures/candidates.json
+seed: 42

@@ -1,0 +1,41 @@
+mode: real
+offline: false
+require_human_verified: true
+dataset: data/benchmark/entity_cases.jsonl
+seed: 42
+candidate_k: 10
+triples_per_entity: 5
+max_calls: 195
+budget_usd: 2
+evidence_max_chars: 10000
+max_attempts: 3
+resolver:
+  provider: openai_compatible
+  model: gpt-4.1-mini-2025-04-14
+  base_url: https://api.openai.com/v1
+  api_key_env: LLMKA_API_KEY
+  temperature: 0
+  send_seed: false
+  input_usd_per_million: 0.4
+  output_usd_per_million: 1.6
+  max_output_tokens: 400
+generator:
+  provider: openai_compatible
+  model: gpt-4.1-mini-2025-04-14
+  base_url: https://api.openai.com/v1
+  api_key_env: LLMKA_API_KEY
+  temperature: 0
+  send_seed: false
+  input_usd_per_million: 0.4
+  output_usd_per_million: 1.6
+  max_output_tokens: 1200
+judge:
+  provider: openai_compatible
+  model: gpt-4.1-2025-04-14
+  base_url: https://api.openai.com/v1
+  api_key_env: LLMKA_API_KEY
+  temperature: 0
+  send_seed: false
+  input_usd_per_million: 2
+  output_usd_per_million: 8
+  max_output_tokens: 600
