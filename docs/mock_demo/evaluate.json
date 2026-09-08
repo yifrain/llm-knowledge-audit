@@ -1,0 +1,1081 @@
+{
+  "mode": "mock",
+  "interpretation": "Synthetic software check",
+  "human_verified_cases": {
+    "numerator": 0,
+    "denominator": 40,
+    "value": 0.0
+  },
+  "candidates": {
+    "recall_at_k": {
+      "numerator": 40,
+      "denominator": 40,
+      "value": 1.0,
+      "wilson_95": [
+        0.9123783988027135,
+        1.0
+      ]
+    },
+    "k": 10,
+    "mrr": {
+      "numerator": 35.0,
+      "denominator": 40,
+      "value": 0.875
+    }
+  },
+  "entity": {
+    "string": {
+      "top1_accuracy": {
+        "numerator": 29,
+        "denominator": 40,
+        "value": 0.725,
+        "wilson_95": [
+          0.5716504419378943,
+          0.8389198375233267
+        ]
+      },
+      "abstention_rate": {
+        "numerator": 1,
+        "denominator": 40,
+        "value": 0.025,
+        "wilson_95": [
+          0.0044268315026814095,
+          0.1288136896347409
+        ]
+      },
+      "accuracy_when_answered": {
+        "numerator": 29,
+        "denominator": 39,
+        "value": 0.7435897435897436,
+        "wilson_95": [
+          0.5891834407831603,
+          0.8543121945900741
+        ]
+      },
+      "homonym_separation_accuracy": {
+        "numerator": 0,
+        "denominator": 10,
+        "value": 0.0
+      },
+      "homonym_conflation_rate": {
+        "numerator": 10,
+        "denominator": 10,
+        "value": 1.0
+      },
+      "synonym_merge_accuracy": {
+        "numerator": 9,
+        "denominator": 10,
+        "value": 0.9
+      },
+      "domain_errors": {
+        "animals": {
+          "numerator": 1,
+          "denominator": 2,
+          "value": 0.5
+        },
+        "creative_works": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        },
+        "history": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "organizations": {
+          "numerator": 1,
+          "denominator": 7,
+          "value": 0.14285714285714285
+        },
+        "people": {
+          "numerator": 1,
+          "denominator": 5,
+          "value": 0.2
+        },
+        "places": {
+          "numerator": 3,
+          "denominator": 12,
+          "value": 0.25
+        },
+        "products": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "programming": {
+          "numerator": 1,
+          "denominator": 2,
+          "value": 0.5
+        },
+        "science": {
+          "numerator": 2,
+          "denominator": 4,
+          "value": 0.5
+        }
+      }
+    },
+    "context": {
+      "top1_accuracy": {
+        "numerator": 36,
+        "denominator": 40,
+        "value": 0.9,
+        "wilson_95": [
+          0.7694822477247771,
+          0.9604204713173936
+        ]
+      },
+      "abstention_rate": {
+        "numerator": 3,
+        "denominator": 40,
+        "value": 0.075,
+        "wilson_95": [
+          0.025836025774588198,
+          0.19864233524310543
+        ]
+      },
+      "accuracy_when_answered": {
+        "numerator": 36,
+        "denominator": 37,
+        "value": 0.972972972972973,
+        "wilson_95": [
+          0.861759301362695,
+          0.9952130255480596
+        ]
+      },
+      "homonym_separation_accuracy": {
+        "numerator": 8,
+        "denominator": 10,
+        "value": 0.8
+      },
+      "homonym_conflation_rate": {
+        "numerator": 1,
+        "denominator": 10,
+        "value": 0.1
+      },
+      "synonym_merge_accuracy": {
+        "numerator": 9,
+        "denominator": 10,
+        "value": 0.9
+      },
+      "domain_errors": {
+        "animals": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "creative_works": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        },
+        "history": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "organizations": {
+          "numerator": 0,
+          "denominator": 7,
+          "value": 0.0
+        },
+        "people": {
+          "numerator": 2,
+          "denominator": 5,
+          "value": 0.4
+        },
+        "places": {
+          "numerator": 1,
+          "denominator": 12,
+          "value": 0.08333333333333333
+        },
+        "products": {
+          "numerator": 0,
+          "denominator": 2,
+          "value": 0.0
+        },
+        "programming": {
+          "numerator": 1,
+          "denominator": 2,
+          "value": 0.5
+        },
+        "science": {
+          "numerator": 0,
+          "denominator": 4,
+          "value": 0.0
+        }
+      }
+    }
+  },
+  "generation": {
+    "valid_entity_output_rate": {
+      "numerator": 29,
+      "denominator": 29,
+      "value": 1.0
+    },
+    "duplicate_triple_rate": {
+      "numerator": 0,
+      "denominator": 145,
+      "value": 0.0
+    },
+    "mean_triples_per_seed": {
+      "numerator": 145,
+      "denominator": 29,
+      "value": 5.0
+    }
+  },
+  "factuality": {
+    "attempted_n": 145,
+    "valid_label_coverage": {
+      "numerator": 145,
+      "denominator": 145,
+      "value": 1.0
+    },
+    "proportions": {
+      "entailed": {
+        "numerator": 87,
+        "denominator": 145,
+        "value": 0.6,
+        "wilson_95": [
+          0.5186737027335638,
+          0.6761644843533797
+        ]
+      },
+      "contradicted": {
+        "numerator": 29,
+        "denominator": 145,
+        "value": 0.2,
+        "wilson_95": [
+          0.14301714456579223,
+          0.27246829417337726
+        ]
+      },
+      "not_enough_information": {
+        "numerator": 29,
+        "denominator": 145,
+        "value": 0.2,
+        "wilson_95": [
+          0.14301714456579223,
+          0.27246829417337726
+        ]
+      }
+    },
+    "strict_precision": {
+      "numerator": 87,
+      "denominator": 145,
+      "value": 0.6,
+      "wilson_95": [
+        0.5186737027335638,
+        0.6761644843533797
+      ]
+    },
+    "decisive_precision": {
+      "numerator": 87,
+      "denominator": 116,
+      "value": 0.75,
+      "wilson_95": [
+        0.6640476911924558,
+        0.8199250555577249
+      ]
+    }
+  },
+  "factuality_by_method": {
+    "string": {
+      "canonical_unique_triples": {
+        "attempted_n": 100,
+        "valid_label_coverage": {
+          "numerator": 100,
+          "denominator": 100,
+          "value": 1.0
+        },
+        "proportions": {
+          "entailed": {
+            "numerator": 60,
+            "denominator": 100,
+            "value": 0.6,
+            "wilson_95": [
+              0.5020025867910618,
+              0.6905987135675411
+            ]
+          },
+          "contradicted": {
+            "numerator": 20,
+            "denominator": 100,
+            "value": 0.2,
+            "wilson_95": [
+              0.1333669333310325,
+              0.2888291655931589
+            ]
+          },
+          "not_enough_information": {
+            "numerator": 20,
+            "denominator": 100,
+            "value": 0.2,
+            "wilson_95": [
+              0.1333669333310325,
+              0.2888291655931589
+            ]
+          }
+        },
+        "strict_precision": {
+          "numerator": 60,
+          "denominator": 100,
+          "value": 0.6,
+          "wilson_95": [
+            0.5020025867910618,
+            0.6905987135675411
+          ]
+        },
+        "decisive_precision": {
+          "numerator": 60,
+          "denominator": 80,
+          "value": 0.75,
+          "wilson_95": [
+            0.6451532538076602,
+            0.8319376814245761
+          ]
+        }
+      },
+      "joint_correct_entity_and_entailed_per_mention_triple": {
+        "numerator": 87,
+        "denominator": 195,
+        "value": 0.4461538461538462
+      },
+      "resolved_case_coverage": {
+        "numerator": 39,
+        "denominator": 40,
+        "value": 0.975
+      }
+    },
+    "context": {
+      "canonical_unique_triples": {
+        "attempted_n": 135,
+        "valid_label_coverage": {
+          "numerator": 135,
+          "denominator": 135,
+          "value": 1.0
+        },
+        "proportions": {
+          "entailed": {
+            "numerator": 81,
+            "denominator": 135,
+            "value": 0.6,
+            "wilson_95": [
+              0.5156981593276376,
+              0.6787682502688573
+            ]
+          },
+          "contradicted": {
+            "numerator": 27,
+            "denominator": 135,
+            "value": 0.2,
+            "wilson_95": [
+              0.1412498917666589,
+              0.27535087944385617
+            ]
+          },
+          "not_enough_information": {
+            "numerator": 27,
+            "denominator": 135,
+            "value": 0.2,
+            "wilson_95": [
+              0.1412498917666589,
+              0.27535087944385617
+            ]
+          }
+        },
+        "strict_precision": {
+          "numerator": 81,
+          "denominator": 135,
+          "value": 0.6,
+          "wilson_95": [
+            0.5156981593276376,
+            0.6787682502688573
+          ]
+        },
+        "decisive_precision": {
+          "numerator": 81,
+          "denominator": 108,
+          "value": 0.75,
+          "wilson_95": [
+            0.6607046489100945,
+            0.822121671216627
+          ]
+        }
+      },
+      "joint_correct_entity_and_entailed_per_mention_triple": {
+        "numerator": 108,
+        "denominator": 185,
+        "value": 0.5837837837837838
+      },
+      "resolved_case_coverage": {
+        "numerator": 37,
+        "denominator": 40,
+        "value": 0.925
+      }
+    }
+  },
+  "public_retrieval_operations": {
+    "events": [],
+    "n": 0
+  },
+  "judge_agreement": {
+    "annotated_n": 0,
+    "prediction_coverage": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    },
+    "accuracy": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    },
+    "accuracy_including_failures": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    },
+    "macro_precision": {
+      "value": null,
+      "n": 0,
+      "labels": 3
+    },
+    "macro_recall": {
+      "value": null,
+      "n": 0,
+      "labels": 3
+    },
+    "macro_f1": {
+      "value": null,
+      "n": 0,
+      "labels": 3
+    },
+    "confusion_matrix": {
+      "rows": [
+        "entailed",
+        "contradicted",
+        "not_enough_information"
+      ],
+      "columns": [
+        "entailed",
+        "contradicted",
+        "not_enough_information"
+      ],
+      "counts": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "n": 0
+    },
+    "cohens_kappa": {
+      "value": null,
+      "n": 0
+    },
+    "by_label": {
+      "entailed": {
+        "precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "f1": {
+          "value": null,
+          "support": 0,
+          "predicted_count": 0
+        }
+      },
+      "contradicted": {
+        "precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "f1": {
+          "value": null,
+          "support": 0,
+          "predicted_count": 0
+        }
+      },
+      "not_enough_information": {
+        "precision": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "recall": {
+          "numerator": 0,
+          "denominator": 0,
+          "value": null
+        },
+        "f1": {
+          "value": null,
+          "support": 0,
+          "predicted_count": 0
+        }
+      }
+    },
+    "zero_division": "Macro averages use zero for undefined label scores when n>0"
+  },
+  "annotation_coverage": {
+    "numerator": 0,
+    "denominator": 145,
+    "value": 0.0
+  },
+  "out_of_run_annotations": 0,
+  "operations_this_invocation": {
+    "logical_calls_n": 214,
+    "uncached_logical_calls_n": 0,
+    "api_requests_n": 0,
+    "mock_invocations_n": 0,
+    "cache_hit_rate": {
+      "numerator": 214,
+      "denominator": 214,
+      "value": 1.0
+    },
+    "mean_latency_seconds": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    },
+    "p50_latency_seconds": {
+      "value": null,
+      "n": 0
+    },
+    "p95_latency_seconds": {
+      "value": null,
+      "n": 0
+    },
+    "input_tokens": {
+      "total": 0,
+      "n": 0
+    },
+    "output_tokens": {
+      "total": 0,
+      "n": 0
+    },
+    "estimated_usd": {
+      "total": 0,
+      "n": 0
+    },
+    "reserved_usd": {
+      "total": 0,
+      "n": 0
+    },
+    "unknown_usage_calls": 0,
+    "retry_rate": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    },
+    "failure_rate": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    },
+    "valid_json_rate": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    },
+    "schema_valid_rate": {
+      "numerator": 0,
+      "denominator": 0,
+      "value": null
+    }
+  },
+  "operations_by_task": {
+    "resolve": {
+      "logical_calls_n": 40,
+      "uncached_logical_calls_n": 0,
+      "api_requests_n": 0,
+      "mock_invocations_n": 0,
+      "cache_hit_rate": {
+        "numerator": 40,
+        "denominator": 40,
+        "value": 1.0
+      },
+      "mean_latency_seconds": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "p50_latency_seconds": {
+        "value": null,
+        "n": 0
+      },
+      "p95_latency_seconds": {
+        "value": null,
+        "n": 0
+      },
+      "input_tokens": {
+        "total": 0,
+        "n": 0
+      },
+      "output_tokens": {
+        "total": 0,
+        "n": 0
+      },
+      "estimated_usd": {
+        "total": 0,
+        "n": 0
+      },
+      "reserved_usd": {
+        "total": 0,
+        "n": 0
+      },
+      "unknown_usage_calls": 0,
+      "retry_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "valid_json_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "schema_valid_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      }
+    },
+    "generate": {
+      "logical_calls_n": 29,
+      "uncached_logical_calls_n": 0,
+      "api_requests_n": 0,
+      "mock_invocations_n": 0,
+      "cache_hit_rate": {
+        "numerator": 29,
+        "denominator": 29,
+        "value": 1.0
+      },
+      "mean_latency_seconds": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "p50_latency_seconds": {
+        "value": null,
+        "n": 0
+      },
+      "p95_latency_seconds": {
+        "value": null,
+        "n": 0
+      },
+      "input_tokens": {
+        "total": 0,
+        "n": 0
+      },
+      "output_tokens": {
+        "total": 0,
+        "n": 0
+      },
+      "estimated_usd": {
+        "total": 0,
+        "n": 0
+      },
+      "reserved_usd": {
+        "total": 0,
+        "n": 0
+      },
+      "unknown_usage_calls": 0,
+      "retry_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "valid_json_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "schema_valid_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      }
+    },
+    "judge": {
+      "logical_calls_n": 145,
+      "uncached_logical_calls_n": 0,
+      "api_requests_n": 0,
+      "mock_invocations_n": 0,
+      "cache_hit_rate": {
+        "numerator": 145,
+        "denominator": 145,
+        "value": 1.0
+      },
+      "mean_latency_seconds": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "p50_latency_seconds": {
+        "value": null,
+        "n": 0
+      },
+      "p95_latency_seconds": {
+        "value": null,
+        "n": 0
+      },
+      "input_tokens": {
+        "total": 0,
+        "n": 0
+      },
+      "output_tokens": {
+        "total": 0,
+        "n": 0
+      },
+      "estimated_usd": {
+        "total": 0,
+        "n": 0
+      },
+      "reserved_usd": {
+        "total": 0,
+        "n": 0
+      },
+      "unknown_usage_calls": 0,
+      "retry_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "failure_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "valid_json_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      },
+      "schema_valid_rate": {
+        "numerator": 0,
+        "denominator": 0,
+        "value": null
+      }
+    }
+  },
+  "error_analysis": {
+    "categories": {
+      "same_label_wrong_sense": {
+        "examples": [
+          {
+            "case_id": "homonym_002",
+            "method": "string",
+            "predicted": "Q308",
+            "gold": "Q925"
+          },
+          {
+            "case_id": "homonym_004",
+            "method": "string",
+            "predicted": "Q251",
+            "gold": "Q3757"
+          },
+          {
+            "case_id": "homonym_005",
+            "method": "string",
+            "predicted": "Q89",
+            "gold": "Q312"
+          },
+          {
+            "case_id": "homonym_008",
+            "method": "string",
+            "predicted": "Q810",
+            "gold": "Q41421"
+          },
+          {
+            "case_id": "homonym_009",
+            "method": "string",
+            "predicted": "Q830149",
+            "gold": "Q90"
+          },
+          {
+            "case_id": "homonym_009",
+            "method": "context",
+            "predicted": "Q830149",
+            "gold": "Q90"
+          },
+          {
+            "case_id": "homonym_011",
+            "method": "string",
+            "predicted": "Q30055",
+            "gold": "Q35694"
+          },
+          {
+            "case_id": "homonym_013",
+            "method": "string",
+            "predicted": "Q271218",
+            "gold": "Q28865"
+          },
+          {
+            "case_id": "homonym_016",
+            "method": "string",
+            "predicted": "Q3884",
+            "gold": "Q177567"
+          },
+          {
+            "case_id": "homonym_018",
+            "method": "string",
+            "predicted": "Q16556",
+            "gold": "Q48444"
+          },
+          {
+            "case_id": "homonym_019",
+            "method": "string",
+            "predicted": "Q25173",
+            "gold": "Q44578"
+          }
+        ],
+        "status": "automatically_flagged_for_review",
+        "flagged_count": 11
+      },
+      "synonyms_not_merged": {
+        "examples": [
+          {
+            "case_ids": [
+              "synonym_037",
+              "synonym_038"
+            ],
+            "method": "string",
+            "predictions": [
+              null,
+              "Q283"
+            ]
+          },
+          {
+            "case_ids": [
+              "synonym_033",
+              "synonym_034"
+            ],
+            "method": "context",
+            "predictions": [
+              null,
+              null
+            ]
+          }
+        ],
+        "status": "automatically_flagged_for_review",
+        "flagged_count": 2
+      },
+      "distinct_entities_merged": {
+        "examples": [
+          {
+            "case_ids": [
+              "homonym_001",
+              "homonym_002"
+            ],
+            "method": "string",
+            "predictions": [
+              "Q308",
+              "Q308"
+            ]
+          },
+          {
+            "case_ids": [
+              "homonym_003",
+              "homonym_004"
+            ],
+            "method": "string",
+            "predictions": [
+              "Q251",
+              "Q251"
+            ]
+          },
+          {
+            "case_ids": [
+              "homonym_005",
+              "homonym_006"
+            ],
+            "method": "string",
+            "predictions": [
+              "Q89",
+              "Q89"
+            ]
+          },
+          {
+            "case_ids": [
+              "homonym_007",
+              "homonym_008"
+            ],
+            "method": "string",
+            "predictions": [
+              "Q810",
+              "Q810"
+            ]
+          },
+          {
+            "case_ids": [
+              "homonym_009",
+              "homonym_010"
+            ],
+            "method": "string",
+            "predictions": [
+              "Q830149",
+              "Q830149"
+            ]
+          },
+          {
+            "case_ids": [
+              "homonym_011",
+              "homonym_012"
+            ],
+            "method": "string",
+            "predictions": [
+              "Q30055",
+              "Q30055"
+            ]
+          },
+          {
+            "case_ids": [
+              "homonym_013",
+              "homonym_014"
+            ],
+            "method": "string",
+            "predictions": [
+              "Q271218",
+              "Q271218"
+            ]
+          },
+          {
+            "case_ids": [
+              "homonym_015",
+              "homonym_016"
+            ],
+            "method": "string",
+            "predictions": [
+              "Q3884",
+              "Q3884"
+            ]
+          },
+          {
+            "case_ids": [
+              "homonym_017",
+              "homonym_018"
+            ],
+            "method": "string",
+            "predictions": [
+              "Q16556",
+              "Q16556"
+            ]
+          },
+          {
+            "case_ids": [
+              "homonym_019",
+              "homonym_020"
+            ],
+            "method": "string",
+            "predictions": [
+              "Q25173",
+              "Q25173"
+            ]
+          },
+          {
+            "case_ids": [
+              "homonym_009",
+              "homonym_010"
+            ],
+            "method": "context",
+            "predictions": [
+              "Q830149",
+              "Q830149"
+            ]
+          }
+        ],
+        "status": "automatically_flagged_for_review",
+        "flagged_count": 11
+      },
+      "candidate_retrieval_failure": {
+        "examples": [],
+        "status": "requires_human_error_review",
+        "flagged_count": 0
+      },
+      "insufficient_context": {
+        "examples": [],
+        "status": "requires_human_error_review",
+        "flagged_count": 0
+      },
+      "generic_description": {
+        "examples": [],
+        "status": "requires_human_error_review",
+        "flagged_count": 0
+      },
+      "hallucinated_relation": {
+        "examples": [],
+        "status": "requires_human_error_review",
+        "flagged_count": 0
+      },
+      "temporal_mismatch": {
+        "examples": [],
+        "status": "requires_human_error_review",
+        "flagged_count": 0
+      },
+      "evidence_retrieval_failure": {
+        "examples": [],
+        "status": "requires_human_error_review",
+        "flagged_count": 0
+      },
+      "judge_false_positive": {
+        "examples": [],
+        "status": "requires_human_error_review",
+        "flagged_count": 0
+      },
+      "judge_false_negative": {
+        "examples": [],
+        "status": "requires_human_error_review",
+        "flagged_count": 0
+      },
+      "judge_overuse_nei": {
+        "examples": [],
+        "status": "requires_human_error_review",
+        "flagged_count": 0
+      },
+      "invalid_structured_output": {
+        "examples": [],
+        "status": "requires_human_error_review",
+        "flagged_count": 0
+      }
+    },
+    "entity_case_n": 40,
+    "triple_n": 145,
+    "human_annotation_n": 0,
+    "note": "Flags overlap; causal categories need review."
+  },
+  "disagreements": []
+}
