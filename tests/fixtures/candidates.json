@@ -1,0 +1,644 @@
+{
+  "Mercury": [
+    {
+      "entity_id": "Q308",
+      "label": "Mercury",
+      "aliases": [
+        "Sol I",
+        "Hermes",
+        "Sol b",
+        "Sol 1",
+        "Planet Mercury",
+        "☿"
+      ],
+      "description": "first planet from the Solar System and smallest among all, tellurian and with extreme temperatures",
+      "source_url": "https://www.wikidata.org/wiki/Q308",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    },
+    {
+      "entity_id": "Q925",
+      "label": "mercury",
+      "aliases": [
+        "Hg",
+        "element 80",
+        "mercury (element)",
+        "hydrargyrum",
+        "80Hg",
+        "quicksilver"
+      ],
+      "description": "chemical element with symbol Hg and atomic number 80",
+      "source_url": "https://www.wikidata.org/wiki/Q925",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "Java": [
+    {
+      "entity_id": "Q251",
+      "label": "Java",
+      "aliases": [
+        "java programming language"
+      ],
+      "description": "object-oriented programming language",
+      "source_url": "https://www.wikidata.org/wiki/Q251",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    },
+    {
+      "entity_id": "Q3757",
+      "label": "Java",
+      "aliases": [
+        "Pulau Jawa",
+        "Jawa Island",
+        "Java Island",
+        "Pulau Java",
+        "Jawa",
+        "Java island",
+        "Java, Indonesia",
+        "Giava",
+        "Ява"
+      ],
+      "description": "island of Indonesia",
+      "source_url": "https://www.wikidata.org/wiki/Q3757",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "Apple": [
+    {
+      "entity_id": "Q312",
+      "label": "Apple Inc.",
+      "aliases": [
+        "Apple (company)"
+      ],
+      "description": "American multinational technology company based in Cupertino, California",
+      "source_url": "https://www.wikidata.org/wiki/Q312",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    },
+    {
+      "entity_id": "Q89",
+      "label": "apple",
+      "aliases": [
+        "apple fruit"
+      ],
+      "description": "edible fruit of the apple tree",
+      "source_url": "https://www.wikidata.org/wiki/Q89",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "Jordan": [
+    {
+      "entity_id": "Q810",
+      "label": "Jordan",
+      "aliases": [
+        "Hashemite Kingdom of Jordan",
+        "Kingdom of Jordan",
+        "Yarden",
+        "Giordania",
+        "ISO 3166-1:JO",
+        "HKJ",
+        "State of Jordan"
+      ],
+      "description": "country in West Asia",
+      "source_url": "https://www.wikidata.org/wiki/Q810",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    },
+    {
+      "entity_id": "Q41421",
+      "label": "Michael Jordan",
+      "aliases": [],
+      "description": "American basketball player and businessman (born 1963)",
+      "source_url": "https://www.wikidata.org/wiki/Q41421",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "Paris": [
+    {
+      "entity_id": "Q90",
+      "label": "Paris",
+      "aliases": [
+        "City of Light",
+        "City of Love",
+        "Lutetia"
+      ],
+      "description": "capital and most populous city in France",
+      "source_url": "https://www.wikidata.org/wiki/Q90",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    },
+    {
+      "entity_id": "Q830149",
+      "label": "Paris",
+      "aliases": [
+        "Paris, Texas",
+        "Paris, TX"
+      ],
+      "description": "city in and county seat of Lamar County, Texas, United States",
+      "source_url": "https://www.wikidata.org/wiki/Q830149",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "Jaguar": [
+    {
+      "entity_id": "Q35694",
+      "label": "jaguar",
+      "aliases": [
+        "Panthera onca",
+        "panter"
+      ],
+      "description": "species of big cat native to the Americas",
+      "source_url": "https://www.wikidata.org/wiki/Q35694",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    },
+    {
+      "entity_id": "Q30055",
+      "label": "Jaguar Cars",
+      "aliases": [
+        "Jaguar"
+      ],
+      "description": "former British car company",
+      "source_url": "https://www.wikidata.org/wiki/Q30055",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "Python": [
+    {
+      "entity_id": "Q28865",
+      "label": "Python",
+      "aliases": [
+        "Python programming language",
+        "Python language",
+        "Python (language)",
+        "Python computer language",
+        "Python Programming Language",
+        "Python (scripting language)",
+        "Python (lang)",
+        "Python (programming)",
+        "Python (computer language)",
+        "Python (software)",
+        "Python (Programming Language)",
+        "Python (computing)",
+        "Python.org"
+      ],
+      "description": "general-purpose programming language",
+      "source_url": "https://www.wikidata.org/wiki/Q28865",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    },
+    {
+      "entity_id": "Q271218",
+      "label": "Python",
+      "aliases": [
+        "Python"
+      ],
+      "description": "genus of reptiles",
+      "source_url": "https://www.wikidata.org/wiki/Q271218",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "Amazon": [
+    {
+      "entity_id": "Q3884",
+      "label": "Amazon",
+      "aliases": [
+        "Amazon.com, Inc."
+      ],
+      "description": "American multinational technology company",
+      "source_url": "https://www.wikidata.org/wiki/Q3884",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    },
+    {
+      "entity_id": "Q177567",
+      "label": "Amazon rainforest",
+      "aliases": [
+        "Amazonas",
+        "Amazonian rainforest",
+        "Amazon rain forest",
+        "Amazonian rain forest",
+        "Amazon forest",
+        "Amazonia",
+        "Brazilian Amazon",
+        "Amazons"
+      ],
+      "description": "large rainforest in South America",
+      "source_url": "https://www.wikidata.org/wiki/Q177567",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "Phoenix": [
+    {
+      "entity_id": "Q16556",
+      "label": "Phoenix",
+      "aliases": [
+        "Phoenix, Arizona",
+        "City of Phoenix",
+        "Phoenix, AZ",
+        "PHX",
+        "Valley of the Sun",
+        "Phœnix"
+      ],
+      "description": "capital city of the U.S. state of Arizona and seat of Maricopa County",
+      "source_url": "https://www.wikidata.org/wiki/Q16556",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    },
+    {
+      "entity_id": "Q48444",
+      "label": "phoenix",
+      "aliases": [
+        "phenix",
+        "phœnix"
+      ],
+      "description": "mythological bird that cyclically regenerates or is reborn from its own ashes in Greek, Roman, Arabian, Persian, and East Asian mythologies",
+      "source_url": "https://www.wikidata.org/wiki/Q48444",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "Titanic": [
+    {
+      "entity_id": "Q44578",
+      "label": "Titanic",
+      "aliases": [],
+      "description": "1997 film directed by James Cameron",
+      "source_url": "https://www.wikidata.org/wiki/Q44578",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    },
+    {
+      "entity_id": "Q25173",
+      "label": "Titanic",
+      "aliases": [
+        "The Titanic",
+        "RMS Titanic",
+        "Royal Mail Steamship Titanic",
+        "SS Titanic"
+      ],
+      "description": "British transatlantic passenger liner, launched and foundered in 1912",
+      "source_url": "https://www.wikidata.org/wiki/Q25173",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "NYC": [
+    {
+      "entity_id": "Q60",
+      "label": "New York City",
+      "aliases": [
+        "the five boroughs",
+        "City of New York",
+        "NY City",
+        "New York City, New York",
+        "New York, NY",
+        "New York City, NY",
+        "Capital of the World",
+        "New York City (NYC)",
+        "New York (city)",
+        "city of New York",
+        "Center of the Universe",
+        "New York City, USA",
+        "New York City, United States of America",
+        "New York, New York, USA",
+        "New York (NY)",
+        "New York, N.Y.",
+        "NY, NY",
+        "New York City, United States",
+        "N. Y., N. Y.",
+        "New York City, New York, United States",
+        "Empire City"
+      ],
+      "description": "most populous city in the United States",
+      "source_url": "https://www.wikidata.org/wiki/Q60",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "New York City": [
+    {
+      "entity_id": "Q60",
+      "label": "New York City",
+      "aliases": [
+        "the five boroughs",
+        "City of New York",
+        "NY City",
+        "New York City, New York",
+        "New York, NY",
+        "New York City, NY",
+        "Capital of the World",
+        "New York City (NYC)",
+        "New York (city)",
+        "city of New York",
+        "Center of the Universe",
+        "New York City, USA",
+        "New York City, United States of America",
+        "New York, New York, USA",
+        "New York (NY)",
+        "New York, N.Y.",
+        "NY, NY",
+        "New York City, United States",
+        "N. Y., N. Y.",
+        "New York City, New York, United States",
+        "Empire City"
+      ],
+      "description": "most populous city in the United States",
+      "source_url": "https://www.wikidata.org/wiki/Q60",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "IBM": [
+    {
+      "entity_id": "Q37156",
+      "label": "IBM",
+      "aliases": [
+        "International Business Machines Corporation (Armonk, NY)",
+        "IBM Corp.",
+        "18M",
+        "ibm.com"
+      ],
+      "description": "American multinational technology company",
+      "source_url": "https://www.wikidata.org/wiki/Q37156",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "International Business Machines": [
+    {
+      "entity_id": "Q37156",
+      "label": "IBM",
+      "aliases": [
+        "International Business Machines Corporation (Armonk, NY)",
+        "IBM Corp.",
+        "18M",
+        "ibm.com"
+      ],
+      "description": "American multinational technology company",
+      "source_url": "https://www.wikidata.org/wiki/Q37156",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "MIT": [
+    {
+      "entity_id": "Q49108",
+      "label": "Massachusetts Institute of Technology",
+      "aliases": [
+        "MIT",
+        "M.I.T.",
+        "Mass Tech"
+      ],
+      "description": "private university in Cambridge, Massachusetts, USA, founded 1861",
+      "source_url": "https://www.wikidata.org/wiki/Q49108",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "Massachusetts Institute of Technology": [
+    {
+      "entity_id": "Q49108",
+      "label": "Massachusetts Institute of Technology",
+      "aliases": [
+        "MIT",
+        "M.I.T.",
+        "Mass Tech"
+      ],
+      "description": "private university in Cambridge, Massachusetts, USA, founded 1861",
+      "source_url": "https://www.wikidata.org/wiki/Q49108",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "USA": [
+    {
+      "entity_id": "Q30",
+      "label": "United States",
+      "aliases": [
+        "the States",
+        "the United States of America",
+        "US of America",
+        "the US",
+        "the U.S.",
+        "the US of A",
+        "U.S. of America",
+        "the US of America",
+        "the USA",
+        "the U.S.A.",
+        "the U.S. of A",
+        "US of A",
+        "the U.S. of America",
+        "the United States",
+        "Merica",
+        "Murica",
+        "U. S.",
+        "U. S. A.",
+        "United States of America"
+      ],
+      "description": "country located primarily in North America",
+      "source_url": "https://www.wikidata.org/wiki/Q30",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "United States": [
+    {
+      "entity_id": "Q30",
+      "label": "United States",
+      "aliases": [
+        "the States",
+        "the United States of America",
+        "US of America",
+        "the US",
+        "the U.S.",
+        "the US of A",
+        "U.S. of America",
+        "the US of America",
+        "the USA",
+        "the U.S.A.",
+        "the U.S. of A",
+        "US of A",
+        "the U.S. of America",
+        "the United States",
+        "Merica",
+        "Murica",
+        "U. S.",
+        "U. S. A.",
+        "United States of America"
+      ],
+      "description": "country located primarily in North America",
+      "source_url": "https://www.wikidata.org/wiki/Q30",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "UK": [
+    {
+      "entity_id": "Q145",
+      "label": "United Kingdom",
+      "aliases": [
+        "United Kingdom of Great Britain and Northern Ireland",
+        "U K",
+        "G B",
+        "Great Britain",
+        "Great Britain and Northern Ireland",
+        "the United Kingdom of Great Britain and Northern Ireland",
+        "the UK",
+        "the United Kingdom"
+      ],
+      "description": "island country in north-west Europe",
+      "source_url": "https://www.wikidata.org/wiki/Q145",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "United Kingdom": [
+    {
+      "entity_id": "Q145",
+      "label": "United Kingdom",
+      "aliases": [
+        "United Kingdom of Great Britain and Northern Ireland",
+        "U K",
+        "G B",
+        "Great Britain",
+        "Great Britain and Northern Ireland",
+        "the United Kingdom of Great Britain and Northern Ireland",
+        "the UK",
+        "the United Kingdom"
+      ],
+      "description": "island country in north-west Europe",
+      "source_url": "https://www.wikidata.org/wiki/Q145",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "Einstein": [
+    {
+      "entity_id": "Q937",
+      "label": "Albert Einstein",
+      "aliases": [],
+      "description": "German-born theoretical physicist (1879–1955)",
+      "source_url": "https://www.wikidata.org/wiki/Q937",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "Albert Einstein": [
+    {
+      "entity_id": "Q937",
+      "label": "Albert Einstein",
+      "aliases": [],
+      "description": "German-born theoretical physicist (1879–1955)",
+      "source_url": "https://www.wikidata.org/wiki/Q937",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "Tolkien": [
+    {
+      "entity_id": "Q892",
+      "label": "J. R. R. Tolkien",
+      "aliases": [
+        "J.R.R Tolkien",
+        "John Tolkien",
+        "John R. R. Tolkien"
+      ],
+      "description": "English writer and philologist (1892–1973)",
+      "source_url": "https://www.wikidata.org/wiki/Q892",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "J. R. R. Tolkien": [
+    {
+      "entity_id": "Q892",
+      "label": "J. R. R. Tolkien",
+      "aliases": [
+        "J.R.R Tolkien",
+        "John Tolkien",
+        "John R. R. Tolkien"
+      ],
+      "description": "English writer and philologist (1892–1973)",
+      "source_url": "https://www.wikidata.org/wiki/Q892",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "The Hobbit": [
+    {
+      "entity_id": "Q74287",
+      "label": "The Hobbit",
+      "aliases": [
+        "Hobbit",
+        "The Hobbit, or There and Back Again"
+      ],
+      "description": "1937 fantasy novel by J. R. R. Tolkien",
+      "source_url": "https://www.wikidata.org/wiki/Q74287",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "The Hobbit, or There and Back Again": [
+    {
+      "entity_id": "Q74287",
+      "label": "The Hobbit",
+      "aliases": [
+        "Hobbit",
+        "The Hobbit, or There and Back Again"
+      ],
+      "description": "1937 fantasy novel by J. R. R. Tolkien",
+      "source_url": "https://www.wikidata.org/wiki/Q74287",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "H2O": [
+    {
+      "entity_id": "Q283",
+      "label": "water",
+      "aliases": [
+        "dihydrogen monoxide",
+        "dihydridooxygen",
+        "hydrogen hydroxide",
+        "dihydrogen oxide",
+        "oxidane",
+        "hydrogen oxide",
+        "pure water"
+      ],
+      "description": "chemical compound whose molecules are formed by two hydrogen atoms and one oxygen atom",
+      "source_url": "https://www.wikidata.org/wiki/Q283",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "water": [
+    {
+      "entity_id": "Q283",
+      "label": "water",
+      "aliases": [
+        "dihydrogen monoxide",
+        "dihydridooxygen",
+        "hydrogen hydroxide",
+        "dihydrogen oxide",
+        "oxidane",
+        "hydrogen oxide",
+        "pure water"
+      ],
+      "description": "chemical compound whose molecules are formed by two hydrogen atoms and one oxygen atom",
+      "source_url": "https://www.wikidata.org/wiki/Q283",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "WWII": [
+    {
+      "entity_id": "Q362",
+      "label": "World War II",
+      "aliases": [
+        "WW 2",
+        "WW II",
+        "World War Two",
+        "2nd World War",
+        "World War 2",
+        "the Second World War",
+        "Second World War",
+        "II World War",
+        "World War 2, 1939–1945"
+      ],
+      "description": "1939–1945 global conflict",
+      "source_url": "https://www.wikidata.org/wiki/Q362",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ],
+  "Second World War": [
+    {
+      "entity_id": "Q362",
+      "label": "World War II",
+      "aliases": [
+        "WW 2",
+        "WW II",
+        "World War Two",
+        "2nd World War",
+        "World War 2",
+        "the Second World War",
+        "Second World War",
+        "II World War",
+        "World War 2, 1939–1945"
+      ],
+      "description": "1939–1945 global conflict",
+      "source_url": "https://www.wikidata.org/wiki/Q362",
+      "retrieved_at": "2026-09-08T20:34:59.424290Z"
+    }
+  ]
+}
