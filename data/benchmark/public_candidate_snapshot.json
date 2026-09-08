@@ -1,0 +1,3662 @@
+{
+  "Albert Einstein": [
+    {
+      "entity_id": "Q937",
+      "label": "Albert Einstein",
+      "aliases": [],
+      "description": "German-born theoretical physicist (1879–1955)",
+      "source_url": "https://www.wikidata.org/wiki/Q937",
+      "retrieved_at": "2026-09-08T20:35:01.005701Z"
+    },
+    {
+      "entity_id": "Q2030894",
+      "label": "Albert Einstein College of Medicine",
+      "aliases": [
+        "AECM",
+        "Einstein College of Medicine"
+      ],
+      "description": "private medical school in New York City, NY",
+      "source_url": "https://www.wikidata.org/wiki/Q2030894",
+      "retrieved_at": "2026-09-08T20:35:01.005701Z"
+    },
+    {
+      "entity_id": "Q2253683",
+      "label": "Albert Einstein",
+      "aliases": [],
+      "description": "train service",
+      "source_url": "https://www.wikidata.org/wiki/Q2253683",
+      "retrieved_at": "2026-09-08T20:35:01.005701Z"
+    },
+    {
+      "entity_id": "Q21200226",
+      "label": "Albert Einstein",
+      "aliases": [],
+      "description": "Wikimedia permanent duplicate item",
+      "source_url": "https://www.wikidata.org/wiki/Q21200226",
+      "retrieved_at": "2026-09-08T20:35:01.005701Z"
+    },
+    {
+      "entity_id": "Q47513150",
+      "label": "Albert Einstein",
+      "aliases": [],
+      "description": "painting by Max Westfield",
+      "source_url": "https://www.wikidata.org/wiki/Q47513150",
+      "retrieved_at": "2026-09-08T20:35:01.005701Z"
+    },
+    {
+      "entity_id": "Q47510526",
+      "label": "Albert Einstein",
+      "aliases": [],
+      "description": "painting by Josef Scharl",
+      "source_url": "https://www.wikidata.org/wiki/Q47510526",
+      "retrieved_at": "2026-09-08T20:35:01.005701Z"
+    },
+    {
+      "entity_id": "Q1630439",
+      "label": "Albert Einstein Israelite Hospital",
+      "aliases": [
+        "Albert Einstein Hospital"
+      ],
+      "description": "hospital in São Paulo, Brazil",
+      "source_url": "https://www.wikidata.org/wiki/Q1630439",
+      "retrieved_at": "2026-09-08T20:35:01.005701Z"
+    },
+    {
+      "entity_id": "Q47512878",
+      "label": "Albert Einstein",
+      "aliases": [],
+      "description": "painting by Roy Andersen",
+      "source_url": "https://www.wikidata.org/wiki/Q47512878",
+      "retrieved_at": "2026-09-08T20:35:01.005701Z"
+    },
+    {
+      "entity_id": "Q2464312",
+      "label": "Albert Einstein's brain",
+      "aliases": [
+        "brain of Albert Einstein"
+      ],
+      "description": "preserved brain of scientist Albert Einstein",
+      "source_url": "https://www.wikidata.org/wiki/Q2464312",
+      "retrieved_at": "2026-09-08T20:35:01.005701Z"
+    },
+    {
+      "entity_id": "Q47512758",
+      "label": "Albert Einstein",
+      "aliases": [],
+      "description": "painting by Ernest Hamlin Baker",
+      "source_url": "https://www.wikidata.org/wiki/Q47512758",
+      "retrieved_at": "2026-09-08T20:35:01.005701Z"
+    }
+  ],
+  "Amazon": [
+    {
+      "entity_id": "Q3884",
+      "label": "Amazon",
+      "aliases": [
+        "Amazon.com, Inc."
+      ],
+      "description": "American multinational technology company",
+      "source_url": "https://www.wikidata.org/wiki/Q3884",
+      "retrieved_at": "2026-09-08T20:35:03.167457Z"
+    },
+    {
+      "entity_id": "Q40040",
+      "label": "Amazonas",
+      "aliases": [
+        "State of Amazonas",
+        "AM",
+        "Amazonas (Brazil)",
+        "Amazonas State"
+      ],
+      "description": "state in the North Region of Brazil",
+      "source_url": "https://www.wikidata.org/wiki/Q40040",
+      "retrieved_at": "2026-09-08T20:35:03.167457Z"
+    },
+    {
+      "entity_id": "Q456065",
+      "label": "Amazon",
+      "aliases": [],
+      "description": "1984 video game",
+      "source_url": "https://www.wikidata.org/wiki/Q456065",
+      "retrieved_at": "2026-09-08T20:35:03.167457Z"
+    },
+    {
+      "entity_id": "Q136469",
+      "label": "Amazon Kindle",
+      "aliases": [
+        "Amazon Kindle product line",
+        "Kindle product line"
+      ],
+      "description": "e-book reading device",
+      "source_url": "https://www.wikidata.org/wiki/Q136469",
+      "retrieved_at": "2026-09-08T20:35:03.167457Z"
+    },
+    {
+      "entity_id": "Q201162",
+      "label": "Amazonas Department",
+      "aliases": [
+        "Amazonas department",
+        "Amazonas, Peru",
+        "Amazonas region"
+      ],
+      "description": "department of Peru",
+      "source_url": "https://www.wikidata.org/wiki/Q201162",
+      "retrieved_at": "2026-09-08T20:35:03.167457Z"
+    },
+    {
+      "entity_id": "Q4740856",
+      "label": "Amazon Prime Video",
+      "aliases": [
+        "Amazon Video On Demand",
+        "Amazon Unbox",
+        "Amazon Instant Video",
+        "Amazon Video"
+      ],
+      "description": "American video streaming service",
+      "source_url": "https://www.wikidata.org/wiki/Q4740856",
+      "retrieved_at": "2026-09-08T20:35:03.167457Z"
+    },
+    {
+      "entity_id": "Q177567",
+      "label": "Amazon rainforest",
+      "aliases": [
+        "Amazonas",
+        "Amazonian rainforest",
+        "Amazon rain forest",
+        "Amazonian rain forest",
+        "Amazon forest",
+        "Amazonia",
+        "Brazilian Amazon",
+        "Amazons"
+      ],
+      "description": "large rainforest in South America",
+      "source_url": "https://www.wikidata.org/wiki/Q177567",
+      "retrieved_at": "2026-09-08T20:35:03.167457Z"
+    },
+    {
+      "entity_id": "Q3783",
+      "label": "Amazon",
+      "aliases": [
+        "Amazon River",
+        "River Amazon",
+        "Amazonian River",
+        "The Amazon",
+        "The Amazon River"
+      ],
+      "description": "river in South America",
+      "source_url": "https://www.wikidata.org/wiki/Q3783",
+      "retrieved_at": "2026-09-08T20:35:03.167457Z"
+    },
+    {
+      "entity_id": "Q456513",
+      "label": "Amazona",
+      "aliases": [
+        "the Amazon parrots"
+      ],
+      "description": "genus of birds",
+      "source_url": "https://www.wikidata.org/wiki/Q456513",
+      "retrieved_at": "2026-09-08T20:35:03.167457Z"
+    },
+    {
+      "entity_id": "Q733115",
+      "label": "Amazon Mechanical Turk",
+      "aliases": [
+        "mturk.com",
+        "Mechanical Turk",
+        "Amazon’s Mechanical Turk"
+      ],
+      "description": "micro-work service subsidiary of Amazon",
+      "source_url": "https://www.wikidata.org/wiki/Q733115",
+      "retrieved_at": "2026-09-08T20:35:03.167457Z"
+    }
+  ],
+  "Apple": [
+    {
+      "entity_id": "Q312",
+      "label": "Apple Inc.",
+      "aliases": [
+        "Apple (company)"
+      ],
+      "description": "American multinational technology company based in Cupertino, California",
+      "source_url": "https://www.wikidata.org/wiki/Q312",
+      "retrieved_at": "2026-09-08T20:35:05.192777Z"
+    },
+    {
+      "entity_id": "Q213710",
+      "label": "Apple Records",
+      "aliases": [
+        "Apple",
+        "Apple (label)"
+      ],
+      "description": "UK international record label; imprint of Apple Corps Ltd.",
+      "source_url": "https://www.wikidata.org/wiki/Q213710",
+      "retrieved_at": "2026-09-08T20:35:05.192777Z"
+    },
+    {
+      "entity_id": "Q89",
+      "label": "apple",
+      "aliases": [
+        "apple fruit"
+      ],
+      "description": "edible fruit of the apple tree",
+      "source_url": "https://www.wikidata.org/wiki/Q89",
+      "retrieved_at": "2026-09-08T20:35:05.192777Z"
+    },
+    {
+      "entity_id": "Q20056642",
+      "label": "Apple Music",
+      "aliases": [],
+      "description": "Internet online music service by Apple",
+      "source_url": "https://www.wikidata.org/wiki/Q20056642",
+      "retrieved_at": "2026-09-08T20:35:05.192777Z"
+    },
+    {
+      "entity_id": "Q26944931",
+      "label": "Apple",
+      "aliases": [],
+      "description": "unisex given name",
+      "source_url": "https://www.wikidata.org/wiki/Q26944931",
+      "retrieved_at": "2026-09-08T20:35:05.192777Z"
+    },
+    {
+      "entity_id": "Q111046003",
+      "label": "Apple",
+      "aliases": [
+        "Apple®"
+      ],
+      "description": "registered trademark owned by Apple",
+      "source_url": "https://www.wikidata.org/wiki/Q111046003",
+      "retrieved_at": "2026-09-08T20:35:05.192777Z"
+    },
+    {
+      "entity_id": "Q1754545",
+      "label": "Apple",
+      "aliases": [],
+      "description": "1990 studio album by Mother Love Bone",
+      "source_url": "https://www.wikidata.org/wiki/Q1754545",
+      "retrieved_at": "2026-09-08T20:35:05.192777Z"
+    },
+    {
+      "entity_id": "Q104819",
+      "label": "Malus",
+      "aliases": [
+        "crabapple",
+        "apples",
+        "apple"
+      ],
+      "description": "flowering genus in the rose family Rosaceae",
+      "source_url": "https://www.wikidata.org/wiki/Q104819",
+      "retrieved_at": "2026-09-08T20:35:05.192777Z"
+    },
+    {
+      "entity_id": "Q9589",
+      "label": "iTunes",
+      "aliases": [
+        "Apple iTunes"
+      ],
+      "description": "media player and library software",
+      "source_url": "https://www.wikidata.org/wiki/Q9589",
+      "retrieved_at": "2026-09-08T20:35:05.192777Z"
+    },
+    {
+      "entity_id": "Q158657",
+      "label": "Malus pumila",
+      "aliases": [
+        "apple",
+        "domestic apple"
+      ],
+      "description": "species of apple tree",
+      "source_url": "https://www.wikidata.org/wiki/Q158657",
+      "retrieved_at": "2026-09-08T20:35:05.192777Z"
+    }
+  ],
+  "Einstein": [
+    {
+      "entity_id": "Q16834800",
+      "label": "Einstein",
+      "aliases": [],
+      "description": "family name",
+      "source_url": "https://www.wikidata.org/wiki/Q16834800",
+      "retrieved_at": "2026-09-08T20:35:07.024964Z"
+    },
+    {
+      "entity_id": "Q937",
+      "label": "Albert Einstein",
+      "aliases": [],
+      "description": "German-born theoretical physicist (1879–1955)",
+      "source_url": "https://www.wikidata.org/wiki/Q937",
+      "retrieved_at": "2026-09-08T20:35:07.024964Z"
+    },
+    {
+      "entity_id": "Q901448",
+      "label": "einstein",
+      "aliases": [],
+      "description": "obsolete unit measuring either one mole of photons or the energy of one mole of photons",
+      "source_url": "https://www.wikidata.org/wiki/Q901448",
+      "retrieved_at": "2026-09-08T20:35:07.024964Z"
+    },
+    {
+      "entity_id": "Q1309274",
+      "label": "Einstein",
+      "aliases": [],
+      "description": "mountain of the Allgäu Alps in Tyrol, Austria",
+      "source_url": "https://www.wikidata.org/wiki/Q1309274",
+      "retrieved_at": "2026-09-08T20:35:07.024964Z"
+    },
+    {
+      "entity_id": "Q26854017",
+      "label": "Einstein / Instituto de Ensino e Pesquisa Albert Einstein",
+      "aliases": [
+        "Einstein (São Paulo)",
+        "Einstein"
+      ],
+      "description": "journal",
+      "source_url": "https://www.wikidata.org/wiki/Q26854017",
+      "retrieved_at": "2026-09-08T20:35:07.024964Z"
+    },
+    {
+      "entity_id": "Q1892",
+      "label": "einsteinium",
+      "aliases": [
+        "99Es",
+        "Es",
+        "element 99"
+      ],
+      "description": "chemical element with symbol Es and atomic number 99",
+      "source_url": "https://www.wikidata.org/wiki/Q1892",
+      "retrieved_at": "2026-09-08T20:35:07.024964Z"
+    },
+    {
+      "entity_id": "Q28739649",
+      "label": "Einstein",
+      "aliases": [],
+      "description": "opera by Paul Dessau",
+      "source_url": "https://www.wikidata.org/wiki/Q28739649",
+      "retrieved_at": "2026-09-08T20:35:07.024964Z"
+    },
+    {
+      "entity_id": "Q11452",
+      "label": "general relativity",
+      "aliases": [
+        "general theory of relativity",
+        "GR",
+        "GTR",
+        "Einstein's general theory of relativity"
+      ],
+      "description": "standard and classical physics theory of gravity and space",
+      "source_url": "https://www.wikidata.org/wiki/Q11452",
+      "retrieved_at": "2026-09-08T20:35:07.024964Z"
+    },
+    {
+      "entity_id": "Q2030894",
+      "label": "Albert Einstein College of Medicine",
+      "aliases": [
+        "AECM",
+        "Einstein College of Medicine"
+      ],
+      "description": "private medical school in New York City, NY",
+      "source_url": "https://www.wikidata.org/wiki/Q2030894",
+      "retrieved_at": "2026-09-08T20:35:07.024964Z"
+    },
+    {
+      "entity_id": "Q146709",
+      "label": "2001 Einstein",
+      "aliases": [
+        "Einstein"
+      ],
+      "description": "Inner main belt asteroid",
+      "source_url": "https://www.wikidata.org/wiki/Q146709",
+      "retrieved_at": "2026-09-08T20:35:07.024964Z"
+    }
+  ],
+  "H2O": [
+    {
+      "entity_id": "Q283",
+      "label": "water",
+      "aliases": [
+        "dihydrogen monoxide",
+        "dihydridooxygen",
+        "hydrogen hydroxide",
+        "dihydrogen oxide",
+        "oxidane",
+        "hydrogen oxide",
+        "pure water"
+      ],
+      "description": "chemical compound whose molecules are formed by two hydrogen atoms and one oxygen atom",
+      "source_url": "https://www.wikidata.org/wiki/Q283",
+      "retrieved_at": "2026-09-08T20:35:08.979765Z"
+    },
+    {
+      "entity_id": "Q130615",
+      "label": "H₂O: Just Add Water",
+      "aliases": [
+        "H₂O",
+        "H2O",
+        "H2O: Just Add Water",
+        "H2O - Just Add Water"
+      ],
+      "description": "2006 children's television show from Australia",
+      "source_url": "https://www.wikidata.org/wiki/Q130615",
+      "retrieved_at": "2026-09-08T20:35:08.979765Z"
+    },
+    {
+      "entity_id": "Q34039679",
+      "label": "H2O",
+      "aliases": [],
+      "description": "new generation HTTP server",
+      "source_url": "https://www.wikidata.org/wiki/Q34039679",
+      "retrieved_at": "2026-09-08T20:35:08.979765Z"
+    },
+    {
+      "entity_id": "Q3780358",
+      "label": "H2O",
+      "aliases": [],
+      "description": "1996 album by H2O",
+      "source_url": "https://www.wikidata.org/wiki/Q3780358",
+      "retrieved_at": "2026-09-08T20:35:08.979765Z"
+    },
+    {
+      "entity_id": "Q133804591",
+      "label": "H2O",
+      "aliases": [],
+      "description": "sculpture and sound installation in Zeist, Netherlands",
+      "source_url": "https://www.wikidata.org/wiki/Q133804591",
+      "retrieved_at": "2026-09-08T20:35:08.979765Z"
+    },
+    {
+      "entity_id": "Q584282",
+      "label": "H2O",
+      "aliases": [],
+      "description": "American hardcore punk band",
+      "source_url": "https://www.wikidata.org/wiki/Q584282",
+      "retrieved_at": "2026-09-08T20:35:08.979765Z"
+    },
+    {
+      "entity_id": "Q10850961",
+      "label": "H2O",
+      "aliases": [],
+      "description": "Japanese music duo formed in 1976",
+      "source_url": "https://www.wikidata.org/wiki/Q10850961",
+      "retrieved_at": "2026-09-08T20:35:08.979765Z"
+    },
+    {
+      "entity_id": "Q171877",
+      "label": "hydrogen peroxide",
+      "aliases": [
+        "H2O2",
+        "dioxidane",
+        "dihydrogen dioxide",
+        "peroxide"
+      ],
+      "description": "chemical compound",
+      "source_url": "https://www.wikidata.org/wiki/Q171877",
+      "retrieved_at": "2026-09-08T20:35:08.979765Z"
+    },
+    {
+      "entity_id": "Q3780359",
+      "label": "H₂O",
+      "aliases": [
+        "H2O"
+      ],
+      "description": "1982 studio album by Daryl Hall + John Oates",
+      "source_url": "https://www.wikidata.org/wiki/Q3780359",
+      "retrieved_at": "2026-09-08T20:35:08.979765Z"
+    },
+    {
+      "entity_id": "Q307507",
+      "label": "H2O: Footprints in the Sand",
+      "aliases": [],
+      "description": "Japanese adult visual novel",
+      "source_url": "https://www.wikidata.org/wiki/Q307507",
+      "retrieved_at": "2026-09-08T20:35:08.979765Z"
+    }
+  ],
+  "IBM": [
+    {
+      "entity_id": "Q37156",
+      "label": "IBM",
+      "aliases": [
+        "International Business Machines Corporation (Armonk, NY)",
+        "IBM Corp.",
+        "18M",
+        "ibm.com"
+      ],
+      "description": "American multinational technology company",
+      "source_url": "https://www.wikidata.org/wiki/Q37156",
+      "retrieved_at": "2026-09-08T20:36:01.500711Z"
+    },
+    {
+      "entity_id": "Q269856",
+      "label": "IBM AIX",
+      "aliases": [
+        "AIX"
+      ],
+      "description": "Unix operating system from IBM",
+      "source_url": "https://www.wikidata.org/wiki/Q269856",
+      "retrieved_at": "2026-09-08T20:36:01.500711Z"
+    },
+    {
+      "entity_id": "Q70096636",
+      "label": "Ibm",
+      "aliases": [],
+      "description": "locality in Braunau District",
+      "source_url": "https://www.wikidata.org/wiki/Q70096636",
+      "retrieved_at": "2026-09-08T20:36:01.500711Z"
+    },
+    {
+      "entity_id": "Q1848471",
+      "label": "inclusion body myositis",
+      "aliases": [
+        "Distal Myopathy with Rimmed Vacuoles (DMRV)",
+        "Distal myopathy, Nonaka type",
+        "IBM-3",
+        "IBM2",
+        "Nonaka Myopathy",
+        "inclusion body myopathy 2",
+        "inclusion body myopathy 3",
+        "hIBM",
+        "hereditary Inclusion Body Myopathy",
+        "sporadic Inclusion Body Myositis",
+        "sIBM",
+        "IBM",
+        "Distal Myopathy with Rimmed Vacuoles",
+        "Inclusion body myositis"
+      ],
+      "description": "inflammatory muscle disease in older adults",
+      "source_url": "https://www.wikidata.org/wiki/Q1848471",
+      "retrieved_at": "2026-09-08T20:36:01.500711Z"
+    },
+    {
+      "entity_id": "Q609843",
+      "label": "IBM System/360",
+      "aliases": [
+        "System/360",
+        "S/360",
+        "IBM S/360",
+        "IBM 360",
+        "System 360",
+        "S360",
+        "IBM System 360",
+        "360"
+      ],
+      "description": "IBM mainframe computer family (1964–1978)",
+      "source_url": "https://www.wikidata.org/wiki/Q609843",
+      "retrieved_at": "2026-09-08T20:36:01.500711Z"
+    },
+    {
+      "entity_id": "Q863568",
+      "label": "IBM PC DOS",
+      "aliases": [
+        "IBM Personal Computer Disk Operating System",
+        "IBM Personal Computer DOS",
+        "PC DOS",
+        "PC-DOS",
+        "IBM PC-DOS",
+        "IBM DOS",
+        "Personal Computer DOS",
+        "IBM-DOS"
+      ],
+      "description": "discontinued computer operating system",
+      "source_url": "https://www.wikidata.org/wiki/Q863568",
+      "retrieved_at": "2026-09-08T20:36:01.500711Z"
+    },
+    {
+      "entity_id": "Q43305211",
+      "label": "IBM Plex",
+      "aliases": [],
+      "description": "open-source typeface family developed by IBM",
+      "source_url": "https://www.wikidata.org/wiki/Q43305211",
+      "retrieved_at": "2026-09-08T20:36:01.500711Z"
+    },
+    {
+      "entity_id": "Q1881253",
+      "label": "MCF-7",
+      "aliases": [
+        "MCF 7",
+        "MCF.7",
+        "MCF7",
+        "Michigan Cancer Foundation-7",
+        "ssMCF-7",
+        "ssMCF7",
+        "MCF7/WT",
+        "MCF7-CTRL",
+        "IBMF-7"
+      ],
+      "description": "cell line",
+      "source_url": "https://www.wikidata.org/wiki/Q1881253",
+      "retrieved_at": "2026-09-08T20:36:01.500711Z"
+    },
+    {
+      "entity_id": "Q751046",
+      "label": "IBM PC compatible",
+      "aliases": [
+        "IBM PC/AT Compatibles",
+        "PC compatible",
+        "PC"
+      ],
+      "description": "computers similar to the IBM PC and its derivatives",
+      "source_url": "https://www.wikidata.org/wiki/Q751046",
+      "retrieved_at": "2026-09-08T20:36:01.500711Z"
+    },
+    {
+      "entity_id": "Q123390",
+      "label": "IBM Lotus SmartSuite",
+      "aliases": [
+        "Lotus SuperOffice",
+        "Lotus SmartSuite",
+        "Lotus Smartsuite"
+      ],
+      "description": "productivity software",
+      "source_url": "https://www.wikidata.org/wiki/Q123390",
+      "retrieved_at": "2026-09-08T20:36:01.500711Z"
+    }
+  ],
+  "International Business Machines": [
+    {
+      "entity_id": "Q37156",
+      "label": "IBM",
+      "aliases": [
+        "International Business Machines Corporation (Armonk, NY)",
+        "IBM Corp.",
+        "18M",
+        "ibm.com"
+      ],
+      "description": "American multinational technology company",
+      "source_url": "https://www.wikidata.org/wiki/Q37156",
+      "retrieved_at": "2026-09-08T20:36:03.172686Z"
+    },
+    {
+      "entity_id": "Q5968787",
+      "label": "IBM Canada Head Office Building",
+      "aliases": [
+        "International Business Machines"
+      ],
+      "description": "head office of IBM Canada",
+      "source_url": "https://www.wikidata.org/wiki/Q5968787",
+      "retrieved_at": "2026-09-08T20:36:03.172686Z"
+    },
+    {
+      "entity_id": "Q19874511",
+      "label": "IBM Hursley",
+      "aliases": [
+        "International Business Machines"
+      ],
+      "description": "laboratory in Hampshire, England",
+      "source_url": "https://www.wikidata.org/wiki/Q19874511",
+      "retrieved_at": "2026-09-08T20:36:03.172686Z"
+    },
+    {
+      "entity_id": "Q1141670",
+      "label": "IBM Personal Computer/AT",
+      "aliases": [
+        "International Business Machines Personal Computer/Advanced Technology",
+        "IBM 5170 PC AT",
+        "IBM PC/AT（model 5170）",
+        "IBM PC/AT",
+        "IBM PC AT",
+        "PC AT",
+        "PC/AT",
+        "IBM Personal Computer AT"
+      ],
+      "description": "personal computer model",
+      "source_url": "https://www.wikidata.org/wiki/Q1141670",
+      "retrieved_at": "2026-09-08T20:36:03.172686Z"
+    },
+    {
+      "entity_id": "Q30338814",
+      "label": "IBM Germany",
+      "aliases": [
+        "IBM Deutschland GmbH",
+        "International Business Machines Corporation"
+      ],
+      "description": "",
+      "source_url": "https://www.wikidata.org/wiki/Q30338814",
+      "retrieved_at": "2026-09-08T20:36:03.172686Z"
+    },
+    {
+      "entity_id": "Q28974610",
+      "label": "IBM France",
+      "aliases": [
+        "Compagnie IBM France, S.A.S.",
+        "International Business Machines Corporation",
+        "Compagnie IBM France"
+      ],
+      "description": "",
+      "source_url": "https://www.wikidata.org/wiki/Q28974610",
+      "retrieved_at": "2026-09-08T20:36:03.172686Z"
+    },
+    {
+      "entity_id": "Q16323757",
+      "label": "IBM Denmark",
+      "aliases": [
+        "International Business Machines Corporation"
+      ],
+      "description": "IBM subsidiary in Denmark",
+      "source_url": "https://www.wikidata.org/wiki/Q16323757",
+      "retrieved_at": "2026-09-08T20:36:03.172686Z"
+    },
+    {
+      "entity_id": "Q30338816",
+      "label": "IBM Egypt Business Support Services",
+      "aliases": [
+        "International Business Machines Corporation"
+      ],
+      "description": "",
+      "source_url": "https://www.wikidata.org/wiki/Q30338816",
+      "retrieved_at": "2026-09-08T20:36:03.172686Z"
+    },
+    {
+      "entity_id": "Q41567073",
+      "label": "IBM Česká republika",
+      "aliases": [
+        "International Business Machines Corporation"
+      ],
+      "description": "company in Prague, Czechia",
+      "source_url": "https://www.wikidata.org/wiki/Q41567073",
+      "retrieved_at": "2026-09-08T20:36:03.172686Z"
+    },
+    {
+      "entity_id": "Q59493032",
+      "label": "International Business Machines Corporation Collection (NAID 653182)",
+      "aliases": [],
+      "description": "collection in the National Archives and Records Administration's holdings",
+      "source_url": "https://www.wikidata.org/wiki/Q59493032",
+      "retrieved_at": "2026-09-08T20:36:03.172686Z"
+    }
+  ],
+  "J. R. R. Tolkien": [
+    {
+      "entity_id": "Q892",
+      "label": "J. R. R. Tolkien",
+      "aliases": [
+        "J.R.R Tolkien",
+        "John Tolkien",
+        "John R. R. Tolkien"
+      ],
+      "description": "English writer and philologist (1892–1973)",
+      "source_url": "https://www.wikidata.org/wiki/Q892",
+      "retrieved_at": "2026-09-08T20:36:05.265929Z"
+    },
+    {
+      "entity_id": "Q6106863",
+      "label": "J. R. R. Tolkien's Riders of Rohan",
+      "aliases": [],
+      "description": "1991 video game",
+      "source_url": "https://www.wikidata.org/wiki/Q6106863",
+      "retrieved_at": "2026-09-08T20:36:05.265929Z"
+    },
+    {
+      "entity_id": "Q105849",
+      "label": "Tolkien Estate",
+      "aliases": [
+        "J. R. R. Tolkien Estate"
+      ],
+      "description": "legal body which manages the property of the English writer J. R. R. Tolkien, including the copyright for most of his works",
+      "source_url": "https://www.wikidata.org/wiki/Q105849",
+      "retrieved_at": "2026-09-08T20:36:05.265929Z"
+    },
+    {
+      "entity_id": "Q92556",
+      "label": "J. R. R. Tolkien: A Biography",
+      "aliases": [
+        "Tolkien: A Biography"
+      ],
+      "description": "written work by Humphrey Carpenter",
+      "source_url": "https://www.wikidata.org/wiki/Q92556",
+      "retrieved_at": "2026-09-08T20:36:05.265929Z"
+    },
+    {
+      "entity_id": "Q140128002",
+      "label": "J. R. R. Tolkien: Author of the Century",
+      "aliases": [],
+      "description": "2001 Houghton Mifflin edition",
+      "source_url": "https://www.wikidata.org/wiki/Q140128002",
+      "retrieved_at": "2026-09-08T20:36:05.265929Z"
+    },
+    {
+      "entity_id": "Q124811223",
+      "label": "J. R. R. Tolkien: A Biography",
+      "aliases": [],
+      "description": "1977 George Allen & Unwin edition",
+      "source_url": "https://www.wikidata.org/wiki/Q124811223",
+      "retrieved_at": "2026-09-08T20:36:05.265929Z"
+    },
+    {
+      "entity_id": "Q330047",
+      "label": "J. R. R. Tolkien bibliography",
+      "aliases": [],
+      "description": "Wikimedia writer's bibliography",
+      "source_url": "https://www.wikidata.org/wiki/Q330047",
+      "retrieved_at": "2026-09-08T20:36:05.265929Z"
+    },
+    {
+      "entity_id": "Q6106865",
+      "label": "J. R. R. Tolkien: Author of the Century",
+      "aliases": [],
+      "description": "book by Tom Shippey",
+      "source_url": "https://www.wikidata.org/wiki/Q6106865",
+      "retrieved_at": "2026-09-08T20:36:05.265929Z"
+    },
+    {
+      "entity_id": "Q6106867",
+      "label": "J. R. R. Tolkien: Artist and Illustrator",
+      "aliases": [],
+      "description": "book by Christina Scull",
+      "source_url": "https://www.wikidata.org/wiki/Q6106867",
+      "retrieved_at": "2026-09-08T20:36:05.265929Z"
+    },
+    {
+      "entity_id": "Q16267863",
+      "label": "J.R.R. Tolkien's The Lord of the Rings, Vol. II: The Two Towers",
+      "aliases": [
+        "J. R. R. Tolkien's The Lord of the Rings, Vol. II: The Two Towers"
+      ],
+      "description": "1992 video game",
+      "source_url": "https://www.wikidata.org/wiki/Q16267863",
+      "retrieved_at": "2026-09-08T20:36:05.265929Z"
+    }
+  ],
+  "Jaguar": [
+    {
+      "entity_id": "Q30055",
+      "label": "Jaguar Cars",
+      "aliases": [
+        "Jaguar"
+      ],
+      "description": "former British car company",
+      "source_url": "https://www.wikidata.org/wiki/Q30055",
+      "retrieved_at": "2026-09-08T20:36:07.226088Z"
+    },
+    {
+      "entity_id": "Q21170490",
+      "label": "Jaguar",
+      "aliases": [],
+      "description": "British car marque used by Jaguar Land Rover",
+      "source_url": "https://www.wikidata.org/wiki/Q21170490",
+      "retrieved_at": "2026-09-08T20:36:07.226088Z"
+    },
+    {
+      "entity_id": "Q2732887",
+      "label": "Jaguar",
+      "aliases": [],
+      "description": "1928 Type 24 torpedo boat",
+      "source_url": "https://www.wikidata.org/wiki/Q2732887",
+      "retrieved_at": "2026-09-08T20:36:07.226088Z"
+    },
+    {
+      "entity_id": "Q35694",
+      "label": "jaguar",
+      "aliases": [
+        "Panthera onca",
+        "panter"
+      ],
+      "description": "species of big cat native to the Americas",
+      "source_url": "https://www.wikidata.org/wiki/Q35694",
+      "retrieved_at": "2026-09-08T20:36:07.226088Z"
+    },
+    {
+      "entity_id": "Q11859320",
+      "label": "Jaguar",
+      "aliases": [],
+      "description": "1923 Chacal-class destroyer",
+      "source_url": "https://www.wikidata.org/wiki/Q11859320",
+      "retrieved_at": "2026-09-08T20:36:07.226088Z"
+    },
+    {
+      "entity_id": "Q650601",
+      "label": "Atari Jaguar",
+      "aliases": [
+        "Jaguar",
+        "Jaguar 64",
+        "Jaguar64"
+      ],
+      "description": "Fifth-generation home video game console by Atari",
+      "source_url": "https://www.wikidata.org/wiki/Q650601",
+      "retrieved_at": "2026-09-08T20:36:07.226088Z"
+    },
+    {
+      "entity_id": "Q93858327",
+      "label": "Jaguar",
+      "aliases": [],
+      "description": "sculpture by Heinrich Drake in Berlin, Germany",
+      "source_url": "https://www.wikidata.org/wiki/Q93858327",
+      "retrieved_at": "2026-09-08T20:36:07.226088Z"
+    },
+    {
+      "entity_id": "Q105765666",
+      "label": "IMO 9354301",
+      "aliases": [
+        "Zaliv Amerika",
+        "Jagger",
+        "Jaguar"
+      ],
+      "description": "ship built in 2008",
+      "source_url": "https://www.wikidata.org/wiki/Q105765666",
+      "retrieved_at": "2026-09-08T20:36:07.226088Z"
+    },
+    {
+      "entity_id": "Q6122893",
+      "label": "Jaguar Land Rover",
+      "aliases": [
+        "Jaguar Land Rover Automotive",
+        "Jaguar Land Rover Automotive PLC",
+        "JLR"
+      ],
+      "description": "British multinational automotive company",
+      "source_url": "https://www.wikidata.org/wiki/Q6122893",
+      "retrieved_at": "2026-09-08T20:36:07.226088Z"
+    },
+    {
+      "entity_id": "Q272223",
+      "label": "Jacksonville Jaguars",
+      "aliases": [
+        "Jaguars"
+      ],
+      "description": "National Football League franchise in Jacksonville, Florida",
+      "source_url": "https://www.wikidata.org/wiki/Q272223",
+      "retrieved_at": "2026-09-08T20:36:07.226088Z"
+    }
+  ],
+  "Java": [
+    {
+      "entity_id": "Q251",
+      "label": "Java",
+      "aliases": [
+        "java programming language"
+      ],
+      "description": "object-oriented programming language",
+      "source_url": "https://www.wikidata.org/wiki/Q251",
+      "retrieved_at": "2026-09-08T20:36:09.419908Z"
+    },
+    {
+      "entity_id": "Q2063",
+      "label": "JSON",
+      "aliases": [
+        "JavaScript/Handling JSON"
+      ],
+      "description": "text-based open standard designed for human-readable data interchange",
+      "source_url": "https://www.wikidata.org/wiki/Q2063",
+      "retrieved_at": "2026-09-08T20:36:09.419908Z"
+    },
+    {
+      "entity_id": "Q61612399",
+      "label": "Java",
+      "aliases": [],
+      "description": "genus of insects",
+      "source_url": "https://www.wikidata.org/wiki/Q61612399",
+      "retrieved_at": "2026-09-08T20:36:09.419908Z"
+    },
+    {
+      "entity_id": "Q3757",
+      "label": "Java",
+      "aliases": [
+        "Pulau Jawa",
+        "Jawa Island",
+        "Java Island",
+        "Pulau Java",
+        "Jawa",
+        "Java island",
+        "Java, Indonesia",
+        "Giava",
+        "Ява"
+      ],
+      "description": "island of Indonesia",
+      "source_url": "https://www.wikidata.org/wiki/Q3757",
+      "retrieved_at": "2026-09-08T20:36:09.419908Z"
+    },
+    {
+      "entity_id": "Q2005",
+      "label": "JavaScript",
+      "aliases": [],
+      "description": "high-level programming language",
+      "source_url": "https://www.wikidata.org/wiki/Q2005",
+      "retrieved_at": "2026-09-08T20:36:09.419908Z"
+    },
+    {
+      "entity_id": "Q37270782",
+      "label": "Java",
+      "aliases": [],
+      "description": "family name",
+      "source_url": "https://www.wikidata.org/wiki/Q37270782",
+      "retrieved_at": "2026-09-08T20:36:09.419908Z"
+    },
+    {
+      "entity_id": "Q879704",
+      "label": "Javanese script",
+      "aliases": [
+        "Javanese abugida",
+        "Aksara Jawa",
+        "Hanacaraka",
+        "Javanese alphabet",
+        "Javanese",
+        "Java"
+      ],
+      "description": "writing system used for Javanic languages",
+      "source_url": "https://www.wikidata.org/wiki/Q879704",
+      "retrieved_at": "2026-09-08T20:36:09.419908Z"
+    },
+    {
+      "entity_id": "Q193321",
+      "label": "Java virtual machine",
+      "aliases": [
+        "JVM",
+        "Java VM",
+        "JavaVM"
+      ],
+      "description": "runtime environment that can execute Java bytecode as a result of compiling computer programs written in the Java programming language",
+      "source_url": "https://www.wikidata.org/wiki/Q193321",
+      "retrieved_at": "2026-09-08T20:36:09.419908Z"
+    },
+    {
+      "entity_id": "Q1713118",
+      "label": "Java platform",
+      "aliases": [
+        "Java"
+      ],
+      "description": "set of several computer software products and specifications",
+      "source_url": "https://www.wikidata.org/wiki/Q1713118",
+      "retrieved_at": "2026-09-08T20:36:09.419908Z"
+    },
+    {
+      "entity_id": "Q56300903",
+      "label": "Java",
+      "aliases": [],
+      "description": "hamlet in Wanze, Belgium",
+      "source_url": "https://www.wikidata.org/wiki/Q56300903",
+      "retrieved_at": "2026-09-08T20:36:09.419908Z"
+    }
+  ],
+  "Jordan": [
+    {
+      "entity_id": "Q14021944",
+      "label": "Jordan",
+      "aliases": [],
+      "description": "unisex given name",
+      "source_url": "https://www.wikidata.org/wiki/Q14021944",
+      "retrieved_at": "2026-09-08T20:37:01.786796Z"
+    },
+    {
+      "entity_id": "Q1703599",
+      "label": "Jordan",
+      "aliases": [],
+      "description": "family name",
+      "source_url": "https://www.wikidata.org/wiki/Q1703599",
+      "retrieved_at": "2026-09-08T20:37:01.786796Z"
+    },
+    {
+      "entity_id": "Q810",
+      "label": "Jordan",
+      "aliases": [
+        "Hashemite Kingdom of Jordan",
+        "Kingdom of Jordan",
+        "Yarden",
+        "Giordania",
+        "ISO 3166-1:JO",
+        "HKJ",
+        "State of Jordan"
+      ],
+      "description": "country in West Asia",
+      "source_url": "https://www.wikidata.org/wiki/Q810",
+      "retrieved_at": "2026-09-08T20:37:01.786796Z"
+    },
+    {
+      "entity_id": "Q313802",
+      "label": "Jordan",
+      "aliases": [
+        "Municipality of Jordan"
+      ],
+      "description": "municipality of the Philippines and capital of the province of Guimaras",
+      "source_url": "https://www.wikidata.org/wiki/Q313802",
+      "retrieved_at": "2026-09-08T20:37:01.786796Z"
+    },
+    {
+      "entity_id": "Q17485430",
+      "label": "Jordan",
+      "aliases": [],
+      "description": "name",
+      "source_url": "https://www.wikidata.org/wiki/Q17485430",
+      "retrieved_at": "2026-09-08T20:37:01.786796Z"
+    },
+    {
+      "entity_id": "Q270658",
+      "label": "Jacob Jordaens",
+      "aliases": [
+        "Jacob Jordaens (I)",
+        "Jacob (I) Jordaens",
+        "Jacques Jordaens",
+        "Jacob Jordaens the Elder",
+        "P. Jordaens",
+        "Jacob Jourdains",
+        "Jacob Jordaan",
+        "Jacob Jordanes",
+        "I︠A︡kob Iordans",
+        "Jacob Jordaen",
+        "Jacob Jourdano",
+        "Giordano d'Olanda",
+        "Jakob Jordaens",
+        "Jacob I Jordaens",
+        "Jacques Jordans",
+        "Jordaens of Antwerp",
+        "Jacob Jordeans",
+        "Jacob Jordeanes",
+        "Jacob Jordains",
+        "Jacob Jordans",
+        "Jacob Joerdaens",
+        "Jacob, the elder Jordaens",
+        "I. Jordaens",
+        "Giordano Jordaens",
+        "Jacob Jourdaens",
+        "Jaques Jordans",
+        "Jacob Jordaans",
+        "Jacob, I Jordaens",
+        "Jacob Jordaens I",
+        "Jourdaens",
+        "Jourdane",
+        "Jourdons",
+        "Joerdaens",
+        "of Antwerp Jordans",
+        "Jakob Jordanus",
+        "Jordaan",
+        "Jacob Jarden",
+        "jacob jordanns",
+        "Jordaens",
+        "Iordans",
+        "Jordaen of Antwerp",
+        "Jourdans",
+        "jordaens jakob",
+        "Jordans of Antwerp",
+        "Jourdaine",
+        "J. J. Jordans",
+        "Jordanus",
+        "a Scholar of Rubens Jordaens",
+        "Jourdains",
+        "Jourdano",
+        "Jordeans of Antwerp",
+        "J. Jourdance",
+        "Monsù Giordano",
+        "Jac. Jordaens",
+        "Esqu. Jacob Jordans",
+        "J. Jordaans",
+        "Jordeen's",
+        "Jordains",
+        "Jakob Jordans",
+        "I Jacob Jordaens",
+        "J. Jourdaens",
+        "J. Jordaen",
+        "G. Jordaens",
+        "Jac. Jordaans",
+        "Jac. Jordanus",
+        "Jaques Iordans",
+        "Jourdon",
+        "Jac. Jordano",
+        "Jacques Jourdaens",
+        "Jordaans",
+        "Jacob Jordan",
+        "Jac. Jordans",
+        "Jacopo Jordans",
+        "Jordaen",
+        "Giordan da Versa",
+        "J Jordaens",
+        "Jacque Jordans",
+        "Jac Jordaens",
+        "J. Jordaens",
+        "T. Jordaens",
+        "J. Jordaëns",
+        "jakob jordaens",
+        "Jordeanes",
+        "Jordanes",
+        "Jordæns",
+        "of Antwerp Jordains",
+        "J. Jordains",
+        "Jordaens Jac.",
+        "Jacob Jordäns",
+        "Jacques Joardaens",
+        "Jaques Jordaans",
+        "J. Jordeans",
+        "jacob jordaens I",
+        "J. Jordans",
+        "J. Jordan",
+        "Jordeans",
+        "Jordahn",
+        "Jorduens",
+        "Jacques Jordaans",
+        "Jordahns",
+        "Jordan",
+        "Jordane",
+        "jordaens jacob",
+        "Jacob Jordanus",
+        "Jordens",
+        "Jordans D'Andversa",
+        "Jardaens",
+        "Jordans",
+        "J. Jordahn",
+        "Jac. Jordeans",
+        "J. Jordanse",
+        "Jaques Jordaens",
+        "Jacq. Jordaens"
+      ],
+      "description": "Flemish painter, draftsman and designer of prints and tapestries (1593-1678)",
+      "source_url": "https://www.wikidata.org/wiki/Q270658",
+      "retrieved_at": "2026-09-08T20:37:01.786796Z"
+    },
+    {
+      "entity_id": "Q332494",
+      "label": "Luca Giordano",
+      "aliases": [
+        "Fa Presto",
+        "Luca Jordanus",
+        "Lucas Jordan",
+        "Luca Jordano",
+        "Lucca Giordano",
+        "Luca Jordans",
+        "Luca Zordano",
+        "Luca Giordani",
+        "Luca Jardaeno",
+        "Luca Giordano il Giovane",
+        "Luca Jordan",
+        "Luca Jiardano",
+        "Luc Jordans",
+        "Luc Jordani",
+        "L. Giordano",
+        "Lucco Giordano",
+        "Luca Fapresto Giordano",
+        "Luca Fa Presto",
+        "Luco Jordano",
+        "Luca Giardano",
+        "Lucca Jordano",
+        "Lucas Jordán",
+        "Gordano",
+        "Luca Jiordano",
+        "Luca Giordanello",
+        "Luca Giordino",
+        "Luca Giordaniello",
+        "Luca Fapresto",
+        "Luca L'Giordano",
+        "Luco Giordano",
+        "Jordano Lucas",
+        "Luc Jourdans",
+        "Luc. Jordano",
+        "L. Gordano",
+        "Jiordano",
+        "Giordano da Napoli",
+        "Fapresto",
+        "Luc. Jordaens",
+        "Lucas Jordans",
+        "Luca Gurdano",
+        "d'Italie Jourdans",
+        "Jordan",
+        "L. Geordano",
+        "Giordano Luca",
+        "Luc Jourdaens",
+        "Luca Giardino",
+        "De Luc Jordans",
+        "L. Joordano",
+        "genannt Fa presto Luca Giordano",
+        "Lucca Giedanoo",
+        "giordano lucca",
+        "Lucas Jeordane",
+        "Luca Guardino",
+        "L. Jordanus",
+        "Luco. Jordano",
+        "Gurdiani",
+        "Luca fa Presto",
+        "Jordahn",
+        "L. Jordahn",
+        "Lucas Jordano",
+        "L. Guiardino",
+        "Luc Jordaens",
+        "Luca. Jordans",
+        "gen. fa presto luca giordano",
+        "Luc Joordaans",
+        "Lucca fa Presto",
+        "Lucia Jordana",
+        "L. Jordaens",
+        "Lucas Jordaans",
+        "Luca Jordan's",
+        "Luca. Jordano",
+        "Li Jordane",
+        "Lucy Giordano",
+        "Giordino",
+        "Giordini",
+        "L. Giardano",
+        "L. Giorano",
+        "Luc Joordain",
+        "L. Jiordano",
+        "L: Giordano",
+        "Luca Guordano",
+        "Lucca Jordans",
+        "L. Giondano",
+        "Lucas Jiordano",
+        "Jordans de Naple",
+        "Luc Jordane",
+        "Lucas Jordaens",
+        "Lucas Jordaeno",
+        "sur-nommé Fa Presto Luca Jordano",
+        "Luca Giordauo",
+        "Lucas de Jordan",
+        "luca cav. giordano",
+        "luca gordano",
+        "dit Fapresto Luca Jordane",
+        "Lca Jordano surnommé Fa Presto",
+        "Giordani",
+        "L. Jordano",
+        "Luc Jordan",
+        "Leicordane di va presto",
+        "L. Jordane",
+        "L'Giordano",
+        "Giordanello",
+        "L. Gairdino",
+        "L. Jordans",
+        "called Luca fa Presto Luca Giordano",
+        "Luc. Giordano",
+        "L. Jeordane",
+        "Luca Jordane",
+        "Luc Jordaans",
+        "L. Jordance",
+        "Giordano",
+        "L.Jordans",
+        "Giordana",
+        "Lucas Jordane",
+        "L. Guardino",
+        "Giordaniello",
+        "Lucas Jordaen",
+        "Lucas Jordanus",
+        "Luca Jordano surnommé Fa Presto",
+        "Called, Luca fa Presto Luca Giordano",
+        "Lucas Giordano",
+        "L. Girdano",
+        "Luc Jordano",
+        "Lucca Giordani",
+        "Luc Giordano",
+        "L. Giardino",
+        "Lucas Giosdano",
+        "Lucas Jordaine",
+        "Lucca Giedano",
+        "Jordan/ aus Neapoli",
+        "Luc. Jordans",
+        "Jordans de Naples",
+        "Lucio Jordano",
+        "de Naple Jordans",
+        "Jiardano",
+        "L. Guardiano",
+        "L. Giodano",
+        "luka giordano",
+        "surnommé Fa-Presto Lucas Jordano",
+        "L. Guardano",
+        "L. Giordano de Naples",
+        "Lucus Giordane",
+        "Luca Jordaens",
+        "L. Jordanes",
+        "Luca Giordani Napoletano",
+        "L. Jordaise",
+        "Luca Jordano surnommé Luca fa presto",
+        "Lukas Jordaens",
+        "Guiordano",
+        "genannt Fa Presto Lucas Giordano",
+        "Zordano",
+        "S. Giordano",
+        "Luga Giordano",
+        "L. Giordani",
+        "Lucca Giardino",
+        "L. Giordana",
+        "Jardaeno",
+        "Jordàn",
+        "L. Giordono",
+        "Lucan",
+        "surnommé Fa Presto Luca Jordano",
+        "Lucâ Jordano",
+        "L. Giordino",
+        "Giordano giovane",
+        "Lucca Giordini",
+        "Jordane",
+        "Luc Jordans de Naples",
+        "Luca Giordano da Napoli",
+        "Luc Jordano De Naples",
+        "Jordano"
+      ],
+      "description": "Italian Baroque painter (1634–1705)",
+      "source_url": "https://www.wikidata.org/wiki/Q332494",
+      "retrieved_at": "2026-09-08T20:37:01.786796Z"
+    },
+    {
+      "entity_id": "Q108462973",
+      "label": "Jordan",
+      "aliases": [],
+      "description": "bishop of the Roman Catholic Church",
+      "source_url": "https://www.wikidata.org/wiki/Q108462973",
+      "retrieved_at": "2026-09-08T20:37:01.786796Z"
+    },
+    {
+      "entity_id": "Q65882",
+      "label": "Karl Jordan",
+      "aliases": [
+        "Jordan",
+        "Heinrich Ernst Karl Jordan",
+        "K. Jordan",
+        "H. E. K. Jordan",
+        "K. J."
+      ],
+      "description": "German entomologist (1861–1959)",
+      "source_url": "https://www.wikidata.org/wiki/Q65882",
+      "retrieved_at": "2026-09-08T20:37:01.786796Z"
+    },
+    {
+      "entity_id": "Q30306599",
+      "label": "Jordán",
+      "aliases": [],
+      "description": "family name",
+      "source_url": "https://www.wikidata.org/wiki/Q30306599",
+      "retrieved_at": "2026-09-08T20:37:01.786796Z"
+    }
+  ],
+  "MIT": [
+    {
+      "entity_id": "Q49108",
+      "label": "Massachusetts Institute of Technology",
+      "aliases": [
+        "MIT",
+        "M.I.T.",
+        "Mass Tech"
+      ],
+      "description": "private university in Cambridge, Massachusetts, USA, founded 1861",
+      "source_url": "https://www.wikidata.org/wiki/Q49108",
+      "retrieved_at": "2026-09-08T20:37:03.461704Z"
+    },
+    {
+      "entity_id": "Q334661",
+      "label": "MIT License",
+      "aliases": [
+        "MIT",
+        "Expat License"
+      ],
+      "description": "permissive free software license",
+      "source_url": "https://www.wikidata.org/wiki/Q334661",
+      "retrieved_at": "2026-09-08T20:37:03.461704Z"
+    },
+    {
+      "entity_id": "Q179205",
+      "label": "Mitchell",
+      "aliases": [],
+      "description": "family name",
+      "source_url": "https://www.wikidata.org/wiki/Q179205",
+      "retrieved_at": "2026-09-08T20:37:03.461704Z"
+    },
+    {
+      "entity_id": "Q843297",
+      "label": "Iwate Menkoi Television",
+      "aliases": [
+        "Iwate Menkoi Television Co., Ltd.",
+        "mit"
+      ],
+      "description": "Japanese television station",
+      "source_url": "https://www.wikidata.org/wiki/Q843297",
+      "retrieved_at": "2026-09-08T20:37:03.461704Z"
+    },
+    {
+      "entity_id": "Q39572",
+      "label": "mitochondrion",
+      "aliases": [
+        "mitochondria",
+        "GO:0005739",
+        "maze bean",
+        "powerhouse of the cell"
+      ],
+      "description": "organelle in eukaryotic cells responsible for respiration",
+      "source_url": "https://www.wikidata.org/wiki/Q39572",
+      "retrieved_at": "2026-09-08T20:37:03.461704Z"
+    },
+    {
+      "entity_id": "Q27727334",
+      "label": "Mitochondrial DNA Part A",
+      "aliases": [
+        "Mitochondrial DNA A DNA Mapp Seq Anal",
+        "Mitochondrial DNA. Part A",
+        "Mitochondrial DNA. Part A, DNA Mapping, Sequencing, and Analysis"
+      ],
+      "description": "scientific journal",
+      "source_url": "https://www.wikidata.org/wiki/Q27727334",
+      "retrieved_at": "2026-09-08T20:37:03.461704Z"
+    },
+    {
+      "entity_id": "Q27727183",
+      "label": "Mitochondrial DNA Part B",
+      "aliases": [
+        "Mitochondrial DNA B Resour",
+        "Mitochondrial DNA. Part B. Resources",
+        "Mitochondrial DNA. Part B, Resources"
+      ],
+      "description": "scientific journal",
+      "source_url": "https://www.wikidata.org/wiki/Q27727183",
+      "retrieved_at": "2026-09-08T20:37:03.461704Z"
+    },
+    {
+      "entity_id": "Q71170",
+      "label": "Mittweida",
+      "aliases": [],
+      "description": "greater district town in Mittelsachsen District, Saxony, Germany",
+      "source_url": "https://www.wikidata.org/wiki/Q71170",
+      "retrieved_at": "2026-09-08T20:37:03.461704Z"
+    },
+    {
+      "entity_id": "Q112671674",
+      "label": "Mithat Kaya",
+      "aliases": [
+        "M. Kaya",
+        "M Kaya"
+      ],
+      "description": "Turkish researcher",
+      "source_url": "https://www.wikidata.org/wiki/Q112671674",
+      "retrieved_at": "2026-09-08T20:37:03.461704Z"
+    },
+    {
+      "entity_id": "Q3859417",
+      "label": "Mitchell",
+      "aliases": [
+        "Mitchell (given name)",
+        "Mitchell (first name)"
+      ],
+      "description": "male given name",
+      "source_url": "https://www.wikidata.org/wiki/Q3859417",
+      "retrieved_at": "2026-09-08T20:37:03.461704Z"
+    }
+  ],
+  "Massachusetts Institute of Technology": [
+    {
+      "entity_id": "Q49108",
+      "label": "Massachusetts Institute of Technology",
+      "aliases": [
+        "MIT",
+        "M.I.T.",
+        "Mass Tech"
+      ],
+      "description": "private university in Cambridge, Massachusetts, USA, founded 1861",
+      "source_url": "https://www.wikidata.org/wiki/Q49108",
+      "retrieved_at": "2026-09-08T20:37:05.472908Z"
+    },
+    {
+      "entity_id": "Q6784299",
+      "label": "Massachusetts Institute of Technology Libraries",
+      "aliases": [
+        "MIT Libraries"
+      ],
+      "description": "library",
+      "source_url": "https://www.wikidata.org/wiki/Q6784299",
+      "retrieved_at": "2026-09-08T20:37:05.472908Z"
+    },
+    {
+      "entity_id": "Q73820",
+      "label": "The MIT Press",
+      "aliases": [
+        "The M.I.T. Press",
+        "M.I.T. Press",
+        "MIT Press",
+        "Mit Press",
+        "Massachusetts Institute of Technology Press"
+      ],
+      "description": "American university press",
+      "source_url": "https://www.wikidata.org/wiki/Q73820",
+      "retrieved_at": "2026-09-08T20:37:05.472908Z"
+    },
+    {
+      "entity_id": "Q551250",
+      "label": "Lemelson–MIT Prize",
+      "aliases": [
+        "Lemelson–MIT award",
+        "Lemelson-MIT Awards Program",
+        "Massachusetts Institute of Technology. Lemelson-MIT Awards Program",
+        "Lemelson-MIT Program"
+      ],
+      "description": "award",
+      "source_url": "https://www.wikidata.org/wiki/Q551250",
+      "retrieved_at": "2026-09-08T20:37:05.472908Z"
+    },
+    {
+      "entity_id": "Q6784301",
+      "label": "Massachusetts Institute of Technology School of Engineering",
+      "aliases": [
+        "MIT School of Engineering"
+      ],
+      "description": "school at the Massachusetts Institute of Technology",
+      "source_url": "https://www.wikidata.org/wiki/Q6784301",
+      "retrieved_at": "2026-09-08T20:37:05.472908Z"
+    },
+    {
+      "entity_id": "Q1354917",
+      "label": "MIT Computer Science and Artificial Intelligence Laboratory",
+      "aliases": [
+        "CSAIL",
+        "MIT CSAIL",
+        "Computer Science and Artificial Intelligence Laboratory",
+        "Massachusetts Institute of Technology Computer Science and Artificial Intelligence Laboratory"
+      ],
+      "description": "Computer Science research institute at MIT",
+      "source_url": "https://www.wikidata.org/wiki/Q1354917",
+      "retrieved_at": "2026-09-08T20:37:05.472908Z"
+    },
+    {
+      "entity_id": "Q123287558",
+      "label": "Massachusetts Institute of Technology",
+      "aliases": [],
+      "description": "1955 film",
+      "source_url": "https://www.wikidata.org/wiki/Q123287558",
+      "retrieved_at": "2026-09-08T20:37:05.472908Z"
+    },
+    {
+      "entity_id": "Q6784300",
+      "label": "Massachusetts Institute of Technology School of Science",
+      "aliases": [
+        "MIT School of Science"
+      ],
+      "description": "school",
+      "source_url": "https://www.wikidata.org/wiki/Q6784300",
+      "retrieved_at": "2026-09-08T20:37:05.472908Z"
+    },
+    {
+      "entity_id": "Q104148856",
+      "label": "Massachusetts Institute of Technology Department of Architecture",
+      "aliases": [
+        "MIT Architecture",
+        "Course 4"
+      ],
+      "description": "academic department at the Massachusetts Institute of Technology",
+      "source_url": "https://www.wikidata.org/wiki/Q104148856",
+      "retrieved_at": "2026-09-08T20:37:05.472908Z"
+    },
+    {
+      "entity_id": "Q16977777",
+      "label": "MIT School of Humanities, Arts, and Social Sciences",
+      "aliases": [
+        "MIT SHASS",
+        "SHASS",
+        "Massachusetts Institute of Technology SHASS",
+        "Massachusetts Institute of Technology School of Humanities, Arts, and Social Sciences"
+      ],
+      "description": "School at the Massachusetts Institute of Technology (MIT)",
+      "source_url": "https://www.wikidata.org/wiki/Q16977777",
+      "retrieved_at": "2026-09-08T20:37:05.472908Z"
+    }
+  ],
+  "Mercury": [
+    {
+      "entity_id": "Q613883",
+      "label": "Mercury",
+      "aliases": [
+        "Ford Motor Company. Mercury Division",
+        "Mercury Division",
+        "Mercury automobile"
+      ],
+      "description": "automobile marque of the Ford Motor Company",
+      "source_url": "https://www.wikidata.org/wiki/Q613883",
+      "retrieved_at": "2026-09-08T20:37:07.542862Z"
+    },
+    {
+      "entity_id": "Q1231263",
+      "label": "Mercury",
+      "aliases": [],
+      "description": "commune in Savoie, France",
+      "source_url": "https://www.wikidata.org/wiki/Q1231263",
+      "retrieved_at": "2026-09-08T20:37:07.542862Z"
+    },
+    {
+      "entity_id": "Q308",
+      "label": "Mercury",
+      "aliases": [
+        "Sol I",
+        "Hermes",
+        "Sol b",
+        "Sol 1",
+        "Planet Mercury",
+        "☿"
+      ],
+      "description": "first planet from the Solar System and smallest among all, tellurian and with extreme temperatures",
+      "source_url": "https://www.wikidata.org/wiki/Q308",
+      "retrieved_at": "2026-09-08T20:37:07.542862Z"
+    },
+    {
+      "entity_id": "Q165745",
+      "label": "Mercury Records",
+      "aliases": [
+        "Mercury Music Group"
+      ],
+      "description": "American record label",
+      "source_url": "https://www.wikidata.org/wiki/Q165745",
+      "retrieved_at": "2026-09-08T20:37:07.542862Z"
+    },
+    {
+      "entity_id": "Q925",
+      "label": "mercury",
+      "aliases": [
+        "Hg",
+        "element 80",
+        "mercury (element)",
+        "hydrargyrum",
+        "80Hg",
+        "quicksilver"
+      ],
+      "description": "chemical element with symbol Hg and atomic number 80",
+      "source_url": "https://www.wikidata.org/wiki/Q925",
+      "retrieved_at": "2026-09-08T20:37:07.542862Z"
+    },
+    {
+      "entity_id": "Q60009810",
+      "label": "Mercury",
+      "aliases": [],
+      "description": "male given name",
+      "source_url": "https://www.wikidata.org/wiki/Q60009810",
+      "retrieved_at": "2026-09-08T20:37:07.542862Z"
+    },
+    {
+      "entity_id": "Q1150",
+      "label": "Mercury",
+      "aliases": [
+        "Mercurius",
+        "Mercury (mythology)"
+      ],
+      "description": "Roman god of trade, merchants, thieves and travel",
+      "source_url": "https://www.wikidata.org/wiki/Q1150",
+      "retrieved_at": "2026-09-08T20:37:07.542862Z"
+    },
+    {
+      "entity_id": "Q107119712",
+      "label": "Mercury",
+      "aliases": [],
+      "description": "",
+      "source_url": "https://www.wikidata.org/wiki/Q107119712",
+      "retrieved_at": "2026-09-08T20:37:07.542862Z"
+    },
+    {
+      "entity_id": "Q1274643",
+      "label": "Phoenix Mercury",
+      "aliases": [
+        "Mercury"
+      ],
+      "description": "American professional women's basketball team",
+      "source_url": "https://www.wikidata.org/wiki/Q1274643",
+      "retrieved_at": "2026-09-08T20:37:07.542862Z"
+    },
+    {
+      "entity_id": "Q87526778",
+      "label": "Mercury symbol",
+      "aliases": [
+        "intersex symbol",
+        "transgender symbol",
+        "non-binary symbol",
+        "mercury symbol",
+        "hydrargyrum symbol",
+        "quicksilver symbol"
+      ],
+      "description": "planetary, alchemical and gender symbol",
+      "source_url": "https://www.wikidata.org/wiki/Q87526778",
+      "retrieved_at": "2026-09-08T20:37:07.542862Z"
+    }
+  ],
+  "NYC": [
+    {
+      "entity_id": "Q60",
+      "label": "New York City",
+      "aliases": [
+        "the five boroughs",
+        "City of New York",
+        "NY City",
+        "New York City, New York",
+        "New York, NY",
+        "New York City, NY",
+        "Capital of the World",
+        "New York City (NYC)",
+        "New York (city)",
+        "city of New York",
+        "Center of the Universe",
+        "New York City, USA",
+        "New York City, United States of America",
+        "New York, New York, USA",
+        "New York (NY)",
+        "New York, N.Y.",
+        "NY, NY",
+        "New York City, United States",
+        "N. Y., N. Y.",
+        "New York City, New York, United States",
+        "Empire City"
+      ],
+      "description": "most populous city in the United States",
+      "source_url": "https://www.wikidata.org/wiki/Q60",
+      "retrieved_at": "2026-09-08T20:37:09.522918Z"
+    },
+    {
+      "entity_id": "Q133189",
+      "label": "Nyctereutes procyonoides",
+      "aliases": [
+        "tanuki",
+        "raccoon dog",
+        "mangut",
+        "common raccoon dog"
+      ],
+      "description": "species of mammal",
+      "source_url": "https://www.wikidata.org/wiki/Q133189",
+      "retrieved_at": "2026-09-08T20:37:09.522918Z"
+    },
+    {
+      "entity_id": "Q602790",
+      "label": "Nyctemera",
+      "aliases": [],
+      "description": "genus of insects",
+      "source_url": "https://www.wikidata.org/wiki/Q602790",
+      "retrieved_at": "2026-09-08T20:37:09.522918Z"
+    },
+    {
+      "entity_id": "Q156227",
+      "label": "Nyctaginaceae",
+      "aliases": [],
+      "description": "family of plants",
+      "source_url": "https://www.wikidata.org/wiki/Q156227",
+      "retrieved_at": "2026-09-08T20:37:09.522918Z"
+    },
+    {
+      "entity_id": "Q126216",
+      "label": "Black-crowned Night Heron",
+      "aliases": [
+        "Nycticorax nycticorax",
+        "black-crowned night-heron"
+      ],
+      "description": "species of bird",
+      "source_url": "https://www.wikidata.org/wiki/Q126216",
+      "retrieved_at": "2026-09-08T20:37:09.522918Z"
+    },
+    {
+      "entity_id": "Q7071000",
+      "label": "Nycteola",
+      "aliases": [],
+      "description": "genus of insects",
+      "source_url": "https://www.wikidata.org/wiki/Q7071000",
+      "retrieved_at": "2026-09-08T20:37:09.522918Z"
+    },
+    {
+      "entity_id": "Q10604523",
+      "label": "Nyctiophylax",
+      "aliases": [],
+      "description": "genus of insects",
+      "source_url": "https://www.wikidata.org/wiki/Q10604523",
+      "retrieved_at": "2026-09-08T20:37:09.522918Z"
+    },
+    {
+      "entity_id": "Q301085",
+      "label": "Nycteribiidae",
+      "aliases": [],
+      "description": "family of true flies (Diptera)",
+      "source_url": "https://www.wikidata.org/wiki/Q301085",
+      "retrieved_at": "2026-09-08T20:37:09.522918Z"
+    },
+    {
+      "entity_id": "Q118065690",
+      "label": "Nyc",
+      "aliases": [],
+      "description": "family name",
+      "source_url": "https://www.wikidata.org/wiki/Q118065690",
+      "retrieved_at": "2026-09-08T20:37:09.522918Z"
+    },
+    {
+      "entity_id": "Q764525",
+      "label": "Nyctanthes arbor-tristis",
+      "aliases": [
+        "sad tree",
+        "sorrowful tree",
+        "melancholy tree"
+      ],
+      "description": "species of plant",
+      "source_url": "https://www.wikidata.org/wiki/Q764525",
+      "retrieved_at": "2026-09-08T20:37:09.522918Z"
+    }
+  ],
+  "New York City": [
+    {
+      "entity_id": "Q60",
+      "label": "New York City",
+      "aliases": [
+        "the five boroughs",
+        "City of New York",
+        "NY City",
+        "New York City, New York",
+        "New York, NY",
+        "New York City, NY",
+        "Capital of the World",
+        "New York City (NYC)",
+        "New York (city)",
+        "city of New York",
+        "Center of the Universe",
+        "New York City, USA",
+        "New York City, United States of America",
+        "New York, New York, USA",
+        "New York (NY)",
+        "New York, N.Y.",
+        "NY, NY",
+        "New York City, United States",
+        "N. Y., N. Y.",
+        "New York City, New York, United States",
+        "Empire City"
+      ],
+      "description": "most populous city in the United States",
+      "source_url": "https://www.wikidata.org/wiki/Q60",
+      "retrieved_at": "2026-09-08T20:38:00.842557Z"
+    },
+    {
+      "entity_id": "Q7013143",
+      "label": "New York City",
+      "aliases": [],
+      "description": "1984 video game",
+      "source_url": "https://www.wikidata.org/wiki/Q7013143",
+      "retrieved_at": "2026-09-08T20:38:00.842557Z"
+    },
+    {
+      "entity_id": "Q116672088",
+      "label": "New York City",
+      "aliases": [],
+      "description": "2023 studio album by The Men",
+      "source_url": "https://www.wikidata.org/wiki/Q116672088",
+      "retrieved_at": "2026-09-08T20:38:00.842557Z"
+    },
+    {
+      "entity_id": "Q135264430",
+      "label": "NY City",
+      "aliases": [
+        "New York",
+        "New York City"
+      ],
+      "description": "Tony Hawk's Pro Skater 2 level",
+      "source_url": "https://www.wikidata.org/wiki/Q135264430",
+      "retrieved_at": "2026-09-08T20:38:00.842557Z"
+    },
+    {
+      "entity_id": "Q7733",
+      "label": "New York City Subway",
+      "aliases": [
+        "New York Subway",
+        "NYC Subway"
+      ],
+      "description": "rapid transit system in New York City",
+      "source_url": "https://www.wikidata.org/wiki/Q7733",
+      "retrieved_at": "2026-09-08T20:38:00.842557Z"
+    },
+    {
+      "entity_id": "Q408230",
+      "label": "New York City Public Schools",
+      "aliases": [
+        "NYCDOE",
+        "NYC DOE",
+        "New York City Department of Education",
+        "NYC Department of Education",
+        "NYC Public Schools"
+      ],
+      "description": "department of the government of New York City",
+      "source_url": "https://www.wikidata.org/wiki/Q408230",
+      "retrieved_at": "2026-09-08T20:38:00.842557Z"
+    },
+    {
+      "entity_id": "Q219555",
+      "label": "New York Public Library",
+      "aliases": [
+        "New York Library",
+        "The New York Public Library",
+        "New York City Public Library",
+        "New York City Library",
+        "NY Public Library",
+        "NYPL",
+        "nypl.org",
+        "The New York Public Library, Astor, Lenox and Tilden Foundations",
+        "New York Public Library, Astor, Lenox and Tilden Foundations"
+      ],
+      "description": "public library system in New York City",
+      "source_url": "https://www.wikidata.org/wiki/Q219555",
+      "retrieved_at": "2026-09-08T20:38:00.842557Z"
+    },
+    {
+      "entity_id": "Q1325591",
+      "label": "New York City Transit Authority",
+      "aliases": [
+        "NYCTA",
+        "MTA New York City Transit",
+        "The New York City Transit Authority",
+        "The TA"
+      ],
+      "description": "bus and subway service operator",
+      "source_url": "https://www.wikidata.org/wiki/Q1325591",
+      "retrieved_at": "2026-09-08T20:38:00.842557Z"
+    },
+    {
+      "entity_id": "Q18710663",
+      "label": "New York City",
+      "aliases": [
+        "New York City I",
+        "piet monderai"
+      ],
+      "description": "painting by Piet Mondrian at the Musée national d’Art moderne, Paris, France",
+      "source_url": "https://www.wikidata.org/wiki/Q18710663",
+      "retrieved_at": "2026-09-08T20:38:00.842557Z"
+    },
+    {
+      "entity_id": "Q7013127",
+      "label": "New York City",
+      "aliases": [],
+      "description": "band",
+      "source_url": "https://www.wikidata.org/wiki/Q7013127",
+      "retrieved_at": "2026-09-08T20:38:00.842557Z"
+    }
+  ],
+  "Paris": [
+    {
+      "entity_id": "Q90",
+      "label": "Paris",
+      "aliases": [
+        "City of Light",
+        "City of Love",
+        "Lutetia"
+      ],
+      "description": "capital and most populous city in France",
+      "source_url": "https://www.wikidata.org/wiki/Q90",
+      "retrieved_at": "2026-09-08T20:38:02.725026Z"
+    },
+    {
+      "entity_id": "Q483020",
+      "label": "Paris Saint-Germain FC",
+      "aliases": [
+        "PSGFC",
+        "Paris"
+      ],
+      "description": "association football club in Paris, France having two UCL",
+      "source_url": "https://www.wikidata.org/wiki/Q483020",
+      "retrieved_at": "2026-09-08T20:38:02.725026Z"
+    },
+    {
+      "entity_id": "Q830149",
+      "label": "Paris",
+      "aliases": [
+        "Paris, Texas",
+        "Paris, TX"
+      ],
+      "description": "city in and county seat of Lamar County, Texas, United States",
+      "source_url": "https://www.wikidata.org/wiki/Q830149",
+      "retrieved_at": "2026-09-08T20:38:02.725026Z"
+    },
+    {
+      "entity_id": "Q18331346",
+      "label": "Paris",
+      "aliases": [
+        "Paris (family name)"
+      ],
+      "description": "family name",
+      "source_url": "https://www.wikidata.org/wiki/Q18331346",
+      "retrieved_at": "2026-09-08T20:38:02.725026Z"
+    },
+    {
+      "entity_id": "Q162121",
+      "label": "Paris",
+      "aliases": [],
+      "description": "genus of plants",
+      "source_url": "https://www.wikidata.org/wiki/Q162121",
+      "retrieved_at": "2026-09-08T20:38:02.725026Z"
+    },
+    {
+      "entity_id": "Q3181341",
+      "label": "Paris",
+      "aliases": [
+        "Paris, Kentucky",
+        "Paris, KY"
+      ],
+      "description": "county seat of Bourbon County, Kentucky, United States",
+      "source_url": "https://www.wikidata.org/wiki/Q3181341",
+      "retrieved_at": "2026-09-08T20:38:02.725026Z"
+    },
+    {
+      "entity_id": "Q1158980",
+      "label": "Paris",
+      "aliases": [
+        "Paris (first name)",
+        "Paris (given name)"
+      ],
+      "description": "unisex given name",
+      "source_url": "https://www.wikidata.org/wiki/Q1158980",
+      "retrieved_at": "2026-09-08T20:38:02.725026Z"
+    },
+    {
+      "entity_id": "Q102496",
+      "label": "parish",
+      "aliases": [
+        "church parish",
+        "ecclesiastical parish"
+      ],
+      "description": "type of ecclesiastical subdivision of a diocese",
+      "source_url": "https://www.wikidata.org/wiki/Q102496",
+      "retrieved_at": "2026-09-08T20:38:02.725026Z"
+    },
+    {
+      "entity_id": "Q8132",
+      "label": "1924 Summer Olympics",
+      "aliases": [
+        "Paris 1924",
+        "Games of the VIII Olympiad"
+      ],
+      "description": "Games of the VIII Olympiad, in Paris, France",
+      "source_url": "https://www.wikidata.org/wiki/Q8132",
+      "retrieved_at": "2026-09-08T20:38:02.725026Z"
+    },
+    {
+      "entity_id": "Q184224",
+      "label": "brown rat",
+      "aliases": [
+        "street rat",
+        "sewer rat",
+        "wharf rat",
+        "water rat",
+        "Parisian rat",
+        "Norwegian rat",
+        "Norway rat",
+        "Rattus norvegicus",
+        "🐀",
+        "rat",
+        "Hanover rat"
+      ],
+      "description": "species of mammal",
+      "source_url": "https://www.wikidata.org/wiki/Q184224",
+      "retrieved_at": "2026-09-08T20:38:02.725026Z"
+    }
+  ],
+  "Phoenix": [
+    {
+      "entity_id": "Q16556",
+      "label": "Phoenix",
+      "aliases": [
+        "Phoenix, Arizona",
+        "City of Phoenix",
+        "Phoenix, AZ",
+        "PHX",
+        "Valley of the Sun",
+        "Phœnix"
+      ],
+      "description": "capital city of the U.S. state of Arizona and seat of Maricopa County",
+      "source_url": "https://www.wikidata.org/wiki/Q16556",
+      "retrieved_at": "2026-09-08T20:38:04.558941Z"
+    },
+    {
+      "entity_id": "Q10441",
+      "label": "Phoenix",
+      "aliases": [
+        "Phoenicis",
+        "Phe",
+        "the Phoenix"
+      ],
+      "description": "constellation in the southern celestial hemisphere",
+      "source_url": "https://www.wikidata.org/wiki/Q10441",
+      "retrieved_at": "2026-09-08T20:38:04.558941Z"
+    },
+    {
+      "entity_id": "Q27685",
+      "label": "Phoenix",
+      "aliases": [
+        "date palm"
+      ],
+      "description": "genus of plants",
+      "source_url": "https://www.wikidata.org/wiki/Q27685",
+      "retrieved_at": "2026-09-08T20:38:04.558941Z"
+    },
+    {
+      "entity_id": "Q1045752",
+      "label": "Phoenix",
+      "aliases": [],
+      "description": "French indie pop band",
+      "source_url": "https://www.wikidata.org/wiki/Q1045752",
+      "retrieved_at": "2026-09-08T20:38:04.558941Z"
+    },
+    {
+      "entity_id": "Q16881188",
+      "label": "Phoenix",
+      "aliases": [],
+      "description": "family name",
+      "source_url": "https://www.wikidata.org/wiki/Q16881188",
+      "retrieved_at": "2026-09-08T20:38:04.558941Z"
+    },
+    {
+      "entity_id": "Q25292",
+      "label": "Phoenix dactylifera",
+      "aliases": [
+        "date palm"
+      ],
+      "description": "palm tree cultivated for its edible sweet fruit",
+      "source_url": "https://www.wikidata.org/wiki/Q25292",
+      "retrieved_at": "2026-09-08T20:38:04.558941Z"
+    },
+    {
+      "entity_id": "Q129091",
+      "label": "Phoenix",
+      "aliases": [
+        "Phoenix Mars Mission",
+        "Phoenix lander",
+        "Phoenix Mars Lander"
+      ],
+      "description": "robotic Mars lander spacecraft developed by NASA as part of the Mars Scout Program",
+      "source_url": "https://www.wikidata.org/wiki/Q129091",
+      "retrieved_at": "2026-09-08T20:38:04.558941Z"
+    },
+    {
+      "entity_id": "Q64786749",
+      "label": "Phoenix",
+      "aliases": [],
+      "description": "unisex given name",
+      "source_url": "https://www.wikidata.org/wiki/Q64786749",
+      "retrieved_at": "2026-09-08T20:38:04.558941Z"
+    },
+    {
+      "entity_id": "Q7186770",
+      "label": "Phoenix",
+      "aliases": [
+        "The Phoenix"
+      ],
+      "description": "academic journal",
+      "source_url": "https://www.wikidata.org/wiki/Q7186770",
+      "retrieved_at": "2026-09-08T20:38:04.558941Z"
+    },
+    {
+      "entity_id": "Q2481003",
+      "label": "Phoenix",
+      "aliases": [],
+      "description": "1979 studio album by Dan Fogelberg",
+      "source_url": "https://www.wikidata.org/wiki/Q2481003",
+      "retrieved_at": "2026-09-08T20:38:04.558941Z"
+    }
+  ],
+  "Python": [
+    {
+      "entity_id": "Q28865",
+      "label": "Python",
+      "aliases": [
+        "Python programming language",
+        "Python language",
+        "Python (language)",
+        "Python computer language",
+        "Python Programming Language",
+        "Python (scripting language)",
+        "Python (lang)",
+        "Python (programming)",
+        "Python (computer language)",
+        "Python (software)",
+        "Python (Programming Language)",
+        "Python (computing)",
+        "Python.org"
+      ],
+      "description": "general-purpose programming language",
+      "source_url": "https://www.wikidata.org/wiki/Q28865",
+      "retrieved_at": "2026-09-08T20:38:06.894575Z"
+    },
+    {
+      "entity_id": "Q271218",
+      "label": "Python",
+      "aliases": [
+        "Python"
+      ],
+      "description": "genus of reptiles",
+      "source_url": "https://www.wikidata.org/wiki/Q271218",
+      "retrieved_at": "2026-09-08T20:38:06.894575Z"
+    },
+    {
+      "entity_id": "Q184018",
+      "label": "python",
+      "aliases": [
+        "Moreliini",
+        "Pythonini",
+        "Pythoninae",
+        "Chondropythonina",
+        "Peropodes",
+        "the python family",
+        "Pythonidae"
+      ],
+      "description": "family of snakes",
+      "source_url": "https://www.wikidata.org/wiki/Q184018",
+      "retrieved_at": "2026-09-08T20:38:06.894575Z"
+    },
+    {
+      "entity_id": "Q76417859",
+      "label": "Python",
+      "aliases": [],
+      "description": "family name",
+      "source_url": "https://www.wikidata.org/wiki/Q76417859",
+      "retrieved_at": "2026-09-08T20:38:06.894575Z"
+    },
+    {
+      "entity_id": "Q245183",
+      "label": "Python molurus",
+      "aliases": [
+        "black-tailed python",
+        "Asiatic rock python",
+        "Indian Rock Python",
+        "Indian python"
+      ],
+      "description": "species of snake",
+      "source_url": "https://www.wikidata.org/wiki/Q245183",
+      "retrieved_at": "2026-09-08T20:38:06.894575Z"
+    },
+    {
+      "entity_id": "Q15727",
+      "label": "Python",
+      "aliases": [],
+      "description": "Vekoma double loop corkscrew roller coaster at Efteling",
+      "source_url": "https://www.wikidata.org/wiki/Q15727",
+      "retrieved_at": "2026-09-08T20:38:06.894575Z"
+    },
+    {
+      "entity_id": "Q29642950",
+      "label": "Python package",
+      "aliases": [
+        "Python module",
+        "Python library"
+      ],
+      "description": "software library for the Python programming language",
+      "source_url": "https://www.wikidata.org/wiki/Q29642950",
+      "retrieved_at": "2026-09-08T20:38:06.894575Z"
+    },
+    {
+      "entity_id": "Q2120075",
+      "label": "Python",
+      "aliases": [],
+      "description": "German ship",
+      "source_url": "https://www.wikidata.org/wiki/Q2120075",
+      "retrieved_at": "2026-09-08T20:38:06.894575Z"
+    },
+    {
+      "entity_id": "Q2716137",
+      "label": "Burmese python",
+      "aliases": [
+        "Python bivittatus"
+      ],
+      "description": "species of large nonvenomous snake",
+      "source_url": "https://www.wikidata.org/wiki/Q2716137",
+      "retrieved_at": "2026-09-08T20:38:06.894575Z"
+    },
+    {
+      "entity_id": "Q599384",
+      "label": "CPython",
+      "aliases": [
+        "Python"
+      ],
+      "description": "Python reference implementation",
+      "source_url": "https://www.wikidata.org/wiki/Q599384",
+      "retrieved_at": "2026-09-08T20:38:06.894575Z"
+    }
+  ],
+  "Second World War": [
+    {
+      "entity_id": "Q362",
+      "label": "World War II",
+      "aliases": [
+        "WW 2",
+        "WW II",
+        "World War Two",
+        "2nd World War",
+        "World War 2",
+        "the Second World War",
+        "Second World War",
+        "II World War",
+        "World War 2, 1939–1945"
+      ],
+      "description": "1939–1945 global conflict",
+      "source_url": "https://www.wikidata.org/wiki/Q362",
+      "retrieved_at": "2026-09-08T20:38:08.691664Z"
+    },
+    {
+      "entity_id": "Q105750294",
+      "label": "World War II",
+      "aliases": [
+        "Second World War"
+      ],
+      "description": "scenario in the video game Civilization II",
+      "source_url": "https://www.wikidata.org/wiki/Q105750294",
+      "retrieved_at": "2026-09-08T20:38:08.691664Z"
+    },
+    {
+      "entity_id": "Q106513510",
+      "label": "history of World War II",
+      "aliases": [
+        "World War II history",
+        "WWII history",
+        "history of WWII",
+        "Second World War history",
+        "history of the Second World War"
+      ],
+      "description": "aspect of history regarding the theatrical global war involving the vast majority of belligerent nations of the Allies and Axis powers from 1939 to 1945 making it the most deadliest conflict in human history",
+      "source_url": "https://www.wikidata.org/wiki/Q106513510",
+      "retrieved_at": "2026-09-08T20:38:08.691664Z"
+    },
+    {
+      "entity_id": "Q17531620",
+      "label": "The Merchant Seamen's Memorial",
+      "aliases": [
+        "Second World War Memorial"
+      ],
+      "description": "war memorial in the London Borough of Tower Hamlets, England, UK",
+      "source_url": "https://www.wikidata.org/wiki/Q17531620",
+      "retrieved_at": "2026-09-08T20:38:08.691664Z"
+    },
+    {
+      "entity_id": "Q2902672",
+      "label": "Second World War Dead",
+      "aliases": [],
+      "description": "",
+      "source_url": "https://www.wikidata.org/wiki/Q2902672",
+      "retrieved_at": "2026-09-08T20:38:08.691664Z"
+    },
+    {
+      "entity_id": "Q5870409",
+      "label": "history of the Second World War",
+      "aliases": [
+        "the Second World War history",
+        "Second World War history"
+      ],
+      "description": "aspect of history",
+      "source_url": "https://www.wikidata.org/wiki/Q5870409",
+      "retrieved_at": "2026-09-08T20:38:08.691664Z"
+    },
+    {
+      "entity_id": "Q18589021",
+      "label": "Second World War Hangar No. 7",
+      "aliases": [],
+      "description": "historical site in Australia",
+      "source_url": "https://www.wikidata.org/wiki/Q18589021",
+      "retrieved_at": "2026-09-08T20:38:08.691664Z"
+    },
+    {
+      "entity_id": "Q21974329",
+      "label": "Second World War RAAF Buildings, Maryborough Airport",
+      "aliases": [],
+      "description": "Heritage listed building in Queensland, Australia",
+      "source_url": "https://www.wikidata.org/wiki/Q21974329",
+      "retrieved_at": "2026-09-08T20:38:08.691664Z"
+    },
+    {
+      "entity_id": "Q66478670",
+      "label": "Second World War memorial and associated pavilion shelters, Ilkley Memorial Gardens",
+      "aliases": [],
+      "description": "war memorial in Ilkley, Bradford, UK",
+      "source_url": "https://www.wikidata.org/wiki/Q66478670",
+      "retrieved_at": "2026-09-08T20:38:08.691664Z"
+    },
+    {
+      "entity_id": "Q136689752",
+      "label": "Second World War defences at Thorneycroft Wood",
+      "aliases": [],
+      "description": "anti-tank defences in Guildford, Surrey, England, UK",
+      "source_url": "https://www.wikidata.org/wiki/Q136689752",
+      "retrieved_at": "2026-09-08T20:38:08.691664Z"
+    }
+  ],
+  "The Hobbit": [
+    {
+      "entity_id": "Q1778141",
+      "label": "The Hobbit",
+      "aliases": [],
+      "description": "1982 interactive fiction video game based on novel by J. R. R. Tolkien",
+      "source_url": "https://www.wikidata.org/wiki/Q1778141",
+      "retrieved_at": "2026-09-08T20:39:00.908779Z"
+    },
+    {
+      "entity_id": "Q2494353",
+      "label": "The Hobbit",
+      "aliases": [],
+      "description": "2003 video game",
+      "source_url": "https://www.wikidata.org/wiki/Q2494353",
+      "retrieved_at": "2026-09-08T20:39:00.908779Z"
+    },
+    {
+      "entity_id": "Q1187415",
+      "label": "The Hobbit",
+      "aliases": [
+        "Hobbit",
+        "Skazochnoye puteshestviye mistera Bilbo Begginsa, Khobbita"
+      ],
+      "description": "1985 Soviet television play",
+      "source_url": "https://www.wikidata.org/wiki/Q1187415",
+      "retrieved_at": "2026-09-08T20:39:00.908779Z"
+    },
+    {
+      "entity_id": "Q74287",
+      "label": "The Hobbit",
+      "aliases": [
+        "Hobbit",
+        "The Hobbit, or There and Back Again"
+      ],
+      "description": "1937 fantasy novel by J. R. R. Tolkien",
+      "source_url": "https://www.wikidata.org/wiki/Q74287",
+      "retrieved_at": "2026-09-08T20:39:00.908779Z"
+    },
+    {
+      "entity_id": "Q74331",
+      "label": "The Hobbit trilogy",
+      "aliases": [
+        "Hobbit trilogy",
+        "The Hobbit"
+      ],
+      "description": "film series consisting of three films based on the 1937 novel \"The Hobbit\" by J. R. R. Tolkien",
+      "source_url": "https://www.wikidata.org/wiki/Q74331",
+      "retrieved_at": "2026-09-08T20:39:00.908779Z"
+    },
+    {
+      "entity_id": "Q74229",
+      "label": "The Hobbit",
+      "aliases": [
+        "Hobbit"
+      ],
+      "description": "1977 animated film directed by Jules Bass and Arthur Rankin, Jr.",
+      "source_url": "https://www.wikidata.org/wiki/Q74229",
+      "retrieved_at": "2026-09-08T20:39:00.908779Z"
+    },
+    {
+      "entity_id": "Q15324904",
+      "label": "The Hobbit",
+      "aliases": [],
+      "description": "10th episode of the seventeenth season of South Park",
+      "source_url": "https://www.wikidata.org/wiki/Q15324904",
+      "retrieved_at": "2026-09-08T20:39:00.908779Z"
+    },
+    {
+      "entity_id": "Q293269",
+      "label": "The Hobbit",
+      "aliases": [],
+      "description": "1968 radio programme",
+      "source_url": "https://www.wikidata.org/wiki/Q293269",
+      "retrieved_at": "2026-09-08T20:39:00.908779Z"
+    },
+    {
+      "entity_id": "Q3521272",
+      "label": "The Hobbit",
+      "aliases": [
+        "Hobbit"
+      ],
+      "description": "1966 film by Gene Deitch",
+      "source_url": "https://www.wikidata.org/wiki/Q3521272",
+      "retrieved_at": "2026-09-08T20:39:00.908779Z"
+    },
+    {
+      "entity_id": "Q80379",
+      "label": "The Hobbit: An Unexpected Journey",
+      "aliases": [
+        "An Unexpected Journey",
+        "Hobbit: An Unexpected Journey"
+      ],
+      "description": "2012 film directed by Peter Jackson",
+      "source_url": "https://www.wikidata.org/wiki/Q80379",
+      "retrieved_at": "2026-09-08T20:39:00.908779Z"
+    }
+  ],
+  "The Hobbit, or There and Back Again": [
+    {
+      "entity_id": "Q74287",
+      "label": "The Hobbit",
+      "aliases": [
+        "Hobbit",
+        "The Hobbit, or There and Back Again"
+      ],
+      "description": "1937 fantasy novel by J. R. R. Tolkien",
+      "source_url": "https://www.wikidata.org/wiki/Q74287",
+      "retrieved_at": "2026-09-08T20:39:02.750305Z"
+    },
+    {
+      "entity_id": "Q135403410",
+      "label": "The Hobbit, or There and Back Again",
+      "aliases": [],
+      "description": "first edition of J. R. R. Tolkien’s novel",
+      "source_url": "https://www.wikidata.org/wiki/Q135403410",
+      "retrieved_at": "2026-09-08T20:39:02.750305Z"
+    }
+  ],
+  "Titanic": [
+    {
+      "entity_id": "Q25173",
+      "label": "Titanic",
+      "aliases": [
+        "The Titanic",
+        "RMS Titanic",
+        "Royal Mail Steamship Titanic",
+        "SS Titanic"
+      ],
+      "description": "British transatlantic passenger liner, launched and foundered in 1912",
+      "source_url": "https://www.wikidata.org/wiki/Q25173",
+      "retrieved_at": "2026-09-08T20:39:04.924920Z"
+    },
+    {
+      "entity_id": "Q6147471",
+      "label": "Titanic",
+      "aliases": [],
+      "description": "1988 video game",
+      "source_url": "https://www.wikidata.org/wiki/Q6147471",
+      "retrieved_at": "2026-09-08T20:39:04.924920Z"
+    },
+    {
+      "entity_id": "Q44578",
+      "label": "Titanic",
+      "aliases": [],
+      "description": "1997 film directed by James Cameron",
+      "source_url": "https://www.wikidata.org/wiki/Q44578",
+      "retrieved_at": "2026-09-08T20:39:04.924920Z"
+    },
+    {
+      "entity_id": "Q124981245",
+      "label": "Titanic",
+      "aliases": [],
+      "description": "vocal track by Stefan Rüdén; 1978 studio recording",
+      "source_url": "https://www.wikidata.org/wiki/Q124981245",
+      "retrieved_at": "2026-09-08T20:39:04.924920Z"
+    },
+    {
+      "entity_id": "Q1416989",
+      "label": "Titanic",
+      "aliases": [
+        "Titanic: The Musical"
+      ],
+      "description": "musical by Maury Yeston and book by Peter Stone in 1997",
+      "source_url": "https://www.wikidata.org/wiki/Q1416989",
+      "retrieved_at": "2026-09-08T20:39:04.924920Z"
+    },
+    {
+      "entity_id": "Q21027972",
+      "label": "RMS Titanic maiden voyage",
+      "aliases": [
+        "Titanic maiden voyage"
+      ],
+      "description": "1912 first and last voyage of the RMS Titanic",
+      "source_url": "https://www.wikidata.org/wiki/Q21027972",
+      "retrieved_at": "2026-09-08T20:39:04.924920Z"
+    },
+    {
+      "entity_id": "Q1889132",
+      "label": "Titanic",
+      "aliases": [],
+      "description": "Norwegian band",
+      "source_url": "https://www.wikidata.org/wiki/Q1889132",
+      "retrieved_at": "2026-09-08T20:39:04.924920Z"
+    },
+    {
+      "entity_id": "Q1197729",
+      "label": "Titanic",
+      "aliases": [
+        "Titanic (1953)"
+      ],
+      "description": "1953 film by Jean Negulesco",
+      "source_url": "https://www.wikidata.org/wiki/Q1197729",
+      "retrieved_at": "2026-09-08T20:39:04.924920Z"
+    },
+    {
+      "entity_id": "Q10698747",
+      "label": "Titanic",
+      "aliases": [],
+      "description": "song written and composed by Mikael Wiehe, originally recorded by Mikael Wiehe and released in 1978",
+      "source_url": "https://www.wikidata.org/wiki/Q10698747",
+      "retrieved_at": "2026-09-08T20:39:04.924920Z"
+    },
+    {
+      "entity_id": "Q47879",
+      "label": "Titanic",
+      "aliases": [],
+      "description": "German satiric magazine",
+      "source_url": "https://www.wikidata.org/wiki/Q47879",
+      "retrieved_at": "2026-09-08T20:39:04.924920Z"
+    }
+  ],
+  "Tolkien": [
+    {
+      "entity_id": "Q892",
+      "label": "J. R. R. Tolkien",
+      "aliases": [
+        "J.R.R Tolkien",
+        "John Tolkien",
+        "John R. R. Tolkien"
+      ],
+      "description": "English writer and philologist (1892–1973)",
+      "source_url": "https://www.wikidata.org/wiki/Q892",
+      "retrieved_at": "2026-09-08T20:39:06.983818Z"
+    },
+    {
+      "entity_id": "Q81738",
+      "label": "Tolkien's legendarium",
+      "aliases": [
+        "legendarium"
+      ],
+      "description": "fictional universe by J. R. R. Tolkien",
+      "source_url": "https://www.wikidata.org/wiki/Q81738",
+      "retrieved_at": "2026-09-08T20:39:06.983818Z"
+    },
+    {
+      "entity_id": "Q102279",
+      "label": "2675 Tolkien",
+      "aliases": [
+        "Tolkien"
+      ],
+      "description": "asteroid",
+      "source_url": "https://www.wikidata.org/wiki/Q102279",
+      "retrieved_at": "2026-09-08T20:39:06.983818Z"
+    },
+    {
+      "entity_id": "Q30069423",
+      "label": "Tolkien",
+      "aliases": [],
+      "description": "family name",
+      "source_url": "https://www.wikidata.org/wiki/Q30069423",
+      "retrieved_at": "2026-09-08T20:39:06.983818Z"
+    },
+    {
+      "entity_id": "Q42689885",
+      "label": "Tolkien",
+      "aliases": [],
+      "description": "2019 film directed by Dome Karukoski",
+      "source_url": "https://www.wikidata.org/wiki/Q42689885",
+      "retrieved_at": "2026-09-08T20:39:06.983818Z"
+    },
+    {
+      "entity_id": "Q9359074",
+      "label": "Tolkien",
+      "aliases": [],
+      "description": "crater on the planet Mercury",
+      "source_url": "https://www.wikidata.org/wiki/Q9359074",
+      "retrieved_at": "2026-09-08T20:39:06.983818Z"
+    },
+    {
+      "entity_id": "Q82718",
+      "label": "Tolkien family",
+      "aliases": [],
+      "description": "family",
+      "source_url": "https://www.wikidata.org/wiki/Q82718",
+      "retrieved_at": "2026-09-08T20:39:06.983818Z"
+    },
+    {
+      "entity_id": "Q989255",
+      "label": "Middle-earth race",
+      "aliases": [
+        "Tolkien races"
+      ],
+      "description": "fictional race within Tolkien's Middle-earth universe",
+      "source_url": "https://www.wikidata.org/wiki/Q989255",
+      "retrieved_at": "2026-09-08T20:39:06.983818Z"
+    },
+    {
+      "entity_id": "Q141306083",
+      "label": "Tolkien",
+      "aliases": [],
+      "description": "",
+      "source_url": "https://www.wikidata.org/wiki/Q141306083",
+      "retrieved_at": "2026-09-08T20:39:06.983818Z"
+    },
+    {
+      "entity_id": "Q1963025",
+      "label": "Tolkien fandom",
+      "aliases": [
+        "Tolkien society"
+      ],
+      "description": "informal community of fans of the works of J. R. R. Tolkien",
+      "source_url": "https://www.wikidata.org/wiki/Q1963025",
+      "retrieved_at": "2026-09-08T20:39:06.983818Z"
+    }
+  ],
+  "UK": [
+    {
+      "entity_id": "Q8798",
+      "label": "Ukrainian",
+      "aliases": [
+        "Ukrainian language",
+        "Ukrainska"
+      ],
+      "description": "East Slavic language",
+      "source_url": "https://www.wikidata.org/wiki/Q8798",
+      "retrieved_at": "2026-09-08T20:39:09.619619Z"
+    },
+    {
+      "entity_id": "Q1499",
+      "label": "Uttarakhand",
+      "aliases": [
+        "Uttaranchal",
+        "IN-UK",
+        "State of Uttarakhand",
+        "Devbhoomi",
+        "UK"
+      ],
+      "description": "state in northern India",
+      "source_url": "https://www.wikidata.org/wiki/Q1499",
+      "retrieved_at": "2026-09-08T20:39:09.619619Z"
+    },
+    {
+      "entity_id": "Q145",
+      "label": "United Kingdom",
+      "aliases": [
+        "United Kingdom of Great Britain and Northern Ireland",
+        "U K",
+        "G B",
+        "Great Britain",
+        "Great Britain and Northern Ireland",
+        "the United Kingdom of Great Britain and Northern Ireland",
+        "the UK",
+        "the United Kingdom"
+      ],
+      "description": "island country in north-west Europe",
+      "source_url": "https://www.wikidata.org/wiki/Q145",
+      "retrieved_at": "2026-09-08T20:39:09.619619Z"
+    },
+    {
+      "entity_id": "Q5412157",
+      "label": "Europe PubMed Central",
+      "aliases": [
+        "HielohitooEurope PMC",
+        "UKPMhC",
+        "Arsingoli"
+      ],
+      "description": "database of biomedical research",
+      "source_url": "https://www.wikidata.org/wiki/Q5412157",
+      "retrieved_at": "2026-09-08T20:39:09.619619Z"
+    },
+    {
+      "entity_id": "Q212",
+      "label": "Ukraine",
+      "aliases": [
+        "Ukrainia",
+        "Ukr.",
+        "Ukraina",
+        "Ukraïna"
+      ],
+      "description": "country in Eastern Europe",
+      "source_url": "https://www.wikidata.org/wiki/Q212",
+      "retrieved_at": "2026-09-08T20:39:09.619619Z"
+    },
+    {
+      "entity_id": "Q199698",
+      "label": "Ukrainian Wikipedia",
+      "aliases": [],
+      "description": "Ukrainian-language edition of Wikipedia",
+      "source_url": "https://www.wikidata.org/wiki/Q199698",
+      "retrieved_at": "2026-09-08T20:39:09.619619Z"
+    },
+    {
+      "entity_id": "Q161885",
+      "label": "Kingdom of Great Britain",
+      "aliases": [
+        "United Kingdom of Great Britain",
+        "UKGB",
+        "UK",
+        "GB",
+        "Great Britain"
+      ],
+      "description": "constitutional monarchy in Western Europe (1707–1800)",
+      "source_url": "https://www.wikidata.org/wiki/Q161885",
+      "retrieved_at": "2026-09-08T20:39:09.619619Z"
+    },
+    {
+      "entity_id": "Q174193",
+      "label": "United Kingdom of Great Britain and Ireland",
+      "aliases": [
+        "United Kingdom",
+        "UKGBI",
+        "Great Britain and Ireland"
+      ],
+      "description": "historical sovereign state (1801–1922)",
+      "source_url": "https://www.wikidata.org/wiki/Q174193",
+      "retrieved_at": "2026-09-08T20:39:09.619619Z"
+    },
+    {
+      "entity_id": "Q1360303",
+      "label": "University of Kentucky",
+      "aliases": [
+        "Kentucky University",
+        "UK"
+      ],
+      "description": "public university in the United States",
+      "source_url": "https://www.wikidata.org/wiki/Q1360303",
+      "retrieved_at": "2026-09-08T20:39:09.619619Z"
+    },
+    {
+      "entity_id": "Q203312",
+      "label": "Uccle",
+      "aliases": [
+        "Ukkel"
+      ],
+      "description": "municipality in the Brussels-Capital Region, Belgium",
+      "source_url": "https://www.wikidata.org/wiki/Q203312",
+      "retrieved_at": "2026-09-08T20:39:09.619619Z"
+    }
+  ],
+  "USA": [
+    {
+      "entity_id": "Q30",
+      "label": "United States",
+      "aliases": [
+        "the States",
+        "the United States of America",
+        "US of America",
+        "the US",
+        "the U.S.",
+        "the US of A",
+        "U.S. of America",
+        "the US of America",
+        "the USA",
+        "the U.S.A.",
+        "the U.S. of A",
+        "US of A",
+        "the U.S. of America",
+        "the United States",
+        "Merica",
+        "Murica",
+        "U. S.",
+        "U. S. A.",
+        "United States of America"
+      ],
+      "description": "country located primarily in North America",
+      "source_url": "https://www.wikidata.org/wiki/Q30",
+      "retrieved_at": "2026-09-08T20:40:02.413784Z"
+    },
+    {
+      "entity_id": "Q248713",
+      "label": "USA Network",
+      "aliases": [
+        "USA"
+      ],
+      "description": "American cable television channel",
+      "source_url": "https://www.wikidata.org/wiki/Q248713",
+      "retrieved_at": "2026-09-08T20:40:02.413784Z"
+    },
+    {
+      "entity_id": "Q9212",
+      "label": "United States Army",
+      "aliases": [
+        "U.S. Army",
+        "USAR",
+        "American Army",
+        "Ground forces of the United States Armed Forces",
+        "US land forces",
+        "US troop",
+        "US troops",
+        "U. S. Army",
+        "USA"
+      ],
+      "description": "land service branch of the United States Armed Forces",
+      "source_url": "https://www.wikidata.org/wiki/Q9212",
+      "retrieved_at": "2026-09-08T20:40:02.413784Z"
+    },
+    {
+      "entity_id": "Q4917",
+      "label": "United States dollar",
+      "aliases": [
+        "USD",
+        "$",
+        "US$",
+        "American dollar",
+        "US $",
+        "U.S. Dollar",
+        "U. S. Dollar",
+        "US-$",
+        "dollar",
+        "dollars",
+        "US dollar",
+        "buck",
+        "greenback",
+        "$USD",
+        "USD$",
+        "US dollars",
+        "United States dollars",
+        "American dollars",
+        "USA dollar",
+        "USA dollars",
+        "American money"
+      ],
+      "description": "official currency of the United States",
+      "source_url": "https://www.wikidata.org/wiki/Q4917",
+      "retrieved_at": "2026-09-08T20:40:02.413784Z"
+    },
+    {
+      "entity_id": "Q2195271",
+      "label": "USA",
+      "aliases": [],
+      "description": "1975 live album by King Crimson",
+      "source_url": "https://www.wikidata.org/wiki/Q2195271",
+      "retrieved_at": "2026-09-08T20:40:02.413784Z"
+    },
+    {
+      "entity_id": "Q6476962",
+      "label": "Usa",
+      "aliases": [
+        "Уса",
+        "Вуса"
+      ],
+      "description": "river in Belarus, upper right-side tributary of the Neman",
+      "source_url": "https://www.wikidata.org/wiki/Q6476962",
+      "retrieved_at": "2026-09-08T20:40:02.413784Z"
+    },
+    {
+      "entity_id": "Q12523556",
+      "label": "Usa",
+      "aliases": [],
+      "description": "village in Bone Regency, South Sulawesi, Indonesia",
+      "source_url": "https://www.wikidata.org/wiki/Q12523556",
+      "retrieved_at": "2026-09-08T20:40:02.413784Z"
+    },
+    {
+      "entity_id": "Q6543186",
+      "label": "Usa",
+      "aliases": [],
+      "description": "village in Belarus",
+      "source_url": "https://www.wikidata.org/wiki/Q6543186",
+      "retrieved_at": "2026-09-08T20:40:02.413784Z"
+    },
+    {
+      "entity_id": "Q1189",
+      "label": "Usain Bolt",
+      "aliases": [],
+      "description": "Jamaican sprinter",
+      "source_url": "https://www.wikidata.org/wiki/Q1189",
+      "retrieved_at": "2026-09-08T20:40:02.413784Z"
+    },
+    {
+      "entity_id": "Q7976",
+      "label": "American English",
+      "aliases": [
+        "English (United States)",
+        "United States English",
+        "U.S. English",
+        "US English",
+        "AmE",
+        "USA English"
+      ],
+      "description": "set of dialects of the English language spoken in the United States",
+      "source_url": "https://www.wikidata.org/wiki/Q7976",
+      "retrieved_at": "2026-09-08T20:40:02.413784Z"
+    }
+  ],
+  "United Kingdom": [
+    {
+      "entity_id": "Q145",
+      "label": "United Kingdom",
+      "aliases": [
+        "United Kingdom of Great Britain and Northern Ireland",
+        "U K",
+        "G B",
+        "Great Britain",
+        "Great Britain and Northern Ireland",
+        "the United Kingdom of Great Britain and Northern Ireland",
+        "the UK",
+        "the United Kingdom"
+      ],
+      "description": "island country in north-west Europe",
+      "source_url": "https://www.wikidata.org/wiki/Q145",
+      "retrieved_at": "2026-09-08T20:40:04.168382Z"
+    },
+    {
+      "entity_id": "Q174193",
+      "label": "United Kingdom of Great Britain and Ireland",
+      "aliases": [
+        "United Kingdom",
+        "UKGBI",
+        "Great Britain and Ireland"
+      ],
+      "description": "historical sovereign state (1801–1922)",
+      "source_url": "https://www.wikidata.org/wiki/Q174193",
+      "retrieved_at": "2026-09-08T20:40:04.168382Z"
+    },
+    {
+      "entity_id": "Q6063",
+      "label": "Government of the United Kingdom",
+      "aliases": [
+        "UK Government",
+        "His Majesty's Government",
+        "British Government",
+        "HM Government",
+        "United Kingdom Government",
+        "Her Majesty's Government",
+        "HMG"
+      ],
+      "description": "central government of the United Kingdom of Great Britain and Northern Ireland",
+      "source_url": "https://www.wikidata.org/wiki/Q6063",
+      "retrieved_at": "2026-09-08T20:40:04.168382Z"
+    },
+    {
+      "entity_id": "Q7887906",
+      "label": "United Kingdom",
+      "aliases": [],
+      "description": "album by Manny Montes",
+      "source_url": "https://www.wikidata.org/wiki/Q7887906",
+      "retrieved_at": "2026-09-08T20:40:04.168382Z"
+    },
+    {
+      "entity_id": "Q7979",
+      "label": "British English",
+      "aliases": [
+        "English (United Kingdom)",
+        "United Kingdom English",
+        "UK English",
+        "BrE",
+        "BE",
+        "Commonwealth English",
+        "Oxford English"
+      ],
+      "description": "forms of the English language used in Britain",
+      "source_url": "https://www.wikidata.org/wiki/Q7979",
+      "retrieved_at": "2026-09-08T20:40:04.168382Z"
+    },
+    {
+      "entity_id": "Q161885",
+      "label": "Kingdom of Great Britain",
+      "aliases": [
+        "United Kingdom of Great Britain",
+        "UKGB",
+        "UK",
+        "GB",
+        "Great Britain"
+      ],
+      "description": "constitutional monarchy in Western Europe (1707–1800)",
+      "source_url": "https://www.wikidata.org/wiki/Q161885",
+      "retrieved_at": "2026-09-08T20:40:04.168382Z"
+    },
+    {
+      "entity_id": "Q11010",
+      "label": "Parliament of the United Kingdom",
+      "aliases": [
+        "Parliament of the United Kingdom of Great Britain and Northern Ireland",
+        "British Parliament",
+        "UK Parliament",
+        "United Kingdom Parliament",
+        "Parliament of Britain",
+        "British legislature",
+        "U.K. Parliament",
+        "Westminster",
+        "Parliament",
+        "Parliament of the UK"
+      ],
+      "description": "supreme legislative body of the United Kingdom",
+      "source_url": "https://www.wikidata.org/wiki/Q11010",
+      "retrieved_at": "2026-09-08T20:40:04.168382Z"
+    },
+    {
+      "entity_id": "Q108280869",
+      "label": "United Kingdom",
+      "aliases": [],
+      "description": "1989 studio album by American Music Club",
+      "source_url": "https://www.wikidata.org/wiki/Q108280869",
+      "retrieved_at": "2026-09-08T20:40:04.168382Z"
+    },
+    {
+      "entity_id": "Q9626",
+      "label": "Conservative Party",
+      "aliases": [
+        "Tories",
+        "Conservative and Unionist Party",
+        "Conservatives",
+        "UK Conservative Party",
+        "United Kingdom Conservative Party",
+        "Tory Party",
+        "Conservative Party (Great Britain) -- Elections",
+        "Conservative Party (Great Britain) -- Records and correspondence",
+        "British Conservative Party",
+        "Conservative Party (UK)"
+      ],
+      "description": "centre-right to right-wing political party in the United Kingdom",
+      "source_url": "https://www.wikidata.org/wiki/Q9626",
+      "retrieved_at": "2026-09-08T20:40:04.168382Z"
+    },
+    {
+      "entity_id": "Q105774620",
+      "label": "Public General Act of the Parliament of the United Kingdom",
+      "aliases": [
+        "Public General Act of Parliament of the United Kingdom",
+        "United Kingdom Public General Act of Parliament",
+        "Public General Act of the United Kingdom Parliament",
+        "UK Public General Act of Parliament"
+      ],
+      "description": "Act of Parliament that is part of the series of Public General Acts, passed via the public bill procedure or the hybrid procedure, generally applying to the public at large",
+      "source_url": "https://www.wikidata.org/wiki/Q105774620",
+      "retrieved_at": "2026-09-08T20:40:04.168382Z"
+    }
+  ],
+  "United States": [
+    {
+      "entity_id": "Q30",
+      "label": "United States",
+      "aliases": [
+        "the States",
+        "the United States of America",
+        "US of America",
+        "the US",
+        "the U.S.",
+        "the US of A",
+        "U.S. of America",
+        "the US of America",
+        "the USA",
+        "the U.S.A.",
+        "the U.S. of A",
+        "US of A",
+        "the U.S. of America",
+        "the United States",
+        "Merica",
+        "Murica",
+        "U. S.",
+        "U. S. A.",
+        "United States of America"
+      ],
+      "description": "country located primarily in North America",
+      "source_url": "https://www.wikidata.org/wiki/Q30",
+      "retrieved_at": "2026-09-08T20:40:06.493946Z"
+    },
+    {
+      "entity_id": "Q637413",
+      "label": "United States Census Bureau",
+      "aliases": [
+        "U.S. Census Bureau",
+        "US Census Bureau",
+        "Census Bureau",
+        "United States Bureau of the Census",
+        "Bureau of the Census"
+      ],
+      "description": "U.S. agency responsible for the census and related statistics",
+      "source_url": "https://www.wikidata.org/wiki/Q637413",
+      "retrieved_at": "2026-09-08T20:40:06.493946Z"
+    },
+    {
+      "entity_id": "Q96",
+      "label": "Mexico",
+      "aliases": [
+        "Mexican United States",
+        "Mexican Republic",
+        "US of M",
+        "United States of Mexico",
+        "mx",
+        "United Mexican States",
+        "MXN"
+      ],
+      "description": "country in North America",
+      "source_url": "https://www.wikidata.org/wiki/Q96",
+      "retrieved_at": "2026-09-08T20:40:06.493946Z"
+    },
+    {
+      "entity_id": "Q4917",
+      "label": "United States dollar",
+      "aliases": [
+        "USD",
+        "$",
+        "US$",
+        "American dollar",
+        "US $",
+        "U.S. Dollar",
+        "U. S. Dollar",
+        "US-$",
+        "dollar",
+        "dollars",
+        "US dollar",
+        "buck",
+        "greenback",
+        "$USD",
+        "USD$",
+        "US dollars",
+        "United States dollars",
+        "American dollars",
+        "USA dollar",
+        "USA dollars",
+        "American money"
+      ],
+      "description": "official currency of the United States",
+      "source_url": "https://www.wikidata.org/wiki/Q4917",
+      "retrieved_at": "2026-09-08T20:40:06.493946Z"
+    },
+    {
+      "entity_id": "Q214867",
+      "label": "National Gallery of Art",
+      "aliases": [
+        "Mellon Gallery of Art",
+        "National Art Gallery (U.S.)",
+        "United States. National Gallery of Art",
+        "National Gallery",
+        "National Gallery of Art (U.S.)",
+        "National Gallery of Art (Washington, D.C.)",
+        "National Gallery of Art (Washington D.C.)",
+        "U.S. National Gallery of Art",
+        "US National Gallery of Art",
+        "National Gallery of Art"
+      ],
+      "description": "national art museum in Washington, D.C.",
+      "source_url": "https://www.wikidata.org/wiki/Q214867",
+      "retrieved_at": "2026-09-08T20:40:06.493946Z"
+    },
+    {
+      "entity_id": "Q29468",
+      "label": "Republican Party",
+      "aliases": [
+        "Republican Party of the United States",
+        "Republicans",
+        "Republican Party (United States)",
+        "United States Republican Party",
+        "American Republican Party",
+        "US Republican Party",
+        "The Republicans"
+      ],
+      "description": "American political party",
+      "source_url": "https://www.wikidata.org/wiki/Q29468",
+      "retrieved_at": "2026-09-08T20:40:06.493946Z"
+    },
+    {
+      "entity_id": "Q29552",
+      "label": "Democratic Party",
+      "aliases": [
+        "Democrats",
+        "Democrat",
+        "Democratic Party (United States)",
+        "Dems",
+        "American Democratic Party",
+        "Democratic Party of the United States",
+        "United States Democratic Party",
+        "US Democratic Party",
+        "U.S. Democratic Party",
+        "The Democrats"
+      ],
+      "description": "American political party",
+      "source_url": "https://www.wikidata.org/wiki/Q29552",
+      "retrieved_at": "2026-09-08T20:40:06.493946Z"
+    },
+    {
+      "entity_id": "Q60346",
+      "label": "National Institute for Occupational Safety and Health",
+      "aliases": [
+        "NIOSH",
+        "National Institute of Occupational Safety and Health",
+        "N.I.O.S.H.",
+        "U.S. Bureau of Occupational Safety and Health",
+        "United States Bureau of Occupational Safety and Health",
+        "Bureau of Occupational Safety and Health"
+      ],
+      "description": "United States government research agency for preventing work-related health and safety problems",
+      "source_url": "https://www.wikidata.org/wiki/Q60346",
+      "retrieved_at": "2026-09-08T20:40:06.493946Z"
+    },
+    {
+      "entity_id": "Q11201",
+      "label": "Supreme Court of the United States",
+      "aliases": [
+        "SCOTUS",
+        "Supreme Court",
+        "United States Supreme Court",
+        "US Supreme Court",
+        "U.S. Supreme Court",
+        "Supreme Court of the U.S.",
+        "Article 3 Court",
+        "Article III Court",
+        "Article Three Court",
+        "Supreme Court of the United States of America"
+      ],
+      "description": "highest court of jurisdiction in the United States of America",
+      "source_url": "https://www.wikidata.org/wiki/Q11201",
+      "retrieved_at": "2026-09-08T20:40:06.493946Z"
+    },
+    {
+      "entity_id": "Q3719",
+      "label": "National Register of Historic Places",
+      "aliases": [
+        "NRHP",
+        "United States National Register of Historic Places",
+        "US NRHP",
+        "U.S. NRHP",
+        "U.S. National Register of Historic Places"
+      ],
+      "description": "federal list of historic sites in the United States",
+      "source_url": "https://www.wikidata.org/wiki/Q3719",
+      "retrieved_at": "2026-09-08T20:40:06.493946Z"
+    }
+  ],
+  "WWII": [
+    {
+      "entity_id": "Q362",
+      "label": "World War II",
+      "aliases": [
+        "WW 2",
+        "WW II",
+        "World War Two",
+        "2nd World War",
+        "World War 2",
+        "the Second World War",
+        "Second World War",
+        "II World War",
+        "World War 2, 1939–1945"
+      ],
+      "description": "1939–1945 global conflict",
+      "source_url": "https://www.wikidata.org/wiki/Q362",
+      "retrieved_at": "2026-09-08T20:40:08.080687Z"
+    },
+    {
+      "entity_id": "Q1470020",
+      "label": "World War II Memorial",
+      "aliases": [
+        "WWII",
+        "National World War II Memorial",
+        "World War II Memorial (Washington, D.C.)",
+        "WWII Memorial"
+      ],
+      "description": "war memorial in Washington, D.C., United States",
+      "source_url": "https://www.wikidata.org/wiki/Q1470020",
+      "retrieved_at": "2026-09-08T20:40:08.080687Z"
+    },
+    {
+      "entity_id": "Q444116",
+      "label": "WWII Axis collaboration in France",
+      "aliases": [],
+      "description": "policy stance",
+      "source_url": "https://www.wikidata.org/wiki/Q444116",
+      "retrieved_at": "2026-09-08T20:40:08.080687Z"
+    },
+    {
+      "entity_id": "Q7957296",
+      "label": "WWII",
+      "aliases": [
+        "WW II"
+      ],
+      "description": "1982 studio album by Waylon Jennings and Willie Nelson",
+      "source_url": "https://www.wikidata.org/wiki/Q7957296",
+      "retrieved_at": "2026-09-08T20:40:08.080687Z"
+    },
+    {
+      "entity_id": "Q8036430",
+      "label": "WWII GI",
+      "aliases": [],
+      "description": "1999 video game",
+      "source_url": "https://www.wikidata.org/wiki/Q8036430",
+      "retrieved_at": "2026-09-08T20:40:08.080687Z"
+    },
+    {
+      "entity_id": "Q7957299",
+      "label": "WWII Aces",
+      "aliases": [
+        "World War II Aces",
+        "WWII Aces Wii",
+        "WWII Aces for Wii"
+      ],
+      "description": "2008 video game",
+      "source_url": "https://www.wikidata.org/wiki/Q7957299",
+      "retrieved_at": "2026-09-08T20:40:08.080687Z"
+    },
+    {
+      "entity_id": "Q64374896",
+      "label": "World War II memorial",
+      "aliases": [
+        "WWII memorial",
+        "WW2 memorial",
+        "WW2M",
+        "memorial of WW2",
+        "WWII memo"
+      ],
+      "description": "memorial to commemorate the events or victims of the Second World War",
+      "source_url": "https://www.wikidata.org/wiki/Q64374896",
+      "retrieved_at": "2026-09-08T20:40:08.080687Z"
+    },
+    {
+      "entity_id": "Q363",
+      "label": "World War III",
+      "aliases": [
+        "WW3",
+        "WWIII",
+        "WW 3",
+        "WW III",
+        "World War Three",
+        "3rd World War",
+        "World War 3",
+        "the Third World War",
+        "Third World War",
+        "III World War"
+      ],
+      "description": "hypothetical global conflict",
+      "source_url": "https://www.wikidata.org/wiki/Q363",
+      "retrieved_at": "2026-09-08T20:40:08.080687Z"
+    },
+    {
+      "entity_id": "Q21072145",
+      "label": "United States World War II draft registration",
+      "aliases": [
+        "World War II draft registration",
+        "United States WWII draft registration",
+        "US WWII draft registration",
+        "WWII draft registration",
+        "US World War II draft registration",
+        "U.S. World War II draft registration"
+      ],
+      "description": "United States World War II draft registration",
+      "source_url": "https://www.wikidata.org/wiki/Q21072145",
+      "retrieved_at": "2026-09-08T20:40:08.080687Z"
+    },
+    {
+      "entity_id": "Q65971239",
+      "label": "WWII resistance group",
+      "aliases": [],
+      "description": "resistance groups in Europe during WWII",
+      "source_url": "https://www.wikidata.org/wiki/Q65971239",
+      "retrieved_at": "2026-09-08T20:40:08.080687Z"
+    }
+  ],
+  "water": [
+    {
+      "entity_id": "Q283",
+      "label": "water",
+      "aliases": [
+        "dihydrogen monoxide",
+        "dihydridooxygen",
+        "hydrogen hydroxide",
+        "dihydrogen oxide",
+        "oxidane",
+        "hydrogen oxide",
+        "pure water"
+      ],
+      "description": "chemical compound whose molecules are formed by two hydrogen atoms and one oxygen atom",
+      "source_url": "https://www.wikidata.org/wiki/Q283",
+      "retrieved_at": "2026-09-08T20:40:10.145123Z"
+    },
+    {
+      "entity_id": "Q7892",
+      "label": "drinking water",
+      "aliases": [
+        "potable water",
+        "improved drinking water",
+        "water",
+        "drinkable water"
+      ],
+      "description": "water safe for consumption",
+      "source_url": "https://www.wikidata.org/wiki/Q7892",
+      "retrieved_at": "2026-09-08T20:40:10.145123Z"
+    },
+    {
+      "entity_id": "Q15816677",
+      "label": "Water",
+      "aliases": [],
+      "description": "Swiss journal",
+      "source_url": "https://www.wikidata.org/wiki/Q15816677",
+      "retrieved_at": "2026-09-08T20:40:10.145123Z"
+    },
+    {
+      "entity_id": "Q23392",
+      "label": "ice",
+      "aliases": [
+        "solid water",
+        "water ice",
+        "water",
+        "crystalline water",
+        "frozen water",
+        "frozen ice"
+      ],
+      "description": "water frozen into the solid state",
+      "source_url": "https://www.wikidata.org/wiki/Q23392",
+      "retrieved_at": "2026-09-08T20:40:10.145123Z"
+    },
+    {
+      "entity_id": "Q37206655",
+      "label": "Water",
+      "aliases": [],
+      "description": "family name",
+      "source_url": "https://www.wikidata.org/wiki/Q37206655",
+      "retrieved_at": "2026-09-08T20:40:10.145123Z"
+    },
+    {
+      "entity_id": "Q11446",
+      "label": "ship",
+      "aliases": [
+        "vessel",
+        "marine vessel",
+        "water vessel",
+        "ships",
+        "Ships"
+      ],
+      "description": "large buoyant watercraft",
+      "source_url": "https://www.wikidata.org/wiki/Q11446",
+      "retrieved_at": "2026-09-08T20:40:10.145123Z"
+    },
+    {
+      "entity_id": "Q184224",
+      "label": "brown rat",
+      "aliases": [
+        "street rat",
+        "sewer rat",
+        "wharf rat",
+        "water rat",
+        "Parisian rat",
+        "Norwegian rat",
+        "Norway rat",
+        "Rattus norvegicus",
+        "🐀",
+        "rat",
+        "Hanover rat"
+      ],
+      "description": "species of mammal",
+      "source_url": "https://www.wikidata.org/wiki/Q184224",
+      "retrieved_at": "2026-09-08T20:40:10.145123Z"
+    },
+    {
+      "entity_id": "Q355304",
+      "label": "watercourse",
+      "aliases": [
+        "water course",
+        "flowing waters",
+        "water movement",
+        "water movements",
+        "creek"
+      ],
+      "description": "path water takes when flowing as a stream, typically encompassing a stream channel;may change seasonally and be devoid of water at times of the year",
+      "source_url": "https://www.wikidata.org/wiki/Q355304",
+      "retrieved_at": "2026-09-08T20:40:10.145123Z"
+    },
+    {
+      "entity_id": "Q124714",
+      "label": "spring",
+      "aliases": [
+        "water spring",
+        "waterspring",
+        "freshwater spring",
+        "natural spring",
+        "natural springs",
+        "spring (water source)",
+        "spring (hydrology)"
+      ],
+      "description": "terrestrial water source",
+      "source_url": "https://www.wikidata.org/wiki/Q124714",
+      "retrieved_at": "2026-09-08T20:40:10.145123Z"
+    },
+    {
+      "entity_id": "Q47521",
+      "label": "stream",
+      "aliases": [
+        "waterway"
+      ],
+      "description": "natural body of water with current within bed and stream banks",
+      "source_url": "https://www.wikidata.org/wiki/Q47521",
+      "retrieved_at": "2026-09-08T20:40:10.145123Z"
+    }
+  ]
+}

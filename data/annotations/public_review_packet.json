@@ -1,0 +1,2375 @@
+{
+  "public-d40c2bea89b7cb23c9ad": {
+    "triple": {
+      "subject": "Mercury",
+      "predicate": "instance of",
+      "object": "inner planet of the Solar System",
+      "object_type": "entity"
+    },
+    "entity_id": "Q308",
+    "evidence": [
+      {
+        "passage_id": "wd-8a2651dea3d0dd391abc",
+        "text": "Wikidata statement: Mercury (Q308) — instance of (P31) — inner planet of the Solar System. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q308&oldid=2532511032",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2532511032",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-e19138ff08a04f5aba10": {
+    "triple": {
+      "subject": "Mercury",
+      "predicate": "named after",
+      "object": "Mercury",
+      "object_type": "entity"
+    },
+    "entity_id": "Q308",
+    "evidence": [
+      {
+        "passage_id": "wd-58339e40c268d25fc9cd",
+        "text": "Wikidata statement: Mercury (Q308) — named after (P138) — Mercury. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q308&oldid=2532511032",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2532511032",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-5f11eb8cf000bd9cc9bb": {
+    "triple": {
+      "subject": "Mercury",
+      "predicate": "mass",
+      "object": "+330 (unit http://www.wikidata.org/entity/Q613726)",
+      "object_type": "literal"
+    },
+    "entity_id": "Q308",
+    "evidence": [
+      {
+        "passage_id": "wd-ce56857603007b6867de",
+        "text": "Wikidata statement: Mercury (Q308) — mass (P2067) — +330 (unit http://www.wikidata.org/entity/Q613726). This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q308&oldid=2532511032",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2532511032",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-d7a12f59e9f9931db3ff": {
+    "triple": {
+      "subject": "mercury",
+      "predicate": "instance of",
+      "object": "superconducting element",
+      "object_type": "entity"
+    },
+    "entity_id": "Q925",
+    "evidence": [
+      {
+        "passage_id": "wd-3ac9695eaf90b877a966",
+        "text": "Wikidata statement: mercury (Q925) — instance of (P31) — superconducting element. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q925&oldid=2540601272",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2540601272",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-0386494b820c55df51b6": {
+    "triple": {
+      "subject": "mercury",
+      "predicate": "subclass of",
+      "object": "post-transition metal",
+      "object_type": "entity"
+    },
+    "entity_id": "Q925",
+    "evidence": [
+      {
+        "passage_id": "wd-f0f9f3e70d5140f80753",
+        "text": "Wikidata statement: mercury (Q925) — subclass of (P279) — post-transition metal. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q925&oldid=2540601272",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2540601272",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-0e57fcb10b474847f8fd": {
+    "triple": {
+      "subject": "mercury",
+      "predicate": "part of",
+      "object": "mercury (II) reductase activity",
+      "object_type": "entity"
+    },
+    "entity_id": "Q925",
+    "evidence": [
+      {
+        "passage_id": "wd-b8a154a14b3e0e2a8934",
+        "text": "Wikidata statement: mercury (Q925) — part of (P361) — mercury (II) reductase activity. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q925&oldid=2540601272",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2540601272",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-ec2ff71d5bf5a494707c": {
+    "triple": {
+      "subject": "mercury",
+      "predicate": "named after",
+      "object": "Mercury",
+      "object_type": "entity"
+    },
+    "entity_id": "Q925",
+    "evidence": [
+      {
+        "passage_id": "wd-d34f142ad015d08f50b3",
+        "text": "Wikidata statement: mercury (Q925) — named after (P138) — Mercury. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q925&oldid=2540601272",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2540601272",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-2ec30ed3314c56d978a6": {
+    "triple": {
+      "subject": "Java",
+      "predicate": "instance of",
+      "object": "JVM language",
+      "object_type": "entity"
+    },
+    "entity_id": "Q251",
+    "evidence": [
+      {
+        "passage_id": "wd-e538a01b9469ee0c0336",
+        "text": "Wikidata statement: Java (Q251) — instance of (P31) — JVM language. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q251&oldid=2523534305",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2523534305",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-c49e45242fe7ee82db9a": {
+    "triple": {
+      "subject": "Java",
+      "predicate": "part of",
+      "object": "Java platform",
+      "object_type": "entity"
+    },
+    "entity_id": "Q251",
+    "evidence": [
+      {
+        "passage_id": "wd-b6de04b42f24a3a88234",
+        "text": "Wikidata statement: Java (Q251) — part of (P361) — Java platform. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q251&oldid=2523534305",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2523534305",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-6645f40ff2d166fd6741": {
+    "triple": {
+      "subject": "Java",
+      "predicate": "country of origin",
+      "object": "United States",
+      "object_type": "entity"
+    },
+    "entity_id": "Q251",
+    "evidence": [
+      {
+        "passage_id": "wd-09fdfeda324744d8bb96",
+        "text": "Wikidata statement: Java (Q251) — country of origin (P495) — United States. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q251&oldid=2523534305",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2523534305",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-fe67900acb1efc54becd": {
+    "triple": {
+      "subject": "Java",
+      "predicate": "inception",
+      "object": "1995",
+      "object_type": "literal"
+    },
+    "entity_id": "Q251",
+    "evidence": [
+      {
+        "passage_id": "wd-84e1ea7ff67a9e1b0dda",
+        "text": "Wikidata statement: Java (Q251) — inception (P571) — 1995. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q251&oldid=2523534305",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2523534305",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-1b3a945203a4109f5d74": {
+    "triple": {
+      "subject": "Java",
+      "predicate": "instance of",
+      "object": "island",
+      "object_type": "entity"
+    },
+    "entity_id": "Q3757",
+    "evidence": [
+      {
+        "passage_id": "wd-35288849ebeb2ff2a988",
+        "text": "Wikidata statement: Java (Q3757) — instance of (P31) — island. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q3757&oldid=2531353099",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2531353099",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-cb362a540bf45b9a684b": {
+    "triple": {
+      "subject": "Java",
+      "predicate": "country",
+      "object": "Indonesia",
+      "object_type": "entity"
+    },
+    "entity_id": "Q3757",
+    "evidence": [
+      {
+        "passage_id": "wd-a0741c5a9105bd7db480",
+        "text": "Wikidata statement: Java (Q3757) — country (P17) — Indonesia. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q3757&oldid=2531353099",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2531353099",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-fd76f1db330a0d0a2b62": {
+    "triple": {
+      "subject": "Java",
+      "predicate": "continent",
+      "object": "Asia",
+      "object_type": "entity"
+    },
+    "entity_id": "Q3757",
+    "evidence": [
+      {
+        "passage_id": "wd-a94306ce1016a74cf7db",
+        "text": "Wikidata statement: Java (Q3757) — continent (P30) — Asia. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q3757&oldid=2531353099",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2531353099",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-788906844b64da581795": {
+    "triple": {
+      "subject": "Java",
+      "predicate": "part of",
+      "object": "Greater Sunda Islands",
+      "object_type": "entity"
+    },
+    "entity_id": "Q3757",
+    "evidence": [
+      {
+        "passage_id": "wd-789c3f504daa1d56df3e",
+        "text": "Wikidata statement: Java (Q3757) — part of (P361) — Greater Sunda Islands. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q3757&oldid=2531353099",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2531353099",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-4a56f4a336cbe8e051a1": {
+    "triple": {
+      "subject": "Apple Inc.",
+      "predicate": "instance of",
+      "object": "enterprise",
+      "object_type": "entity"
+    },
+    "entity_id": "Q312",
+    "evidence": [
+      {
+        "passage_id": "wd-faef8794bf24efb11bfc",
+        "text": "Wikidata statement: Apple Inc. (Q312) — instance of (P31) — enterprise. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q312&oldid=2541278556",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541278556",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-9cb8043460432c4c7e98": {
+    "triple": {
+      "subject": "Apple Inc.",
+      "predicate": "country",
+      "object": "United States",
+      "object_type": "entity"
+    },
+    "entity_id": "Q312",
+    "evidence": [
+      {
+        "passage_id": "wd-ae308d7b2b33e3933131",
+        "text": "Wikidata statement: Apple Inc. (Q312) — country (P17) — United States. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q312&oldid=2541278556",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541278556",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-502071d210c52913484e": {
+    "triple": {
+      "subject": "Apple Inc.",
+      "predicate": "part of",
+      "object": "Nasdaq-100",
+      "object_type": "entity"
+    },
+    "entity_id": "Q312",
+    "evidence": [
+      {
+        "passage_id": "wd-86658f025b6fae70984b",
+        "text": "Wikidata statement: Apple Inc. (Q312) — part of (P361) — Nasdaq-100. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q312&oldid=2541278556",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541278556",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-5023a909799abb135bcb": {
+    "triple": {
+      "subject": "Apple Inc.",
+      "predicate": "country of origin",
+      "object": "United States",
+      "object_type": "entity"
+    },
+    "entity_id": "Q312",
+    "evidence": [
+      {
+        "passage_id": "wd-43dfa1aba2d10d74a35f",
+        "text": "Wikidata statement: Apple Inc. (Q312) — country of origin (P495) — United States. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q312&oldid=2541278556",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541278556",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-a89342944df49d833793": {
+    "triple": {
+      "subject": "apple",
+      "predicate": "instance of",
+      "object": "type of fruit",
+      "object_type": "entity"
+    },
+    "entity_id": "Q89",
+    "evidence": [
+      {
+        "passage_id": "wd-403cd6ffe77e050b5090",
+        "text": "Wikidata statement: apple (Q89) — instance of (P31) — type of fruit. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q89&oldid=2542021118",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2542021118",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-239e2b9f2f97f406197e": {
+    "triple": {
+      "subject": "apple",
+      "predicate": "subclass of",
+      "object": "pome",
+      "object_type": "entity"
+    },
+    "entity_id": "Q89",
+    "evidence": [
+      {
+        "passage_id": "wd-f27764b59f0100c1d02d",
+        "text": "Wikidata statement: apple (Q89) — subclass of (P279) — pome. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q89&oldid=2542021118",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2542021118",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-c05042f9be44b37969ab": {
+    "triple": {
+      "subject": "Jordan",
+      "predicate": "instance of",
+      "object": "sovereign state",
+      "object_type": "entity"
+    },
+    "entity_id": "Q810",
+    "evidence": [
+      {
+        "passage_id": "wd-ae8934fc51896111b2f8",
+        "text": "Wikidata statement: Jordan (Q810) — instance of (P31) — sovereign state. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q810&oldid=2539091385",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539091385",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-3f21ad8739d7eb6c0f42": {
+    "triple": {
+      "subject": "Jordan",
+      "predicate": "country",
+      "object": "Jordan",
+      "object_type": "entity"
+    },
+    "entity_id": "Q810",
+    "evidence": [
+      {
+        "passage_id": "wd-63d59ba954fc389e3002",
+        "text": "Wikidata statement: Jordan (Q810) — country (P17) — Jordan. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q810&oldid=2539091385",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539091385",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-1f7b35bc8e0115c2cce6": {
+    "triple": {
+      "subject": "Jordan",
+      "predicate": "continent",
+      "object": "Asia",
+      "object_type": "entity"
+    },
+    "entity_id": "Q810",
+    "evidence": [
+      {
+        "passage_id": "wd-ecfdcda0c7e4c79c0d30",
+        "text": "Wikidata statement: Jordan (Q810) — continent (P30) — Asia. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q810&oldid=2539091385",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539091385",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-9429ef5604f1503c7d9f": {
+    "triple": {
+      "subject": "Jordan",
+      "predicate": "part of",
+      "object": "Middle East",
+      "object_type": "entity"
+    },
+    "entity_id": "Q810",
+    "evidence": [
+      {
+        "passage_id": "wd-69079165650737157a94",
+        "text": "Wikidata statement: Jordan (Q810) — part of (P361) — Middle East. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q810&oldid=2539091385",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539091385",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-ea1797b315d1ee19f3f4": {
+    "triple": {
+      "subject": "Michael Jordan",
+      "predicate": "instance of",
+      "object": "human",
+      "object_type": "entity"
+    },
+    "entity_id": "Q41421",
+    "evidence": [
+      {
+        "passage_id": "wd-c67b32a33cef4ff3c31b",
+        "text": "Wikidata statement: Michael Jordan (Q41421) — instance of (P31) — human. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q41421&oldid=2540289186",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2540289186",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-130bacfd958537ad3b45": {
+    "triple": {
+      "subject": "Michael Jordan",
+      "predicate": "part of",
+      "object": "Jordan Rules",
+      "object_type": "entity"
+    },
+    "entity_id": "Q41421",
+    "evidence": [
+      {
+        "passage_id": "wd-e46723208b783aab99cd",
+        "text": "Wikidata statement: Michael Jordan (Q41421) — part of (P361) — Jordan Rules. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q41421&oldid=2540289186",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2540289186",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-001b5d2a094bbd52b4dd": {
+    "triple": {
+      "subject": "Michael Jordan",
+      "predicate": "place of birth",
+      "object": "Brooklyn",
+      "object_type": "entity"
+    },
+    "entity_id": "Q41421",
+    "evidence": [
+      {
+        "passage_id": "wd-8b045174317a3fdb4520",
+        "text": "Wikidata statement: Michael Jordan (Q41421) — place of birth (P19) — Brooklyn. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q41421&oldid=2540289186",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2540289186",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-8f11d477e81537ff5a1a": {
+    "triple": {
+      "subject": "Michael Jordan",
+      "predicate": "date of birth",
+      "object": "1963-02-17",
+      "object_type": "literal"
+    },
+    "entity_id": "Q41421",
+    "evidence": [
+      {
+        "passage_id": "wd-95b2b5b111311af09ae0",
+        "text": "Wikidata statement: Michael Jordan (Q41421) — date of birth (P569) — 1963-02-17. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q41421&oldid=2540289186",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2540289186",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-02b46b4b24fc2256cc23": {
+    "triple": {
+      "subject": "Paris",
+      "predicate": "instance of",
+      "object": "tourist destination",
+      "object_type": "entity"
+    },
+    "entity_id": "Q90",
+    "evidence": [
+      {
+        "passage_id": "wd-24fe62954dfc2a26033e",
+        "text": "Wikidata statement: Paris (Q90) — instance of (P31) — tourist destination. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q90&oldid=2540522736",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2540522736",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-aee166b78272feab66dd": {
+    "triple": {
+      "subject": "Paris",
+      "predicate": "continent",
+      "object": "Europe",
+      "object_type": "entity"
+    },
+    "entity_id": "Q90",
+    "evidence": [
+      {
+        "passage_id": "wd-17009a632ad0df429e41",
+        "text": "Wikidata statement: Paris (Q90) — continent (P30) — Europe. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q90&oldid=2540522736",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2540522736",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-83131fd7c3f67517b0fa": {
+    "triple": {
+      "subject": "Paris",
+      "predicate": "part of",
+      "object": "Île-de-France",
+      "object_type": "entity"
+    },
+    "entity_id": "Q90",
+    "evidence": [
+      {
+        "passage_id": "wd-cc1ea8b69805c35f1b29",
+        "text": "Wikidata statement: Paris (Q90) — part of (P361) — Île-de-France. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q90&oldid=2540522736",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2540522736",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-a2a86dc4513e244ce3ba": {
+    "triple": {
+      "subject": "Paris",
+      "predicate": "official language",
+      "object": "French",
+      "object_type": "entity"
+    },
+    "entity_id": "Q90",
+    "evidence": [
+      {
+        "passage_id": "wd-8eaa16296e732c06ad5e",
+        "text": "Wikidata statement: Paris (Q90) — official language (P37) — French. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q90&oldid=2540522736",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2540522736",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-eb3e3da126486a32c384": {
+    "triple": {
+      "subject": "Paris",
+      "predicate": "instance of",
+      "object": "city in the United States",
+      "object_type": "entity"
+    },
+    "entity_id": "Q830149",
+    "evidence": [
+      {
+        "passage_id": "wd-dda6f0b6d74699b9e02e",
+        "text": "Wikidata statement: Paris (Q830149) — instance of (P31) — city in the United States. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q830149&oldid=2541302532",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541302532",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-7704d7d021aa9b0c8525": {
+    "triple": {
+      "subject": "Paris",
+      "predicate": "country",
+      "object": "United States",
+      "object_type": "entity"
+    },
+    "entity_id": "Q830149",
+    "evidence": [
+      {
+        "passage_id": "wd-230e126110b2e10a2609",
+        "text": "Wikidata statement: Paris (Q830149) — country (P17) — United States. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q830149&oldid=2541302532",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541302532",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-c56a718686da3bc2006a": {
+    "triple": {
+      "subject": "Paris",
+      "predicate": "located in the administrative territorial entity",
+      "object": "Lamar County",
+      "object_type": "entity"
+    },
+    "entity_id": "Q830149",
+    "evidence": [
+      {
+        "passage_id": "wd-306b6dc0896fb7355a3a",
+        "text": "Wikidata statement: Paris (Q830149) — located in the administrative territorial entity (P131) — Lamar County. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q830149&oldid=2541302532",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541302532",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-a644ed03bf3d3f6368aa": {
+    "triple": {
+      "subject": "Paris",
+      "predicate": "inception",
+      "object": "1845",
+      "object_type": "literal"
+    },
+    "entity_id": "Q830149",
+    "evidence": [
+      {
+        "passage_id": "wd-0efe157308dbd0801f95",
+        "text": "Wikidata statement: Paris (Q830149) — inception (P571) — 1845. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q830149&oldid=2541302532",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541302532",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-5a839e76ada8412dcb6e": {
+    "triple": {
+      "subject": "jaguar",
+      "predicate": "instance of",
+      "object": "taxon",
+      "object_type": "entity"
+    },
+    "entity_id": "Q35694",
+    "evidence": [
+      {
+        "passage_id": "wd-347e2bed92a5676b8ec0",
+        "text": "Wikidata statement: jaguar (Q35694) — instance of (P31) — taxon. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q35694&oldid=2539515693",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539515693",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-c979bdb21fed03648207": {
+    "triple": {
+      "subject": "jaguar",
+      "predicate": "subclass of",
+      "object": "big cat",
+      "object_type": "entity"
+    },
+    "entity_id": "Q35694",
+    "evidence": [
+      {
+        "passage_id": "wd-6f29086050189cc4c350",
+        "text": "Wikidata statement: jaguar (Q35694) — subclass of (P279) — big cat. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q35694&oldid=2539515693",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539515693",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-69ba66b2fb176b27654f": {
+    "triple": {
+      "subject": "jaguar",
+      "predicate": "taxon rank",
+      "object": "species",
+      "object_type": "entity"
+    },
+    "entity_id": "Q35694",
+    "evidence": [
+      {
+        "passage_id": "wd-da3fa8e0fbb441fbdca1",
+        "text": "Wikidata statement: jaguar (Q35694) — taxon rank (P105) — species. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q35694&oldid=2539515693",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539515693",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-2fda795a4819cd8a92ab": {
+    "triple": {
+      "subject": "jaguar",
+      "predicate": "parent taxon",
+      "object": "Panthera",
+      "object_type": "entity"
+    },
+    "entity_id": "Q35694",
+    "evidence": [
+      {
+        "passage_id": "wd-7bf6b9ac1a2d3f72634f",
+        "text": "Wikidata statement: jaguar (Q35694) — parent taxon (P171) — Panthera. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q35694&oldid=2539515693",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539515693",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-65548150c92e40225ee2": {
+    "triple": {
+      "subject": "Jaguar Cars",
+      "predicate": "country",
+      "object": "United Kingdom",
+      "object_type": "entity"
+    },
+    "entity_id": "Q30055",
+    "evidence": [
+      {
+        "passage_id": "wd-afc0d5aefd493ea6742d",
+        "text": "Wikidata statement: Jaguar Cars (Q30055) — country (P17) — United Kingdom. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q30055&oldid=2539413441",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539413441",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-ef90f91d5f5c52d4a5ec": {
+    "triple": {
+      "subject": "Jaguar Cars",
+      "predicate": "country of origin",
+      "object": "United Kingdom",
+      "object_type": "entity"
+    },
+    "entity_id": "Q30055",
+    "evidence": [
+      {
+        "passage_id": "wd-9e6fe1a24c61a8a9a364",
+        "text": "Wikidata statement: Jaguar Cars (Q30055) — country of origin (P495) — United Kingdom. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q30055&oldid=2539413441",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539413441",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-97064b59c3f4ffc43972": {
+    "triple": {
+      "subject": "Jaguar Cars",
+      "predicate": "founder",
+      "object": "William Lyons",
+      "object_type": "entity"
+    },
+    "entity_id": "Q30055",
+    "evidence": [
+      {
+        "passage_id": "wd-8386e91d5f944436d04d",
+        "text": "Wikidata statement: Jaguar Cars (Q30055) — founder (P112) — William Lyons. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q30055&oldid=2539413441",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539413441",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-a7fd9a67f64066d01670": {
+    "triple": {
+      "subject": "Jaguar Cars",
+      "predicate": "inception",
+      "object": "1934",
+      "object_type": "literal"
+    },
+    "entity_id": "Q30055",
+    "evidence": [
+      {
+        "passage_id": "wd-52be698f3a35dfe13269",
+        "text": "Wikidata statement: Jaguar Cars (Q30055) — inception (P571) — 1934. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q30055&oldid=2539413441",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539413441",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-c368ce6e0c022fd84fb0": {
+    "triple": {
+      "subject": "Python",
+      "predicate": "instance of",
+      "object": "object-based language",
+      "object_type": "entity"
+    },
+    "entity_id": "Q28865",
+    "evidence": [
+      {
+        "passage_id": "wd-07875c13e4bea7f23267",
+        "text": "Wikidata statement: Python (Q28865) — instance of (P31) — object-based language. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q28865&oldid=2530995293",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2530995293",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-1dcdc848e2b8ce053986": {
+    "triple": {
+      "subject": "Python",
+      "predicate": "developer",
+      "object": "Python Software Foundation",
+      "object_type": "entity"
+    },
+    "entity_id": "Q28865",
+    "evidence": [
+      {
+        "passage_id": "wd-5ad40d034d93cd2c83e4",
+        "text": "Wikidata statement: Python (Q28865) — developer (P178) — Python Software Foundation. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q28865&oldid=2530995293",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2530995293",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-1c7f87d6e51027b47bce": {
+    "triple": {
+      "subject": "Python",
+      "predicate": "inception",
+      "object": "1991-02-20",
+      "object_type": "literal"
+    },
+    "entity_id": "Q28865",
+    "evidence": [
+      {
+        "passage_id": "wd-efea9ced37e157a9a187",
+        "text": "Wikidata statement: Python (Q28865) — inception (P571) — 1991-02-20. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q28865&oldid=2530995293",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2530995293",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-d23646e3df0f3affd28f": {
+    "triple": {
+      "subject": "Python",
+      "predicate": "named after",
+      "object": "Monty Python",
+      "object_type": "entity"
+    },
+    "entity_id": "Q28865",
+    "evidence": [
+      {
+        "passage_id": "wd-0136e5d6c2ffcae78ec8",
+        "text": "Wikidata statement: Python (Q28865) — named after (P138) — Monty Python. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q28865&oldid=2530995293",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2530995293",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-0edf2ccce652b4cd26f7": {
+    "triple": {
+      "subject": "Python",
+      "predicate": "instance of",
+      "object": "taxon",
+      "object_type": "entity"
+    },
+    "entity_id": "Q271218",
+    "evidence": [
+      {
+        "passage_id": "wd-172826f8dd2221ab5be8",
+        "text": "Wikidata statement: Python (Q271218) — instance of (P31) — taxon. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q271218&oldid=2531920769",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2531920769",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-c167ed873438d6783f83": {
+    "triple": {
+      "subject": "Python",
+      "predicate": "taxon rank",
+      "object": "genus",
+      "object_type": "entity"
+    },
+    "entity_id": "Q271218",
+    "evidence": [
+      {
+        "passage_id": "wd-5085da534d5838942f5f",
+        "text": "Wikidata statement: Python (Q271218) — taxon rank (P105) — genus. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q271218&oldid=2531920769",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2531920769",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-ba208fb28f18469cc0fa": {
+    "triple": {
+      "subject": "Python",
+      "predicate": "parent taxon",
+      "object": "python",
+      "object_type": "entity"
+    },
+    "entity_id": "Q271218",
+    "evidence": [
+      {
+        "passage_id": "wd-463557a966536aef624d",
+        "text": "Wikidata statement: Python (Q271218) — parent taxon (P171) — python. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q271218&oldid=2531920769",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2531920769",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-e85bbb2cde0f068b28db": {
+    "triple": {
+      "subject": "Amazon",
+      "predicate": "instance of",
+      "object": "enterprise",
+      "object_type": "entity"
+    },
+    "entity_id": "Q3884",
+    "evidence": [
+      {
+        "passage_id": "wd-67b216e452903482ed77",
+        "text": "Wikidata statement: Amazon (Q3884) — instance of (P31) — enterprise. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q3884&oldid=2542321275",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2542321275",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-ba3f0e56b59cc1db1be0": {
+    "triple": {
+      "subject": "Amazon",
+      "predicate": "country",
+      "object": "United States",
+      "object_type": "entity"
+    },
+    "entity_id": "Q3884",
+    "evidence": [
+      {
+        "passage_id": "wd-a6682118fedee5e591f4",
+        "text": "Wikidata statement: Amazon (Q3884) — country (P17) — United States. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q3884&oldid=2542321275",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2542321275",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-25cc4cf3b10d49e211e4": {
+    "triple": {
+      "subject": "Amazon",
+      "predicate": "part of",
+      "object": "Nasdaq-100",
+      "object_type": "entity"
+    },
+    "entity_id": "Q3884",
+    "evidence": [
+      {
+        "passage_id": "wd-20df01e6504688aa6597",
+        "text": "Wikidata statement: Amazon (Q3884) — part of (P361) — Nasdaq-100. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q3884&oldid=2542321275",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2542321275",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-85012beec37e6a24bf6f": {
+    "triple": {
+      "subject": "Amazon",
+      "predicate": "founder",
+      "object": "Jeff Bezos",
+      "object_type": "entity"
+    },
+    "entity_id": "Q3884",
+    "evidence": [
+      {
+        "passage_id": "wd-4392bf1067d32dcc354e",
+        "text": "Wikidata statement: Amazon (Q3884) — founder (P112) — Jeff Bezos. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q3884&oldid=2542321275",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2542321275",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-53abf1223c7429c9c564": {
+    "triple": {
+      "subject": "Amazon rainforest",
+      "predicate": "instance of",
+      "object": "tropical forest",
+      "object_type": "entity"
+    },
+    "entity_id": "Q177567",
+    "evidence": [
+      {
+        "passage_id": "wd-4c6a25670ea47f3ef672",
+        "text": "Wikidata statement: Amazon rainforest (Q177567) — instance of (P31) — tropical forest. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q177567&oldid=2538615723",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2538615723",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-167e376fca0502bc9e38": {
+    "triple": {
+      "subject": "Amazon rainforest",
+      "predicate": "country",
+      "object": "Peru",
+      "object_type": "entity"
+    },
+    "entity_id": "Q177567",
+    "evidence": [
+      {
+        "passage_id": "wd-ebb3ad7407736a66d66a",
+        "text": "Wikidata statement: Amazon rainforest (Q177567) — country (P17) — Peru. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q177567&oldid=2538615723",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2538615723",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-9b335498c8b6d1c23228": {
+    "triple": {
+      "subject": "Amazon rainforest",
+      "predicate": "continent",
+      "object": "Americas",
+      "object_type": "entity"
+    },
+    "entity_id": "Q177567",
+    "evidence": [
+      {
+        "passage_id": "wd-e7cf7f4dc11001d5f4a4",
+        "text": "Wikidata statement: Amazon rainforest (Q177567) — continent (P30) — Americas. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q177567&oldid=2538615723",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2538615723",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-a9af4ce258155384b4f0": {
+    "triple": {
+      "subject": "Amazon rainforest",
+      "predicate": "part of",
+      "object": "South America",
+      "object_type": "entity"
+    },
+    "entity_id": "Q177567",
+    "evidence": [
+      {
+        "passage_id": "wd-a6576413b88580ff9103",
+        "text": "Wikidata statement: Amazon rainforest (Q177567) — part of (P361) — South America. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q177567&oldid=2538615723",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2538615723",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-8b50554f5513fa07bad9": {
+    "triple": {
+      "subject": "Phoenix",
+      "predicate": "instance of",
+      "object": "city in Arizona",
+      "object_type": "entity"
+    },
+    "entity_id": "Q16556",
+    "evidence": [
+      {
+        "passage_id": "wd-6c85049e939fe5f02e71",
+        "text": "Wikidata statement: Phoenix (Q16556) — instance of (P31) — city in Arizona. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q16556&oldid=2539626497",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539626497",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-b570c4ef28d0d23972e5": {
+    "triple": {
+      "subject": "Phoenix",
+      "predicate": "country",
+      "object": "United States",
+      "object_type": "entity"
+    },
+    "entity_id": "Q16556",
+    "evidence": [
+      {
+        "passage_id": "wd-8635c398f6fa2bc4abce",
+        "text": "Wikidata statement: Phoenix (Q16556) — country (P17) — United States. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q16556&oldid=2539626497",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539626497",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-4a1ba7f731468cdea534": {
+    "triple": {
+      "subject": "Phoenix",
+      "predicate": "located in the administrative territorial entity",
+      "object": "Maricopa County",
+      "object_type": "entity"
+    },
+    "entity_id": "Q16556",
+    "evidence": [
+      {
+        "passage_id": "wd-ae2ec0558361f085d5c3",
+        "text": "Wikidata statement: Phoenix (Q16556) — located in the administrative territorial entity (P131) — Maricopa County. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q16556&oldid=2539626497",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539626497",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-c1fff66944c6621b2784": {
+    "triple": {
+      "subject": "Phoenix",
+      "predicate": "inception",
+      "object": "1868",
+      "object_type": "literal"
+    },
+    "entity_id": "Q16556",
+    "evidence": [
+      {
+        "passage_id": "wd-3ea9c478a4a99c087b34",
+        "text": "Wikidata statement: Phoenix (Q16556) — inception (P571) — 1868. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q16556&oldid=2539626497",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539626497",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-8f6dc47a65472a639c43": {
+    "triple": {
+      "subject": "phoenix",
+      "predicate": "instance of",
+      "object": "mythical creature",
+      "object_type": "entity"
+    },
+    "entity_id": "Q48444",
+    "evidence": [
+      {
+        "passage_id": "wd-52d1a841119ac114a093",
+        "text": "Wikidata statement: phoenix (Q48444) — instance of (P31) — mythical creature. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q48444&oldid=2542026566",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2542026566",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-b86e4715457d8decd9cd": {
+    "triple": {
+      "subject": "phoenix",
+      "predicate": "country",
+      "object": "Ancient Greece",
+      "object_type": "entity"
+    },
+    "entity_id": "Q48444",
+    "evidence": [
+      {
+        "passage_id": "wd-37197ad59e53ec0d07f6",
+        "text": "Wikidata statement: phoenix (Q48444) — country (P17) — Ancient Greece. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q48444&oldid=2542026566",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2542026566",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-fbbc1a0010ce3c099add": {
+    "triple": {
+      "subject": "phoenix",
+      "predicate": "subclass of",
+      "object": "legendary bird",
+      "object_type": "entity"
+    },
+    "entity_id": "Q48444",
+    "evidence": [
+      {
+        "passage_id": "wd-e906f1fad0d683e0ca1b",
+        "text": "Wikidata statement: phoenix (Q48444) — subclass of (P279) — legendary bird. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q48444&oldid=2542026566",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2542026566",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-3168e5b6b2200ce3d5bd": {
+    "triple": {
+      "subject": "phoenix",
+      "predicate": "part of",
+      "object": "Greek mythology",
+      "object_type": "entity"
+    },
+    "entity_id": "Q48444",
+    "evidence": [
+      {
+        "passage_id": "wd-160982a1d751c4566202",
+        "text": "Wikidata statement: phoenix (Q48444) — part of (P361) — Greek mythology. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q48444&oldid=2542026566",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2542026566",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-73c2176a0857ffdc10a8": {
+    "triple": {
+      "subject": "Titanic",
+      "predicate": "instance of",
+      "object": "film",
+      "object_type": "entity"
+    },
+    "entity_id": "Q44578",
+    "evidence": [
+      {
+        "passage_id": "wd-7a8a19865cd719eee294",
+        "text": "Wikidata statement: Titanic (Q44578) — instance of (P31) — film. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q44578&oldid=2539310828",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539310828",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-30e91d176087eba810f5": {
+    "triple": {
+      "subject": "Titanic",
+      "predicate": "country of origin",
+      "object": "United States",
+      "object_type": "entity"
+    },
+    "entity_id": "Q44578",
+    "evidence": [
+      {
+        "passage_id": "wd-3701a40b49d581664360",
+        "text": "Wikidata statement: Titanic (Q44578) — country of origin (P495) — United States. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q44578&oldid=2539310828",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539310828",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-093e1735c6b3477801c5": {
+    "triple": {
+      "subject": "Titanic",
+      "predicate": "director",
+      "object": "James Cameron",
+      "object_type": "entity"
+    },
+    "entity_id": "Q44578",
+    "evidence": [
+      {
+        "passage_id": "wd-5c1754ebad8798f88521",
+        "text": "Wikidata statement: Titanic (Q44578) — director (P57) — James Cameron. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q44578&oldid=2539310828",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539310828",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-69b5f97f0d3000842c60": {
+    "triple": {
+      "subject": "Titanic",
+      "predicate": "named after",
+      "object": "Titanic",
+      "object_type": "entity"
+    },
+    "entity_id": "Q44578",
+    "evidence": [
+      {
+        "passage_id": "wd-6ed393bfe133f85c3b14",
+        "text": "Wikidata statement: Titanic (Q44578) — named after (P138) — Titanic. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q44578&oldid=2539310828",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2539310828",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-5d4b11ae2dcd1ad2b23c": {
+    "triple": {
+      "subject": "Titanic",
+      "predicate": "instance of",
+      "object": "four funnel liner",
+      "object_type": "entity"
+    },
+    "entity_id": "Q25173",
+    "evidence": [
+      {
+        "passage_id": "wd-4f5958c80910c0dbf23f",
+        "text": "Wikidata statement: Titanic (Q25173) — instance of (P31) — four funnel liner. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q25173&oldid=2538970316",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2538970316",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-77fae8559d6d695d4d7a": {
+    "triple": {
+      "subject": "Titanic",
+      "predicate": "country of origin",
+      "object": "United Kingdom of Great Britain and Ireland",
+      "object_type": "entity"
+    },
+    "entity_id": "Q25173",
+    "evidence": [
+      {
+        "passage_id": "wd-a9dc15edf335adbb6423",
+        "text": "Wikidata statement: Titanic (Q25173) — country of origin (P495) — United Kingdom of Great Britain and Ireland. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q25173&oldid=2538970316",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2538970316",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-32ef96b18076dcf3099a": {
+    "triple": {
+      "subject": "Titanic",
+      "predicate": "named after",
+      "object": "titan",
+      "object_type": "entity"
+    },
+    "entity_id": "Q25173",
+    "evidence": [
+      {
+        "passage_id": "wd-7e4e98e70ef503beec8e",
+        "text": "Wikidata statement: Titanic (Q25173) — named after (P138) — titan. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q25173&oldid=2538970316",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2538970316",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-afda2771484a62090415": {
+    "triple": {
+      "subject": "Titanic",
+      "predicate": "mass",
+      "object": "+52310 (unit http://www.wikidata.org/entity/Q191118)",
+      "object_type": "literal"
+    },
+    "entity_id": "Q25173",
+    "evidence": [
+      {
+        "passage_id": "wd-f82d3209ffa1bfcde0fd",
+        "text": "Wikidata statement: Titanic (Q25173) — mass (P2067) — +52310 (unit http://www.wikidata.org/entity/Q191118). This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q25173&oldid=2538970316",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2538970316",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-c68d5857e2fae1e5142e": {
+    "triple": {
+      "subject": "New York City",
+      "predicate": "instance of",
+      "object": "global city",
+      "object_type": "entity"
+    },
+    "entity_id": "Q60",
+    "evidence": [
+      {
+        "passage_id": "wd-972f9d3a94178f32e5b3",
+        "text": "Wikidata statement: New York City (Q60) — instance of (P31) — global city. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q60&oldid=2541594025",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541594025",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-dc8de490bf871e807269": {
+    "triple": {
+      "subject": "New York City",
+      "predicate": "continent",
+      "object": "North America",
+      "object_type": "entity"
+    },
+    "entity_id": "Q60",
+    "evidence": [
+      {
+        "passage_id": "wd-97d86719a9fb3f3c7c2e",
+        "text": "Wikidata statement: New York City (Q60) — continent (P30) — North America. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q60&oldid=2541594025",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541594025",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-1895184ecfc86b822205": {
+    "triple": {
+      "subject": "New York City",
+      "predicate": "located in the administrative territorial entity",
+      "object": "New York",
+      "object_type": "entity"
+    },
+    "entity_id": "Q60",
+    "evidence": [
+      {
+        "passage_id": "wd-2ddfff0e61c71d3b6875",
+        "text": "Wikidata statement: New York City (Q60) — located in the administrative territorial entity (P131) — New York. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q60&oldid=2541594025",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541594025",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-2c22b7622dcc47a5583a": {
+    "triple": {
+      "subject": "New York City",
+      "predicate": "inception",
+      "object": "1624",
+      "object_type": "literal"
+    },
+    "entity_id": "Q60",
+    "evidence": [
+      {
+        "passage_id": "wd-17f9a3913b1e44b2bad1",
+        "text": "Wikidata statement: New York City (Q60) — inception (P571) — 1624. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q60&oldid=2541594025",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541594025",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-03899591d378fda794fa": {
+    "triple": {
+      "subject": "IBM",
+      "predicate": "instance of",
+      "object": "software company",
+      "object_type": "entity"
+    },
+    "entity_id": "Q37156",
+    "evidence": [
+      {
+        "passage_id": "wd-78916186bf8cf86023c3",
+        "text": "Wikidata statement: IBM (Q37156) — instance of (P31) — software company. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q37156&oldid=2534566925",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2534566925",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-2dafa53243b3fdf1c038": {
+    "triple": {
+      "subject": "IBM",
+      "predicate": "country",
+      "object": "United States",
+      "object_type": "entity"
+    },
+    "entity_id": "Q37156",
+    "evidence": [
+      {
+        "passage_id": "wd-9298f82ccb170a261652",
+        "text": "Wikidata statement: IBM (Q37156) — country (P17) — United States. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q37156&oldid=2534566925",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2534566925",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-6e525d7d5bc355200e36": {
+    "triple": {
+      "subject": "IBM",
+      "predicate": "part of",
+      "object": "Dow Jones Industrial Average",
+      "object_type": "entity"
+    },
+    "entity_id": "Q37156",
+    "evidence": [
+      {
+        "passage_id": "wd-a36fa5c924b87b611f55",
+        "text": "Wikidata statement: IBM (Q37156) — part of (P361) — Dow Jones Industrial Average. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q37156&oldid=2534566925",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2534566925",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-cfeafe0729345941e580": {
+    "triple": {
+      "subject": "IBM",
+      "predicate": "founder",
+      "object": "Charles Ranlett Flint",
+      "object_type": "entity"
+    },
+    "entity_id": "Q37156",
+    "evidence": [
+      {
+        "passage_id": "wd-12e7d9df1dd1a0e07bcc",
+        "text": "Wikidata statement: IBM (Q37156) — founder (P112) — Charles Ranlett Flint. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q37156&oldid=2534566925",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2534566925",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-c9be45c370e06369ddcc": {
+    "triple": {
+      "subject": "Massachusetts Institute of Technology",
+      "predicate": "instance of",
+      "object": "university",
+      "object_type": "entity"
+    },
+    "entity_id": "Q49108",
+    "evidence": [
+      {
+        "passage_id": "wd-46bbd8e47911c5b042ae",
+        "text": "Wikidata statement: Massachusetts Institute of Technology (Q49108) — instance of (P31) — university. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q49108&oldid=2535395346",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2535395346",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-da48eaa50aff024e4998": {
+    "triple": {
+      "subject": "Massachusetts Institute of Technology",
+      "predicate": "country",
+      "object": "United States",
+      "object_type": "entity"
+    },
+    "entity_id": "Q49108",
+    "evidence": [
+      {
+        "passage_id": "wd-197163aa9704f9665e26",
+        "text": "Wikidata statement: Massachusetts Institute of Technology (Q49108) — country (P17) — United States. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q49108&oldid=2535395346",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2535395346",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-cbe76975463b590d3a10": {
+    "triple": {
+      "subject": "Massachusetts Institute of Technology",
+      "predicate": "located in the administrative territorial entity",
+      "object": "Cambridge",
+      "object_type": "entity"
+    },
+    "entity_id": "Q49108",
+    "evidence": [
+      {
+        "passage_id": "wd-4fe08ecc2f643c3e649d",
+        "text": "Wikidata statement: Massachusetts Institute of Technology (Q49108) — located in the administrative territorial entity (P131) — Cambridge. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q49108&oldid=2535395346",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2535395346",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-086c643339650ee54518": {
+    "triple": {
+      "subject": "Massachusetts Institute of Technology",
+      "predicate": "founder",
+      "object": "William Barton Rogers",
+      "object_type": "entity"
+    },
+    "entity_id": "Q49108",
+    "evidence": [
+      {
+        "passage_id": "wd-b92dbe7a732b58aa3c36",
+        "text": "Wikidata statement: Massachusetts Institute of Technology (Q49108) — founder (P112) — William Barton Rogers. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q49108&oldid=2535395346",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2535395346",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-f81d412bdd85486b0de9": {
+    "triple": {
+      "subject": "United States",
+      "predicate": "instance of",
+      "object": "sovereign state",
+      "object_type": "entity"
+    },
+    "entity_id": "Q30",
+    "evidence": [
+      {
+        "passage_id": "wd-5a5e9ba273c4936da981",
+        "text": "Wikidata statement: United States (Q30) — instance of (P31) — sovereign state. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q30&oldid=2541221261",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541221261",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-627ac5a698138c9923d2": {
+    "triple": {
+      "subject": "United States",
+      "predicate": "country",
+      "object": "United States",
+      "object_type": "entity"
+    },
+    "entity_id": "Q30",
+    "evidence": [
+      {
+        "passage_id": "wd-285bfe52c08269ef3e41",
+        "text": "Wikidata statement: United States (Q30) — country (P17) — United States. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q30&oldid=2541221261",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541221261",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-a01ec5ec4270bfe83042": {
+    "triple": {
+      "subject": "United Kingdom",
+      "predicate": "instance of",
+      "object": "country",
+      "object_type": "entity"
+    },
+    "entity_id": "Q145",
+    "evidence": [
+      {
+        "passage_id": "wd-de0577fe54b90db4de85",
+        "text": "Wikidata statement: United Kingdom (Q145) — instance of (P31) — country. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q145&oldid=2541613337",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541613337",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-5fb83e9dfafaff042ebe": {
+    "triple": {
+      "subject": "United Kingdom",
+      "predicate": "country",
+      "object": "United Kingdom",
+      "object_type": "entity"
+    },
+    "entity_id": "Q145",
+    "evidence": [
+      {
+        "passage_id": "wd-001d97ff50b4c499f34b",
+        "text": "Wikidata statement: United Kingdom (Q145) — country (P17) — United Kingdom. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q145&oldid=2541613337",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541613337",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-db96ddd11612e15b3b01": {
+    "triple": {
+      "subject": "United Kingdom",
+      "predicate": "continent",
+      "object": "Europe",
+      "object_type": "entity"
+    },
+    "entity_id": "Q145",
+    "evidence": [
+      {
+        "passage_id": "wd-8e2fd5fd6fc76776ef3a",
+        "text": "Wikidata statement: United Kingdom (Q145) — continent (P30) — Europe. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q145&oldid=2541613337",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541613337",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-2ad9c6e9c6da23b7209b": {
+    "triple": {
+      "subject": "United Kingdom",
+      "predicate": "part of",
+      "object": "Common Travel Area",
+      "object_type": "entity"
+    },
+    "entity_id": "Q145",
+    "evidence": [
+      {
+        "passage_id": "wd-7afb45dda5d89eae9ed0",
+        "text": "Wikidata statement: United Kingdom (Q145) — part of (P361) — Common Travel Area. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q145&oldid=2541613337",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541613337",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-0e6cf7c5333850878839": {
+    "triple": {
+      "subject": "Albert Einstein",
+      "predicate": "instance of",
+      "object": "human",
+      "object_type": "entity"
+    },
+    "entity_id": "Q937",
+    "evidence": [
+      {
+        "passage_id": "wd-af59bdc03c957fc39ded",
+        "text": "Wikidata statement: Albert Einstein (Q937) — instance of (P31) — human. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q937&oldid=2540247840",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2540247840",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-06485bfd28d73b5a34e1": {
+    "triple": {
+      "subject": "Albert Einstein",
+      "predicate": "place of birth",
+      "object": "Ulm",
+      "object_type": "entity"
+    },
+    "entity_id": "Q937",
+    "evidence": [
+      {
+        "passage_id": "wd-57a5473ed08fca48f0ae",
+        "text": "Wikidata statement: Albert Einstein (Q937) — place of birth (P19) — Ulm. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q937&oldid=2540247840",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2540247840",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-af77b24770c101d3acd3": {
+    "triple": {
+      "subject": "Albert Einstein",
+      "predicate": "place of death",
+      "object": "Princeton",
+      "object_type": "entity"
+    },
+    "entity_id": "Q937",
+    "evidence": [
+      {
+        "passage_id": "wd-1d183ce35dbbb8a17a8f",
+        "text": "Wikidata statement: Albert Einstein (Q937) — place of death (P20) — Princeton. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q937&oldid=2540247840",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2540247840",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-eaaa53a33c126597c282": {
+    "triple": {
+      "subject": "Albert Einstein",
+      "predicate": "date of birth",
+      "object": "1879-03-14",
+      "object_type": "literal"
+    },
+    "entity_id": "Q937",
+    "evidence": [
+      {
+        "passage_id": "wd-800eb5a4cecd1bc62b7a",
+        "text": "Wikidata statement: Albert Einstein (Q937) — date of birth (P569) — 1879-03-14. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q937&oldid=2540247840",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2540247840",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-1c9f05daf68308f97b3e": {
+    "triple": {
+      "subject": "J. R. R. Tolkien",
+      "predicate": "instance of",
+      "object": "human",
+      "object_type": "entity"
+    },
+    "entity_id": "Q892",
+    "evidence": [
+      {
+        "passage_id": "wd-6c35fb8d0396fafa2564",
+        "text": "Wikidata statement: J. R. R. Tolkien (Q892) — instance of (P31) — human. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q892&oldid=2541273182",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541273182",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-10fe2253087b8fc32023": {
+    "triple": {
+      "subject": "J. R. R. Tolkien",
+      "predicate": "place of death",
+      "object": "Bournemouth",
+      "object_type": "entity"
+    },
+    "entity_id": "Q892",
+    "evidence": [
+      {
+        "passage_id": "wd-84b73f0067c3591dcc26",
+        "text": "Wikidata statement: J. R. R. Tolkien (Q892) — place of death (P20) — Bournemouth. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q892&oldid=2541273182",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541273182",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-f32d940019b991392804": {
+    "triple": {
+      "subject": "J. R. R. Tolkien",
+      "predicate": "date of birth",
+      "object": "1892-01-03",
+      "object_type": "literal"
+    },
+    "entity_id": "Q892",
+    "evidence": [
+      {
+        "passage_id": "wd-0d766380577d589dc3a8",
+        "text": "Wikidata statement: J. R. R. Tolkien (Q892) — date of birth (P569) — 1892-01-03. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q892&oldid=2541273182",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541273182",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-c2e59e85745b4189d0f2": {
+    "triple": {
+      "subject": "J. R. R. Tolkien",
+      "predicate": "date of death",
+      "object": "1973-09-02",
+      "object_type": "literal"
+    },
+    "entity_id": "Q892",
+    "evidence": [
+      {
+        "passage_id": "wd-c3e3e572bb24427bb652",
+        "text": "Wikidata statement: J. R. R. Tolkien (Q892) — date of death (P570) — 1973-09-02. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q892&oldid=2541273182",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541273182",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-93a9f9d59dce29123dc0": {
+    "triple": {
+      "subject": "The Hobbit",
+      "predicate": "instance of",
+      "object": "literary work",
+      "object_type": "entity"
+    },
+    "entity_id": "Q74287",
+    "evidence": [
+      {
+        "passage_id": "wd-b364c174cfac199083c7",
+        "text": "Wikidata statement: The Hobbit (Q74287) — instance of (P31) — literary work. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q74287&oldid=2532883798",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2532883798",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-501ea76feef124a10dba": {
+    "triple": {
+      "subject": "The Hobbit",
+      "predicate": "country of origin",
+      "object": "United Kingdom",
+      "object_type": "entity"
+    },
+    "entity_id": "Q74287",
+    "evidence": [
+      {
+        "passage_id": "wd-f95a407703d2eabff026",
+        "text": "Wikidata statement: The Hobbit (Q74287) — country of origin (P495) — United Kingdom. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q74287&oldid=2532883798",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2532883798",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-29f6b722c8347168f08c": {
+    "triple": {
+      "subject": "The Hobbit",
+      "predicate": "author",
+      "object": "J. R. R. Tolkien",
+      "object_type": "entity"
+    },
+    "entity_id": "Q74287",
+    "evidence": [
+      {
+        "passage_id": "wd-29710c24b128e8b64b86",
+        "text": "Wikidata statement: The Hobbit (Q74287) — author (P50) — J. R. R. Tolkien. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q74287&oldid=2532883798",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2532883798",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-081596d6691d4ebe38fa": {
+    "triple": {
+      "subject": "The Hobbit",
+      "predicate": "publication date",
+      "object": "1937",
+      "object_type": "literal"
+    },
+    "entity_id": "Q74287",
+    "evidence": [
+      {
+        "passage_id": "wd-61caf82d64446207fcc0",
+        "text": "Wikidata statement: The Hobbit (Q74287) — publication date (P577) — 1937. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q74287&oldid=2532883798",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2532883798",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-8e509c6acbc05a7b0c82": {
+    "triple": {
+      "subject": "water",
+      "predicate": "instance of",
+      "object": "type of chemical entity",
+      "object_type": "entity"
+    },
+    "entity_id": "Q283",
+    "evidence": [
+      {
+        "passage_id": "wd-5a2754d0485d250d6299",
+        "text": "Wikidata statement: water (Q283) — instance of (P31) — type of chemical entity. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q283&oldid=2541125828",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541125828",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-f356051e4fe1ee6b7f5d": {
+    "triple": {
+      "subject": "water",
+      "predicate": "subclass of",
+      "object": "oxide",
+      "object_type": "entity"
+    },
+    "entity_id": "Q283",
+    "evidence": [
+      {
+        "passage_id": "wd-dff78b3f353a04091220",
+        "text": "Wikidata statement: water (Q283) — subclass of (P279) — oxide. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q283&oldid=2541125828",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541125828",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-9a1f7ff86fb91d473f35": {
+    "triple": {
+      "subject": "water",
+      "predicate": "part of",
+      "object": "food",
+      "object_type": "entity"
+    },
+    "entity_id": "Q283",
+    "evidence": [
+      {
+        "passage_id": "wd-a82df0c9fe88f67974eb",
+        "text": "Wikidata statement: water (Q283) — part of (P361) — food. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q283&oldid=2541125828",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541125828",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-3a57e9bfa40c43ce5122": {
+    "triple": {
+      "subject": "water",
+      "predicate": "mass",
+      "object": "+18.02 (unit http://www.wikidata.org/entity/Q483261)",
+      "object_type": "literal"
+    },
+    "entity_id": "Q283",
+    "evidence": [
+      {
+        "passage_id": "wd-dc709258f3bd6f485338",
+        "text": "Wikidata statement: water (Q283) — mass (P2067) — +18.02 (unit http://www.wikidata.org/entity/Q483261). This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q283&oldid=2541125828",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2541125828",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-aaff8ca2f0af77d4e3ad": {
+    "triple": {
+      "subject": "World War II",
+      "predicate": "instance of",
+      "object": "historical period",
+      "object_type": "entity"
+    },
+    "entity_id": "Q362",
+    "evidence": [
+      {
+        "passage_id": "wd-84964b167003698fde98",
+        "text": "Wikidata statement: World War II (Q362) — instance of (P31) — historical period. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q362&oldid=2542173433",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2542173433",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-256cb6c630bce76d7776": {
+    "triple": {
+      "subject": "World War II",
+      "predicate": "country",
+      "object": "Japan",
+      "object_type": "entity"
+    },
+    "entity_id": "Q362",
+    "evidence": [
+      {
+        "passage_id": "wd-43cb53c33a6aad30234e",
+        "text": "Wikidata statement: World War II (Q362) — country (P17) — Japan. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q362&oldid=2542173433",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2542173433",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  },
+  "public-e9cd8661cc237968d2a0": {
+    "triple": {
+      "subject": "World War II",
+      "predicate": "subclass of",
+      "object": "war",
+      "object_type": "entity"
+    },
+    "entity_id": "Q362",
+    "evidence": [
+      {
+        "passage_id": "wd-5afa2297da99d713c781",
+        "text": "Wikidata statement: World War II (Q362) — subclass of (P279) — war. This is a KB assertion; inspect the statement references before assessing truth.",
+        "source_url": "https://www.wikidata.org/w/index.php?title=Q362&oldid=2542173433",
+        "retrieved_at": "2026-09-08T20:40:50.710550Z",
+        "revision_id": "2542173433",
+        "license": "CC0-1.0 (Wikidata structured data)",
+        "synthetic": false
+      }
+    ],
+    "origin": "public_wikidata_claim_not_llm_generated"
+  }
+}
