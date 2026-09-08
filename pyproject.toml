@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "llm-knowledge-audit"
+version = "0.1.0"
+description = "Reproducible entity disambiguation and evidence-grounded factuality auditing"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Yifan Li"}]
+dependencies = ["pydantic>=2.10,<3", "httpx>=0.27,<1", "typer>=0.15,<1", "PyYAML>=6,<7", "rapidfuzz>=3.10,<4"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1", "mypy>=1.14,<2", "types-PyYAML>=6", "pytest-socket>=0.7,<1"]
+plots = ["matplotlib>=3.9,<3.11", "numpy>=1.26,<2.3"]
+
+[project.scripts]
+llmka = "llm_knowledge_audit.cli:app"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/llm_knowledge_audit"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --disable-socket"
+
+[tool.ruff]
+line-length = 100
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+[tool.ruff.lint.per-file-ignores]
+"src/llm_knowledge_audit/cli.py" = ["B008"]
+[tool.mypy]
+python_version = "3.11"
+strict = true
