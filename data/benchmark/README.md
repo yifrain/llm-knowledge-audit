@@ -1,3 +1,14 @@
+# Current review scope
+
+Start with `pilot_cases.jsonl` (5 cases). `starter_cases.jsonl` is an optional 12-case paired study.
+The local workbench writes reviewer identity and time after your explicit confirmation, and copies
+that decision only to identical cases in the other small subset. It never edits the original 40-case
+pool or old experiment artifacts. No need to review all 40 cases or the 113 practice claims now.
+
+The reduced 12-case pool has 6 homonym cases (Mercury, Java, Paris pairs) and 6 synonym cases
+(IBM, Einstein, water pairs). It is a convenience set for learning and exploratory comparison.
+The five-case pilot is not balanced and is only a technical smoke test.
+
 # Benchmark review queue
 
 `entity_cases.jsonl` holds **40 proposed cases**, not completed gold annotations. Open each `source_url`,

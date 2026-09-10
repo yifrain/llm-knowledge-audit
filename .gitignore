@@ -17,3 +17,6 @@ data/raw/*
 dist/
 *.egg-info/
 .DS_Store
+
+# Personal, editable review records and reviewer history
+data/reviews/

@@ -103,3 +103,11 @@ def pilot_plan(config: ConfigOption = Path("configs/pilot.yaml")) -> None:
             "approval": "Required before any uncached model request",
         }
     )
+
+
+@app.command("ui")
+def ui(root: Path = Path("."), port: int = 8765, open_browser: bool = False) -> None:
+    """打开中文本地工作台：流程、结果和轻量人工复核，无付费调用。"""
+    from .workbench.server import serve
+
+    serve(root.resolve(), port, open_browser)

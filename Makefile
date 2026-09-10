@@ -1,4 +1,4 @@
-.PHONY: install check demo pilot-plan
+.PHONY: install check demo ui pilot-plan
 install:
 	uv sync --frozen --extra dev --extra plots
 check:
@@ -6,6 +6,9 @@ check:
 	uv run --frozen --extra dev ruff check .
 	uv run --frozen --extra dev --extra plots mypy src
 demo:
-	uv run --frozen llmka run-all --config configs/mock.yaml
+	uv run --frozen llmka run-all --config configs/learn.yaml
 pilot-plan:
 	uv run --frozen llmka pilot-plan --config configs/pilot.yaml
+
+ui:
+	uv run --frozen llmka ui --open-browser

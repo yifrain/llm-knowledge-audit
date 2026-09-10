@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>知识审计 · 本地实验工作台</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body>
+<header><div class="brand"><span class="brand-mark" aria-hidden="true">知</span><div><strong>知识审计</strong><span class="subtle">LLM Knowledge Audit · 本地工作台</span></div></div><span class="local">本机运行 · 英文原始数据</span></header>
+<div class="shell"><aside><nav aria-label="工作区"><button class="nav active" data-tab="flow">看懂流程<span>从一个名字开始</span></button><button class="nav" data-tab="results">看结果<span>比较方法与复核对照</span></button><button class="nav" data-tab="review">轻量复核<span>先 5 个实体，可选 20 条事实</span></button></nav><div class="sidebar-note"><b>先做小，再做深。</b><p>今天可以只看演示，不需要填写任何标注。</p><p>40 例与 100+ 条标注是扩展方案，不是当前作业。</p></div></aside>
+<main>
+<div class="toolbar"><label class="run-label">当前实验<select id="run" aria-label="选择实验"></select></label><button id="demo" class="primary">运行 12 例离线演示</button></div>
+<div id="notice" class="notice" role="status" aria-live="polite"></div>
+<section id="flow" class="page"><div class="page-title"><span class="eyebrow">理解核心问题</span><h1>同一个名字，究竟指向谁？</h1><p>选一个案例，沿着箭头看数据如何变成可检查的判断。</p></div>
+<div class="steps" aria-label="流水线阶段"><button data-step="0" class="selected">1 找候选</button><span>→</span><button data-step="1">2 比较消歧</button><span>→</span><button data-step="2">3 生成事实</button><span>→</span><button data-step="3">4 找证据、判断</button><span>→</span><button data-step="4">5 评估结果</button></div>
+<div class="flow-grid"><div class="case-pane"><label for="case">追踪一个案例</label><select id="case"></select><div id="case-detail"></div></div><div class="stage-pane"><div id="step-explain"></div><div id="stage-content"></div></div></div>
+<details class="glossary"><summary>术语速查：先认识这 8 个词就够了</summary><dl><dt>实体 Entity / QID</dt><dd>具体的人、地点或事物。QID 是 Wikidata 编号，像书的索引号。</dd><dt>同名异义 Homonym</dt><dd>Mercury 可以指水星，也可以指汞。</dd><dt>同义异名 Synonym</dt><dd>IBM 与 International Business Machines 指同一家公司。</dd><dt>候选 Candidate</dt><dd>搜索返回的“可能是谁”；不保证包含正确答案。</dd><dt>消歧 Disambiguation</dt><dd>从候选中选出符合此处语境的实体。</dd><dt>三元组 Triple</dt><dd>主语—关系—宾语，如“Java—开发者—Sun Microsystems”。</dd><dt>Mock / Gold</dt><dd>Mock 是离线测试替身；gold 是对照答案，当前未复核的 gold 只是拟定答案。</dd><dt>NEI / Abstention</dt><dd>NEI 表示证据不足；abstention 表示没有足够把握选实体。都不等于说事实是假的。</dd></dl></details></section>
+<section id="results" class="page" hidden><div class="page-title"><span class="eyebrow">实际输出 · 保留分母</span><h1>哪里有帮助，哪里还会错？</h1><p>先看准确率与覆盖率，再看具体案例；不要只记住一个百分数。</p></div><div id="result-content"></div></section>
+<section id="review" class="page" hidden><div class="page-title"><span class="eyebrow">你需要做的事情</span><h1>一次只核对一条。</h1><p>系统填写时间、编号和哈希。你只负责阅读、选择和确认。</p></div>
+<div class="review-mode"><button class="selected" data-review="entities">实体核对 · 首轮必做</button><button data-review="claims">事实复核 · 真实试跑后可选</button></div>
+<div id="entity-review"><div class="section-toolbar"><label>任务范围<select id="scope"><option value="pilot">5 个实体案例 · 当前建议</option><option value="starter">12 个案例 · 可选扩展</option></select></label><span id="entity-progress"></span></div><div id="entity-card"></div></div>
+<div id="claim-review" hidden><div id="claim-content"></div></div>
+<div class="form-footer"><label>复核人（首次填写即可）<input id="reviewer" placeholder="例如 Yifan Li" autocomplete="name" maxlength="100"></label><p>复核人姓名只保存在本机。证据保留英文以便追溯；可以借助翻译理解，但最终标签须由你决定。</p></div>
+</section>
+<footer>研究范围：小规模实体链接 + 有证据的事实审计。不是训练模型，也不是重建 GPTKB。<span>学习指南：README_CN.md</span></footer>
+</main></div></body></html>

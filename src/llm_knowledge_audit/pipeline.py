@@ -1,4 +1,7 @@
-"""A stage invocation always creates a new immutable run, including resume."""
+"""A stage invocation always creates a new immutable run, including resume.
+
+每次调用阶段都会创建一个新的不可变运行记录（run），续跑（resume）也不例外。
+"""
 
 from __future__ import annotations
 
@@ -26,6 +29,7 @@ from .retrieval.base import EvidenceRetriever
 from .retrieval.mock import MockEvidenceRetriever
 from .storage import digest, now, read_json, write_jsonl_new, write_new
 
+# 流水线的 8 个阶段
 STAGES = [
     "collect-candidates",
     "disambiguate-string",
@@ -36,6 +40,7 @@ STAGES = [
     "evaluate",
     "build-report",
 ]
+# 阶段依赖关系（有向无环图）：执行某阶段前必须先完成其依赖阶段
 DEPENDENCIES = {
     "collect-candidates": [],
     "disambiguate-string": ["collect-candidates"],
@@ -51,9 +56,11 @@ DEPENDENCIES = {
 class Pipeline:
     def __init__(self, cfg: Config, resume: Path | None = None, approved: bool = False):
         self.cfg = cfg
+        # 加载并截断评测案例（case_limit 控制数量）
         self.cases = load_cases(cfg.dataset)
         self.cases = self.cases[: cfg.case_limit]
         self.client = CallClient(cfg, approved)
+        # 输入数据的校验和：数据集、人工标注、mock 候选快照
         inputs = {
             "dataset": hashlib.sha256(cfg.dataset.read_bytes()).hexdigest(),
             "annotations": hashlib.sha256(cfg.annotations.read_bytes()).hexdigest()
@@ -64,6 +71,7 @@ class Pipeline:
             else None,
         }
         source_dir = Path(__file__).parent
+        # 运行签名 = 配置 + 输入数据 + 全部源码的哈希，用于保证运行可复现
         self.signature = digest(
             {
                 "config": cfg.model_dump(mode="json"),
@@ -74,11 +82,14 @@ class Pipeline:
                 },
             }
         )
+        # 续跑前先校验签名：配置、源码或输入校验和发生变化则拒绝续跑
         if resume and read_json(resume / "manifest.json")["signature"] != self.signature:
             raise ValueError("Resume rejected: config, source code, or input checksum changed")
+        # 新的运行目录：<results_dir>/<mode>/<时间戳>-<随机后缀>
         run_id = datetime.now(UTC).strftime("%Y%m%dT%H%M%S") + "-" + uuid.uuid4().hex[:12]
         self.path = cfg.results_dir / cfg.mode / run_id
         self.path.mkdir(parents=True, exist_ok=False)
+        # 尝试记录当前 git 提交（失败则置空，不阻塞运行）
         try:
             commit = subprocess.check_output(
                 ["git", "rev-parse", "HEAD"],
@@ -88,6 +99,7 @@ class Pipeline:
             ).strip()
         except (subprocess.SubprocessError, FileNotFoundError):
             commit = None
+        # 运行清单（manifest）：记录运行元信息，供审计与续跑追溯
         write_new(
             self.path / "manifest.json",
             {
@@ -111,9 +123,14 @@ class Pipeline:
                 ),
             },
         )
+        # reused：从旧运行中直接复用的阶段列表
+        write_new(self.path / "cases.json", [c.model_dump(mode="json") for c in self.cases])
         self.reused: list[str] = []
         inherited_reservations: list[dict[str, Any]] = []
         if resume:
+            # 逐阶段复用旧运行产物：
+            # - 失败阶段及其所有下游阶段被阻断（blocked），必须重跑；
+            # - evaluate / build-report 总是重算，以反映最新的人工标注快照。
             blocked: set[str] = set()
             for stage in STAGES:
                 old = resume / f"{stage}.json"
@@ -132,11 +149,14 @@ class Pipeline:
                         continue
                     shutil.copyfile(old, self.path / old.name)
                     self.reused.append(stage)
+            # 逐条级缓存（items/）整体继承
             if (resume / "items").exists():
                 shutil.copytree(resume / "items", self.path / "items")
+            # judge 阶段被复用时，人工标注模板与盲评包一并继承
             if "judge" in self.reused:
                 for name in ("annotations.template.jsonl", "annotation_packet.json"):
                     shutil.copyfile(resume / name, self.path / name)
+            # 继承历史运行的费用预算预留（见下方 immutable lineage 说明）
             inherited_reservations = (
                 read_json(resume / "inherited_budget.json")
                 if (resume / "inherited_budget.json").exists()
@@ -145,14 +165,17 @@ class Pipeline:
             inherited_reservations += [
                 read_json(f) for f in (resume / "reservations").glob("*.json")
             ]
+        # 恢复续跑前已预留的费用与调用次数统计
         self.client.reserved_usd = sum(r["reserved_usd"] for r in inherited_reservations)
         self.client.attempts = sum(r["attempts"] for r in inherited_reservations)
         self.client.reservation_dir = self.path / "reservations"
         # Separate immutable lineage artifact retains conservative reservations across resumes.
+        # 独立的不可变血统工件：跨多次续跑累积保留保守的预算预留记录。
         write_new(self.path / "inherited_budget.json", inherited_reservations)
         self.failures: list[dict[str, Any]] = []
         self.retriever: EvidenceRetriever = MockEvidenceRetriever()
         self.public: Any = None
+        # real 模式：初始化公开知识库（Wikidata 候选检索 + Wikipedia 证据检索）
         if cfg.mode == "real":
             from .retrieval.wikidata import Wikidata
             from .retrieval.wikipedia import WikipediaRetriever
@@ -161,6 +184,7 @@ class Pipeline:
             self.retriever = WikipediaRetriever(self.public)
 
     def provider(self, model: LLMConfig) -> Provider:
+        """按配置选择 LLM 提供方：mock 用本地假实现，其余走 OpenAI 兼容接口。"""
         if model.provider == "mock":
             return MockProvider()
         from .providers.openai_compatible import OpenAICompatible
@@ -168,6 +192,10 @@ class Pipeline:
         return OpenAICompatible(model, self.cfg)
 
     def item(self, stage: str, key: str, compute: Callable[[], dict[str, Any]]) -> dict[str, Any]:
+        """逐条级缓存：以 stage + key 的哈希为文件名落盘，命中缓存则跳过计算。
+
+        失败的结果会被保留供审计，但不会写入缓存（不作为已完成的检查点）。
+        """
         path = self.path / "items" / stage / f"{digest(key)}.json"
         if path.exists():
             value: dict[str, Any] = read_json(path)
@@ -177,12 +205,17 @@ class Pipeline:
         # Failed outputs are retained for audit but are not accepted as completed checkpoints.
         if value.get("status") != "failed":
             write_new(path, value)
+        # 本次计算产生的 LLM 调用事件单独记入遥测文件
         new_events = self.client.events[before:]
         if new_events:
             write_new(self.path / "telemetry" / f"{uuid.uuid4().hex}.json", new_events)
         return value
 
     def ensure(self, stage: str) -> Any:
+        """幂等地执行到指定阶段：
+
+        产物已存在则直接返回；否则先递归确保依赖阶段完成，再执行本阶段并落盘。
+        """
         if (
             stage != "collect-candidates"
             and self.cfg.mode == "real"
@@ -202,8 +235,10 @@ class Pipeline:
         return output
 
     def execute(self, stage: str = "build-report") -> Path:
+        """流水线主入口：执行到目标阶段（默认全流程），记录完成/失败状态。"""
         try:
             self.ensure(stage)
+            # 成功（可能带部分失败）时写完成清单，列出全部输出文件
             write_new(
                 self.path / "completion.json",
                 {
@@ -219,6 +254,7 @@ class Pipeline:
                 },
             )
         except Exception as exc:
+            # 整体失败时写失败清单并重新抛出异常
             write_new(
                 self.path / "failure.json",
                 {
@@ -233,6 +269,10 @@ class Pipeline:
         return self.path
 
     def stage_collect_candidates(self) -> dict[str, Any]:
+        """阶段 1：为每个案例的表面形式收集候选实体。
+
+        mock 模式读取固定候选快照；real 模式调用 Wikidata 搜索。
+        """
         fixture = read_json(self.cfg.mock_candidates) if self.cfg.mode == "mock" else {}
         result = {}
         for case in self.cases:
@@ -253,6 +293,10 @@ class Pipeline:
         return result
 
     def resolve(self, method: str) -> dict[str, Any]:
+        """阶段 2/3 的公共实现：逐案例做实体消歧。
+
+        method="string"：纯字符串基线（无 LLM）；method="context"：带上下文的 LLM 消歧。
+        """
         raw = self.ensure("collect-candidates")
         result = {}
         for case in self.cases:
@@ -281,6 +325,7 @@ class Pipeline:
                         ).resolve(case.surface_form, case.context, case.source_triple, candidates)
                     return {"status": "ok", **prediction.model_dump()}
                 except (ValueError, RuntimeError) as exc:
+                    # 单条失败不中断整体：记入 failures 并返回失败状态
                     self.failures.append(
                         {"stage": method, "case_id": case.case_id, "type": type(exc).__name__}
                     )
@@ -294,18 +339,22 @@ class Pipeline:
         return result
 
     def stage_disambiguate_string(self) -> dict[str, Any]:
+        """阶段 2：字符串基线消歧。"""
         return self.resolve("string")
 
     def stage_disambiguate_context(self) -> dict[str, Any]:
+        """阶段 3：基于上下文的 LLM 消歧。"""
         return self.resolve("context")
 
     def stage_generate_triples(self) -> dict[str, Any]:
+        """阶段 4：以两种消歧方法选中的实体为种子，用 LLM 生成三元组。"""
         candidates = self.ensure("collect-candidates")
         lookup = {
             c["entity_id"]: Candidate.model_validate(c)
             for row in candidates.values()
             for c in row["candidates"]
         }
+        # 汇总两个消歧阶段的选中实体，并记录其来自哪些案例（resolution_links）
         seeds: dict[str, list[dict[str, str]]] = {}
         for method in ("string", "context"):
             for case_id, row in self.ensure("disambiguate-" + method).items():
@@ -329,6 +378,7 @@ class Pipeline:
                         "status": "ok",
                         "entity_id": qid,
                         "duplicates": duplicates,
+                        # 每条三元组分配确定性 ID（内容哈希前缀），便于去重与追溯
                         "triples": [
                             {
                                 "triple_id": "t-" + digest([qid, t.model_dump()])[:20],
@@ -353,6 +403,7 @@ class Pipeline:
         return result
 
     def stage_retrieve_evidence(self) -> dict[str, Any]:
+        """阶段 5：为每条生成的三元组检索证据段落（Wikipedia）。"""
         result = {}
         for qid, generation in self.ensure("generate-triples").items():
             for row in generation["triples"]:
@@ -380,6 +431,7 @@ class Pipeline:
         return result
 
     def stage_judge(self) -> dict[str, Any]:
+        """阶段 6：对每条三元组做事实性判定，并生成人工标注模板与盲评包。"""
         evidence = self.ensure("retrieve-evidence")
         result = {}
         template = []
@@ -422,6 +474,7 @@ class Pipeline:
                     "entity_id": qid,
                     "resolution_links": generation["resolution_links"],
                 }
+                # 为每条三元组预填人工标注模板（三元组与证据哈希用于去重追溯）
                 annotation = Annotation(
                     triple_id=tid,
                     evidence_sha256=digest(result[tid]["supplied_evidence"]),
@@ -430,6 +483,7 @@ class Pipeline:
                 template.append(annotation.model_dump(mode="json"))
         write_jsonl_new(self.path / "annotations.template.jsonl", template)
         # Blinded review packet excludes judge decisions, confidence, and rationale.
+        # 盲评包：不含模型判定结果、置信度与理由，避免影响人工标注者。
         write_new(
             self.path / "annotation_packet.json",
             {
@@ -445,11 +499,13 @@ class Pipeline:
         return result
 
     def stage_evaluate(self) -> dict[str, Any]:
+        """阶段 7：对照人工标注评估模型判定（import 在函数内，避免启动时依赖）。"""
         from .evaluation.evaluate import evaluate
 
         return evaluate(self)
 
     def stage_build_report(self) -> dict[str, Any]:
+        """阶段 8：基于评估结果生成报告。"""
         from .reporting.report import build_report
 
         return build_report(self.path, self.ensure("evaluate"), self.cfg.mode)

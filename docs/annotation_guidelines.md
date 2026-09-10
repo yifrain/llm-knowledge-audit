@@ -1,3 +1,8 @@
+> **Scope update (2026-09-11):** the current owner-focused path is a zero-annotation demo,
+> five human-verified pilot cases, an optional twelve-case comparison, and **at most 20 initial
+> generated-triple reviews**. The original 30–50/40-case and 100+-label targets below are optional
+> extended-study goals, not current prerequisites. Use [the Chinese guide](../README_CN.md) first.
+
 # Annotation guidelines
 
 ## Two distinct review tasks
