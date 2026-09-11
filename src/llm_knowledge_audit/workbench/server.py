@@ -2,9 +2,11 @@
 
 from __future__ import annotations
 
+import errno
 import json
 import mimetypes
 import secrets
+import urllib.request
 import webbrowser
 from collections.abc import Callable
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -15,6 +17,19 @@ from urllib.parse import parse_qs, urlsplit
 from .service import Workbench
 
 ASSETS = Path(__file__).parent / "assets"
+
+
+def _is_workbench_running(port: int) -> bool:
+    """探测该端口上是否已经运行着本工作台实例（用于幂等启动）。
+
+    通过 GET /api/state 判断：能返回带 runs/token 字段的 JSON 才是本工作台。
+    """
+    try:
+        with urllib.request.urlopen(f"http://127.0.0.1:{port}/api/state", timeout=1) as resp:
+            payload = json.loads(resp.read())
+        return isinstance(payload, dict) and "runs" in payload and "token" in payload
+    except (OSError, ValueError):
+        return False
 
 
 def serve(root: Path, port: int = 8765, open_browser: bool = False) -> None:
@@ -117,7 +132,17 @@ def serve(root: Path, port: int = 8765, open_browser: bool = False) -> None:
             except Exception:
                 self.reply({"error": "执行失败；请检查本地实验目录，原始结果未覆盖"}, 500)
 
-    server = ThreadingHTTPServer(("127.0.0.1", port), Handler)
+    try:
+        server = ThreadingHTTPServer(("127.0.0.1", port), Handler)
+    except OSError as exc:
+        # 端口被占用：若已是本工作台实例则直接复用（幂等启动），否则给出清晰报错
+        if exc.errno != errno.EADDRINUSE or not _is_workbench_running(port):
+            raise OSError(f"端口 {port} 已被其他程序占用：{exc}") from exc
+        address = f"http://127.0.0.1:{port}"
+        print(f"工作台已在运行：{address}（复用现有实例，不重复启动）", flush=True)
+        if open_browser:
+            webbrowser.open(address)
+        return
     address = f"http://127.0.0.1:{server.server_port}"
     print(f"本地实验工作台：{address}\n关闭此进程即可停止服务。", flush=True)
     if open_browser:

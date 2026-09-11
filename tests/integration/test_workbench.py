@@ -1,5 +1,6 @@
 """All review mutations happen in temporary fixtures, never in the real benchmark."""
 
+import errno
 import json
 import shutil
 from pathlib import Path
@@ -7,6 +8,8 @@ from pathlib import Path
 import pytest
 
 from llm_knowledge_audit.storage import digest, read_json, read_jsonl
+from llm_knowledge_audit.workbench import server as server_module
+from llm_knowledge_audit.workbench.server import serve
 from llm_knowledge_audit.workbench.service import Workbench
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -154,3 +157,62 @@ def test_ui_cannot_run_paid_by_changed_learning_config(workbench):
     config.write_text(yaml.safe_dump(value))
     with pytest.raises(ValueError, match="离线演示"):
         workbench.demo()
+
+
+class _RaisingHTTPServer:
+    """模拟"端口被占用"的绑定失败（测试全程断网，不创建真实 socket）。"""
+
+    def __init__(self, address, handler):
+        raise OSError(errno.EADDRINUSE, "Address already in use")
+
+
+class _FakeResponse:
+    def __init__(self, data: bytes):
+        self.data = data
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *args):
+        return False
+
+    def read(self) -> bytes:
+        return self.data
+
+
+def test_probe_recognises_only_workbench_response(monkeypatch):
+    urlopen = server_module.urllib.request.urlopen
+    monkeypatch.setattr(
+        server_module.urllib.request, "urlopen", lambda url, timeout: _FakeResponse(b'{"runs": [], "token": "x"}')
+    )
+    assert server_module._is_workbench_running(8765)
+    monkeypatch.setattr(
+        server_module.urllib.request, "urlopen", lambda url, timeout: _FakeResponse(b"hello")
+    )
+    assert not server_module._is_workbench_running(8765)
+
+    def refused(url, timeout):
+        raise OSError("Connection refused")
+
+    monkeypatch.setattr(server_module.urllib.request, "urlopen", refused)
+    assert not server_module._is_workbench_running(8765)
+    monkeypatch.setattr(server_module.urllib.request, "urlopen", urlopen)
+
+
+def test_serve_reuses_running_instance(workbench, capsys, monkeypatch):
+    # 端口被占用但探测到本工作台实例：应提示复用、打开浏览器，而不是崩溃
+    monkeypatch.setattr(server_module, "ThreadingHTTPServer", _RaisingHTTPServer)
+    monkeypatch.setattr(server_module, "_is_workbench_running", lambda port: True)
+    opened: list[str] = []
+    monkeypatch.setattr(server_module.webbrowser, "open", opened.append)
+    serve(workbench.root, 9999, open_browser=True)
+    assert "已在运行" in capsys.readouterr().out
+    assert opened == ["http://127.0.0.1:9999"]
+
+
+def test_serve_raises_when_port_held_by_other_program(workbench, monkeypatch):
+    # 端口被占用且探测不到本工作台实例：应报清晰错误
+    monkeypatch.setattr(server_module, "ThreadingHTTPServer", _RaisingHTTPServer)
+    monkeypatch.setattr(server_module, "_is_workbench_running", lambda port: False)
+    with pytest.raises(OSError, match="已被其他程序占用"):
+        serve(workbench.root, 9999, open_browser=False)
