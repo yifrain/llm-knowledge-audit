@@ -37,15 +37,18 @@ llmka ui --open-browser
 On macOS, after installation you can also double-click `打开工作台.command`.
 The workbench listens only at `http://127.0.0.1:8765`:
 
-- **Understand the flow:** follow a single mention through candidates, both methods, generated
-  triples, evidence and evaluation; Chinese explanations point to the relevant implementation.
-- **Inspect results:** compare actual saved outputs with denominators and explicit mock/real labels.
-- **Lightweight review:** verify five cases and, after a real run, annotate at most 20 randomly
-  sampled claims without seeing judge labels. IDs, timestamps and evidence hashes are automatic.
+- **Runs:** create real or mock runs through scope, limits, models, memory-only credentials,
+  explicit paid approval and background execution. List running, completed and failed jobs.
+- **Inspect:** trace cases across eight stages, monitor reserved budget, and resume failures into
+  new immutable runs with the existing signature checks.
+- **Review:** compare all gold sources and batch-confirm selected cases with an honest batch audit
+  trail; optional fixed-sample fact annotation remains blind until the sample is complete.
+- **Reports & exports:** download blind-safe summaries or, after review, full reports and figures.
 
-There is no frontend build system, database, external asset dependency or paid-run button.
-The UI wraps the same Python pipeline and metrics as the CLI. English source text stays intact;
-Chinese context aids and a copy-for-translation action reduce reading burden.
+Default English with a Chinese switch; system typography and no external assets or build system.
+Gold verification is an explicit run option; optional fact annotation never blocks execution.
+Read the [console operating and architecture notes](docs/workbench.md) for security, lifecycle,
+blind-export rules and the distinction between original reports and later UI reviews.
 
 ## Run without a UI
 

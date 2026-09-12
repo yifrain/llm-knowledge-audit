@@ -5,11 +5,18 @@ import typer
 
 from .config import load_config
 from .dataset.validate_cases import load_cases, summary
+from .env import load_local_env
 from .pipeline import Pipeline
 
 app = typer.Typer(no_args_is_help=True, pretty_exceptions_enable=False)
 ConfigOption = Annotated[Path, typer.Option("--config", exists=True)]
 ResumeOption = Annotated[Path | None, typer.Option("--resume", exists=True)]
+
+
+@app.callback()
+def bootstrap() -> None:
+    """所有命令启动前先载入本地 .env 密钥（仅进程环境，不落盘、不覆盖已有变量）。"""
+    load_local_env()
 
 
 @app.command("validate-data")
@@ -107,7 +114,7 @@ def pilot_plan(config: ConfigOption = Path("configs/pilot.yaml")) -> None:
 
 @app.command("ui")
 def ui(root: Path = Path("."), port: int = 8765, open_browser: bool = False) -> None:
-    """打开中文本地工作台：流程、结果和轻量人工复核，无付费调用。"""
+    """Open the local research console: controlled runs, inspection, and optional review."""
     from .workbench.server import serve
 
     serve(root.resolve(), port, open_browser)

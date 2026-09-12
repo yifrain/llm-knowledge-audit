@@ -1,3 +1,22 @@
+# Research console verification — 2026-09-13
+
+- 63 tests passed with pytest-socket `--disable-socket` retained.
+- Ruff passed; mypy passed for 44 source files.
+- Dependency-free Node smoke passed: English default, language/title switch, catalog parity,
+  and English data-region marking.
+- New coverage: approval/credential preflight, no secret persistence, optional gold gate,
+  background lifecycle, interrupted/failed records, immutable resume and signature rejection,
+  batch-confirmation provenance, all-sample blind visibility/export gate, and HTTP protections.
+- Browser checked: real wizard through credential entry (no real key entered), mock wizard through
+  eight stages to results, language switch, batch source table, narrow layout and summary download.
+- No paid model calls were made. Real-mode orchestration tests used synthetic providers/retrievers
+  in temporary directories. No synthetic fixture is presented as a real experiment.
+- Existing pipeline, judging and evaluation semantics were not changed by this refactor.
+
+Earlier verification records follow.
+
+---
+
 # Local workbench and reduced-scope update (2026-09-11)
 
 - 47 tests passed with sockets disabled, including 11 new workbench cases.

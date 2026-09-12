@@ -1,41 +1,265 @@
-'use strict';
-const $ = s => document.querySelector(s);
-const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const safeURL = u => { try {const x=new URL(u);return ['https:','http:'].includes(x.protocol)?esc(x.href):'#';}catch{return '#';}};
-const link = (u, label) => `<a href="${safeURL(u)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`;
-const state={token:'',run:'',data:null,trace:null,step:0,queue:null,index:0,review:null,claimIndex:0,tab:'flow'};
-const labels={entailed:'支持',contradicted:'矛盾',not_enough_information:'证据不足'};
-const zh={homonym_001:'探测器正在研究绕太阳运行的最内侧行星。',homonym_002:'实验室存放着化学符号为 Hg 的液态金属。',homonym_003:'应用程序在虚拟机上运行字节码。',homonym_004:'旅行者在这座印度尼西亚岛屿上游览雅加达。',homonym_009:'埃菲尔铁塔是这座欧洲首都的地标。',homonym_010:'这座城市是美国得克萨斯州拉马尔县的县治。',synonym_023:'这家科技公司开发了 System/360 计算机系列。',synonym_024:'这家科技公司开发了 System/360 计算机系列。',synonym_031:'这位物理学家提出了广义相对论。',synonym_032:'这位物理学家提出了广义相对论。',synonym_037:'这种化合物每个分子含有两个氢原子。',synonym_038:'这种化合物每个分子含有两个氢原子。'};
-const explanations=[
-['找出“可能是谁”','只把名字交给检索器，获得若干候选实体。真实模式来自 Wikidata 搜索；演示使用固定候选。正确答案也可能根本不在候选里。','retrieval/wikidata.py → Wikidata.search'],
-['让两种方法面对同一批候选','左边只能看名字和别名；右边还可看上下文与候选描述。真实实验右边会调用模型；演示右边只是确定性的词语重合规则。','disambiguation/string_baseline.py · context_guided.py'],
-['针对选中的实体生成几条陈述','取两种方法实际选中的实体并去重，再生成三元组。这里不能偷偷改用 gold 答案，否则就看不到消歧错误如何影响后续结果。','pipeline.py → stage_generate_triples · generation/generate_triples.py'],
-['先拿到证据，再让裁判判断','裁判只依据提供的段落，输出支持、矛盾或证据不足。没有证据不等于事实为假。演示证据是合成测试材料。','retrieval/wikipedia.py · judging/factuality_judge.py'],
-['把判断和对照答案进行比较','实体准确率 = 选对案例数 / 全部案例数。事实裁判与人工一致率 = 相同标签数 / 有效人工对照数；没人复核时显示暂无数据。','evaluation/entity_metrics.py · judge_metrics.py']
-];
-function notice(text,error=false){$('#notice').textContent=text;$('#notice').classList.toggle('error',error);}
-async function api(path,body){const r=await fetch(path,{cache:'no-store',...(body?{method:'POST',headers:{'Content-Type':'application/json','X-Review-Token':state.token},body:JSON.stringify(body)}:{})});const value=await r.json();if(!r.ok)throw Error(value.error||'请求失败');return value;}
-async function safely(action){try{await action();}catch(e){notice(e.message,true);}}
-function flag(){if(!state.data)return;notice(state.run.startsWith('mock/')?'当前为离线演示：数据和规则用于理解流程，分数不是大模型实验结论。':'当前为真实实验：结果仅适用于这些案例。先完成盲评，再看人工与模型的逐条对照。');}
-function fraction(r){return !r||r.value==null?'暂无数据':`${r.numerator} / ${r.denominator}`;}
-function percent(r){return !r||r.value==null?'暂无数据':`${(100*r.value).toFixed(1)}%`;}
-function triple(t){return `<div class="triple"><strong>${esc(t.subject)}</strong><span class="relation">${esc(t.predicate)}</span><strong>${esc(t.object)}</strong></div>`;}
-async function loadRuns(preferred){const response=await api('/api/state');state.token=response.token;$('#run').innerHTML=response.runs.map(r=>`<option value="${esc(r.id)}">${r.mode==='mock'?'演示':'真实'} · ${r.n} 例 · ${esc(r.id.split('/')[1])}${r.status==='completed_with_failures'?' · 有失败记录':''}</option>`).join('');if(!response.runs.length){notice('还没有实验记录。点击“运行 12 例离线演示”即可开始，不需要 API key。');$('#stage-content').innerHTML='<p class="empty">先运行演示，再追踪一个案例。</p>';return;}if(preferred&&response.runs.some(r=>r.id===preferred))$('#run').value=preferred;await loadRun();}
-async function loadRun(){const run=$('#run').value;const data=await api(`/api/run?run=${encodeURIComponent(run)}`);if($('#run').value!==run)return;state.run=run;state.data=data;state.review=null;$('#case').innerHTML=data.cases.map(c=>`<option value="${esc(c.case_id)}">${esc(c.surface_form)} · ${esc(c.case_id)}</option>`).join('');flag();renderResults();await loadTrace();if(!$('#claim-review').hidden)await loadReview();}
-async function loadTrace(){if(!state.run)return;const id=$('#case').value;const run=state.run;const value=await api(`/api/trace?run=${encodeURIComponent(run)}&case=${encodeURIComponent(id)}`);if(state.run!==run||$('#case').value!==id)return;state.trace=value;renderCase();renderStep();}
-function renderCase(){const c=state.trace.case;$('#case-detail').innerHTML=`<span class="tag">${c.case_type==='homonym'?'同名异义':'同义异名'}</span><span class="tag">${esc(c.domain)}</span><h2>${esc(c.surface_form)}</h2><div class="context-box">${esc(zh[c.case_id]||c.context)}</div>${zh[c.case_id]?`<details><summary>英文原文</summary><p>${esc(c.context)}</p></details>`:''}<div class="candidate"><span class="subtle">${c.verification_status==='human_verified'?'人工核对的答案':'拟定答案 · 尚未人工核对'}</span>${link(c.source_url,`${c.gold_label} · ${c.gold_entity_id}`)}</div><p class="small muted">上面的答案仅用于评估，不传给两种消歧方法。</p>`;}
-function selectedText(row,candidates){if(!row.selected_entity_id)return row.status==='failed'?'执行失败':'没有选择（弃权）';const c=candidates.find(c=>c.entity_id===row.selected_entity_id);return `${c?.label||''} · ${row.selected_entity_id}`;}
-function renderStep(){if(!state.trace||!state.data)return;const [title,desc,code]=explanations[state.step];$('#step-explain').innerHTML=`<div class="explanation"><h2>${title}</h2><p>${desc}</p><details class="code-path"><summary>想看实现时，打开哪里？</summary><code>src/llm_knowledge_audit/${esc(code)}</code></details></div>`;document.querySelectorAll('[data-step]').forEach(b=>b.classList.toggle('selected',+b.dataset.step===state.step));const c=state.trace.case;const candidates=state.data.candidates[c.case_id].candidates;let body='';if(state.step===0){body=candidates.map((row,i)=>`<div class="candidate"><span class="number">${i+1}</span>${link(row.source_url,`${row.label} · ${row.entity_id}`)}<p>${esc(row.description)}</p></div>`).join('')||'<p class="empty">没有找到候选；两种方法只能弃权。</p>';}if(state.step===1){body='<div class="compare-grid">'+['string','context'].map(method=>{const row=state.data[method][c.case_id];const match=row.selected_entity_id===c.gold_entity_id;return `<article class="method ${method}"><h3>${method==='string'?'字符串基线':'上下文方法'}</h3><p class="small muted">${method==='string'?'可见：名字、候选标签和别名':'额外可见：上下文、来源三元组和描述'}</p><p class="decision">${esc(selectedText(row,candidates))}</p><span class="${match?'correct':'wrong'}">${match?'与拟定答案一致':'与拟定答案不一致'}</span><details><summary>简短决策说明</summary><p>${esc(row.short_rationale||row.error)}</p></details></article>`;}).join('')+'</div>';}if(state.step===2){body=state.trace.claims.map(row=>`<article class="claim">${triple(row.triple)}<p class="small muted">主体：${esc(row.entity_id)} · 来源方法：${[...new Set(row.links.filter(l=>l.case_id===c.case_id).map(l=>l.method==='string'?'字符串':'上下文'))].join('、')}</p></article>`).join('')||'<p class="empty">本案例没有生成的三元组，可能两种方法都弃权或生成阶段失败。</p>';}if(state.step===3){const row=state.trace.claims[0];body=row?`<article class="claim">${triple(row.triple)}<p>裁判结果：<strong>${row.judgment?labels[row.judgment.label]:'真实数据先复核，再到结果页看对照'}</strong></p></article>${row.evidence.map(e=>`<div class="evidence"><span class="tag">${e.synthetic?'合成测试证据':'公开来源'}</span><p>${esc(e.text)}</p>${e.synthetic?'':link(e.source_url,'查看证据来源')}<p class="small muted">${esc(e.passage_id)}</p></div>`).join('')||'<p class="empty">没有可用证据 → 证据不足（NEI）。</p>'}`:'<p class="empty">没有生成的三元组可供审计。</p>';}if(state.step===4){body=`<p>这一案例：字符串方法 ${state.data.string[c.case_id].selected_entity_id===c.gold_entity_id?'选对':'未选对'}；上下文方法 ${state.data.context[c.case_id].selected_entity_id===c.gold_entity_id?'选对':'未选对'}。</p><p class="muted">这里只是与保存的拟定答案比较。未人工核对的答案不应当作可信研究金标准。</p><button id="goto-results">查看本次实验的整体结果 →</button>`;}$('#stage-content').innerHTML=body;$('#goto-results')?.addEventListener('click',()=>switchTab('results'));}
-function renderResults(){const d=state.data;if(!d)return;const m=d.metrics;const a=m.entity.string,b=m.entity.context;const comp=d.comparison;const acc=comp.metrics.accuracy;const labelsSource=comp.pairs.length?'工作台新保存的盲评':'本次实验的原始记录';const current=comp.pairs.length?acc:m.judge_agreement.accuracy;$('#result-content').innerHTML=`<div class="panel result-strip"><div><h3>字符串准确率</h3><div class="score">${fraction(a.top1_accuracy)} <small>例</small></div><progress class="bar" max="1" value="${a.top1_accuracy.value||0}"></progress><span class="muted">${percent(a.top1_accuracy)} · 弃权 ${fraction(a.abstention_rate)}</span></div><div><h3>上下文准确率</h3><div class="score">${fraction(b.top1_accuracy)} <small>例</small></div><progress class="bar" max="1" value="${b.top1_accuracy.value||0}"></progress><span class="muted">${percent(b.top1_accuracy)} · 弃权 ${fraction(b.abstention_rate)}</span></div><div><h3>与人工标签一致</h3><div class="score">${fraction(current)}</div><p class="muted">${current.denominator?`${percent(current)} · 仅为小样本检查`:'尚无人工对照，不代表 0% 准确率'}</p><span class="small muted">${labelsSource}</span></div></div><div class="panel"><h2>怎样理解这些数？</h2><p>候选覆盖：${fraction(m.candidates.recall_at_k)} 例含有拟定正确答案。没有召回正确候选时，再聪明的排序也无法选对。</p><p>人工核对的案例：${fraction(m.human_verified_cases)}。生成的独立三元组：${m.factuality.attempted_n} 条。</p><p>本次运行新增付费请求：${m.operations_this_invocation.api_requests_n} 次；预估新增费用：$${Number(m.operations_this_invocation.estimated_usd.total).toFixed(4)}。</p><p class="small muted">费用来自已保存的运行记录；缓存命中的零新增费用不是原始实验免费。合成演示分数只检验代码流程。</p></div><div class="panel"><h2>逐条比较</h2><div class="table-wrap"><table><thead><tr><th>名字 / 案例</th><th>拟定答案</th><th>字符串</th><th>上下文</th></tr></thead><tbody>${d.cases.map(c=>`<tr><td>${esc(c.surface_form)}<span class="subtle">${esc(c.case_id)}</span></td><td>${esc(c.gold_entity_id)}</td>${['string','context'].map(k=>`<td class="${d[k][c.case_id].selected_entity_id===c.gold_entity_id?'correct':'wrong'}">${esc(d[k][c.case_id].selected_entity_id||'弃权 / 失败')}</td>`).join('')}</tr>`).join('')}</tbody></table></div></div>${comp.pairs.length?`<div class="panel"><h2>已完成盲评的对照（${comp.pairs.length} 条）</h2><p class="muted">${comp.note}。这里只展示你已提交过标签的记录。</p><div class="table-wrap"><table><thead><tr><th>事实</th><th>人工</th><th>模型</th></tr></thead><tbody>${comp.pairs.map(p=>`<tr><td>${esc(p.triple.subject)} — ${esc(p.triple.predicate)} — ${esc(p.triple.object)}</td><td>${labels[p.human]}</td><td>${labels[p.judge]||'执行失败'}</td></tr>`).join('')}</tbody></table></div></div>`:''}`;}
-function switchTab(tab){state.tab=tab;flag();document.querySelectorAll('.page').forEach(el=>el.hidden=el.id!==tab);document.querySelectorAll('[data-tab]').forEach(el=>el.classList.toggle('active',el.dataset.tab===tab));if(tab==='review')safely(loadQueue);}
-async function loadQueue(){state.queue=await api(`/api/cases?scope=${$('#scope').value}`);state.index=state.queue.rows.findIndex(c=>c.verification_status!=='human_verified');if(state.index<0)state.index=0;renderEntity();}
-function renderEntity(){const q=state.queue,c=q.rows[state.index];$('#entity-progress').textContent=`已核对 ${q.reviewed} / ${q.rows.length} · 可随时停止，已保存的进度会保留`;$('#entity-card').innerHTML=`<article class="review-card"><div class="review-head"><div><span class="eyebrow">${state.index+1} / ${q.rows.length} · ${esc(c.case_id)}</span><h2>${esc(c.surface_form)}</h2></div><span class="tag">${c.verification_status==='human_verified'?'已核对':'待你确认'}</span></div><div class="review-context"><b>这里说的是：</b><p>${esc(zh[c.case_id]||c.context)}</p><details><summary>英文原文</summary><p>${esc(c.context)}</p></details></div><p>拟定实体：${link(c.source_url,`${c.gold_label} · ${c.gold_entity_id}`)}</p><p class="muted">公开描述：${esc(c.gold_description)}</p><ol><li>点开上面的 Wikidata 来源。</li><li>核对标签、描述是否与这条上下文指的是同一个实体。</li><li>一致就确认；有疑问先跳过，不要勉强标为正确。</li></ol><label class="checkbox-row"><input type="checkbox" id="confirm-case">我已查看来源，确认 QID 和上下文的实体含义一致。</label><div class="actions"><button id="save-case" class="primary">确认并看下一条</button><button id="next-case">跳过，稍后再看</button><button id="prev-case">上一条</button></div><p class="small muted">保存到 ${esc(q.file)}。相同记录会同步到 5 / 12 例集合，避免重复劳动。若拟定答案错误，直接修改该文件中的 gold_entity_id、gold_label、gold_description、source_url 后再复核。</p></article>`;$('#save-case').onclick=()=>safely(async()=>{const result=await api('/api/verify-case',{scope:q.scope,case_id:c.case_id,revision:c.revision,reviewer:$('#reviewer').value,confirmed:$('#confirm-case').checked});notice(result.message);await loadQueue();});$('#next-case').onclick=()=>{state.index=(state.index+1)%q.rows.length;renderEntity();};$('#prev-case').onclick=()=>{state.index=(state.index+q.rows.length-1)%q.rows.length;renderEntity();};}
-async function loadReview(){if(!state.run){$('#claim-content').innerHTML='<p class="empty">还没有可复核的实验。</p>';return;}if(state.run.startsWith('mock/')){$('#claim-content').innerHTML='<div class="empty"><h2>演示不需要人工标注。</h2><p>这里的事实和证据是程序造出的测试材料，标注它们不能验证真实模型。</p><p>下一步只需核对 5 个实体。得到获批的真实试跑结果后，这里会自动提供最多 20 条盲评记录；113 条公开练习材料无需填写。</p></div>';return;}state.review=await api(`/api/review?run=${encodeURIComponent(state.run)}`);state.claimIndex=Math.max(0,state.review.rows.findIndex(r=>!r.annotation));renderClaim();}
-function renderClaim(){const data=state.review;const row=data.rows[state.claimIndex];if(!row){$('#claim-content').innerHTML='<p class="empty">没有生成的三元组可供复核，请先查看实验失败记录。</p>';return;}const saved=row.annotation;$('#claim-content').innerHTML=`<p class="muted">已保存 ${data.completed} / ${data.sample_size} · 从 ${data.population_size} 条中固定随机抽样（seed=42），可分多次完成。</p><article class="review-card"><span class="eyebrow">事实 ${state.claimIndex+1} / ${data.sample_size}</span>${triple(row.triple)}<p class="small muted">主体 ${esc(row.entity_id)} · 先独立判断，这里不显示模型标签。</p>${row.evidence.map(e=>`<div class="evidence"><p>${esc(e.text)}</p>${link(e.source_url,'打开原始来源')}<label class="checkbox-row"><input type="checkbox" name="evidence" value="${esc(e.passage_id)}" ${saved?.evidence_ids.includes(e.passage_id)?'checked':''}>引用这段证据</label></div>`).join('')||'<p class="empty">没有提供证据。应选“证据不足”，不能因无证据就判断为假。</p>'}<button id="copy-evidence">复制事实与证据，便于翻译</button><div class="labels">${Object.entries(labels).map(([key,label])=>`<label><input type="radio" name="human-label" value="${key}" ${saved?.human_label===key?'checked':''}> ${label}</label>`).join('')}</div><p class="small muted">支持：完整支持此事实。矛盾：明确不兼容，而不是没有提到。证据不足：缺失、模糊、仅部分支持或存在未解决冲突。</p><label>备注（可选，可用中文）<textarea id="claim-note" placeholder="例如：材料没有说明发生年份">${esc(saved?.annotator_notes||'')}</textarea></label><div class="actions"><button id="save-claim" class="primary">保存并看下一条</button><button id="skip-claim">暂时跳过</button></div><p class="small muted">文件：${esc(data.file)}。编号、证据哈希与时间自动填写；历史实验不变。</p></article>`;$('#copy-evidence').onclick=()=>safely(async()=>{await navigator.clipboard.writeText('请翻译以下事实和证据，保留实体名、日期、否定词与数值。不要替我作事实标签判断。\n'+JSON.stringify({triple:row.triple,evidence:row.evidence},null,2));notice('已复制，可粘贴到你习惯的翻译工具。');});$('#save-claim').onclick=()=>safely(async()=>{const human_label=$('input[name="human-label"]:checked')?.value;if(!human_label)throw Error('请先阅读并选择标签；没读完可以暂时跳过。');const evidence_ids=[...document.querySelectorAll('input[name="evidence"]:checked')].map(e=>e.value);if(human_label!=='not_enough_information'&&!evidence_ids.length)throw Error('请至少选择一段支持你判断的证据；证据不足时可以不选。');const r=await api('/api/annotate',{run:state.run,triple_id:row.triple_id,human_label,evidence_ids,annotator_id:$('#reviewer').value,annotator_notes:$('#claim-note').value});notice(r.message);await loadReview();state.data=await api(`/api/run?run=${encodeURIComponent(state.run)}`);renderResults();});$('#skip-claim').onclick=()=>{state.claimIndex=(state.claimIndex+1)%data.rows.length;renderClaim();};}
-$('#run').onchange=()=>safely(loadRun);$('#case').onchange=()=>safely(loadTrace);$('#scope').onchange=()=>safely(loadQueue);
-document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>switchTab(b.dataset.tab));document.querySelectorAll('[data-step]').forEach(b=>b.onclick=()=>{state.step=+b.dataset.step;renderStep();});
-document.querySelectorAll('[data-review]').forEach(b=>b.onclick=()=>{flag();document.querySelectorAll('[data-review]').forEach(e=>e.classList.toggle('selected',e===b));$('#entity-review').hidden=b.dataset.review!=='entities';$('#claim-review').hidden=b.dataset.review!=='claims';if(b.dataset.review==='claims')safely(loadReview);});
-$('#demo').onclick=()=>safely(async()=>{const b=$('#demo');b.disabled=true;b.textContent='正在运行离线演示…';try{const value=await api('/api/demo',{});await loadRuns(value.run);}finally{b.disabled=false;b.textContent='运行 12 例离线演示';}});
-try{$('#reviewer').value=localStorage.getItem('llmka-reviewer')||'';}catch{/* Device preferences are optional. */}
-$('#reviewer').onchange=()=>{try{localStorage.setItem('llmka-reviewer',$('#reviewer').value);}catch{/* Saving reviews still works. */}};
-safely(()=>loadRuns());
+"use strict";
+const $ = (selector) => document.querySelector(selector);
+const esc = (value) => String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const state = {lang: localStorage.getItem("llmka.language") || "en", page:"runs", token:"", runs:[], env:null, run:"", detail:null, trace:null, stage:0, caseId:"", scope:"pilot", reviewTab:"gold", queue:null, packet:null, index:0, wizard:null, notice:""};
+if (!MESSAGES[state.lang]) state.lang = "en";
+const t = key => MESSAGES[state.lang][key] || MESSAGES.en[key] || key;
+const text = key => esc(t(key));
+const button = (key, action, cls="", extra="") => `<button type="button" class="${cls}" data-action="${action}" ${extra}>${text(key)}</button>`;
+const english = html => `<div lang="en">${html}</div>`;
+const url = value => { try { const u = new URL(value); return ["https:","http:"].includes(u.protocol) ? esc(u.href) : "#"; } catch { return "#"; } };
+const link = (href, label) => `<a href="${url(href)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`;
+const field = (key, id, value, type="text", extra="") => `<label>${text(key)}<input id="${id}" type="${type}" value="${esc(value)}" ${extra}></label>`;
+const rate = value => value?.value == null ? text("noData") : `${value.numerator} / ${value.denominator} · ${(value.value*100).toFixed(1)}%`;
+const stages = ["collect-candidates","disambiguate-string","disambiguate-context","generate-triples","retrieve-evidence","judge","evaluate","build-report"];
+function notice(key) { state.notice = key; $("#notice").textContent = key ? t(key) : ""; }
+async function api(path, body) {
+  let response;
+  try { response = await fetch(path, body === undefined ? {cache:"no-store"} : {method:"POST", headers:{"Content-Type":"application/json","X-Review-Token":state.token}, body:JSON.stringify(body)}); }
+  catch { throw new Error("network_error"); }
+  const value = await response.json();
+  if (!response.ok) throw new Error(value.error || "invalid_request");
+  return value;
+}
+function applyLanguage() {
+  document.documentElement.lang = state.lang;
+  document.title = t("title");
+  $("#language").value = state.lang;
+  $("#language").setAttribute("aria-label",t("language"));
+  $("#nav").setAttribute("aria-label",t("console"));
+  document.querySelectorAll("[data-i18n]").forEach(el => el.textContent = t(el.dataset.i18n));
+  notice(state.notice);
+}
+function render() {
+  const focused = document.activeElement;
+  const focusId = focused?.id;
+  const focusAction = focused?.dataset?.action;
+  applyLanguage();
+  document.querySelectorAll("[data-page]").forEach(el => el.setAttribute("aria-current",el.dataset.page === state.page ? "page":"false"));
+  $("#main").innerHTML = state.wizard ? wizardView() : ({runs:runsView,inspect:inspectView,review:reviewView,exports:exportsView}[state.page])();
+  if (focusId) document.getElementById(focusId)?.focus({preventScroll:true});
+  else if (focusAction) [...document.querySelectorAll("main button[data-action]")].find(e => e.dataset.action === focusAction && e.dataset.stage === focused.dataset.stage && e.dataset.run === focused.dataset.run)?.focus({preventScroll:true});
+}
+function runsTable() {
+  if (!state.runs.length) return `<p class="empty">${text("noRuns")}</p>`;
+  return `<div class="table-wrap"><table><thead><tr>${["run","mode","status","cases","created"].map(k=>`<th>${text(k)}</th>`).join("")}<th></th></tr></thead><tbody>${state.runs.map(r=>`<tr><td class="identifier">${esc(r.id)}</td><td>${text(r.mode)}</td><td>${text(r.status)}${r.completed_stages != null ? ` · ${r.completed_stages}/8`:""}</td><td>${r.n}</td><td>${esc(new Date(r.created_at).toLocaleString(state.lang))}</td><td>${button("open","open-run","",`data-run="${esc(r.id)}"`)}</td></tr>`).join("")}</tbody></table></div>`;
+}
+function runsView() { return `<div class="toolbar"><h1>${text("runs")}</h1>${button("newRun","new","primary")}</div><div id="run-list">${runsTable()}</div>`; }
+function selectedHeader(key) {
+  return `<div class="toolbar"><h1>${text(key)}</h1><label>${text("selectRun")}<select id="select-run"><option value="">—</option>${state.runs.filter(r=>!r.id.startsWith("job/")).map(r=>`<option value="${esc(r.id)}" ${state.run===r.id?"selected":""}>${esc(r.id)}</option>`).join("")}</select></label></div>`;
+}
+function progressView(p) {
+  if (!p) return "";
+  return `<div class="rule"><span class="identifier">${esc(p.id)}</span><p>${text(p.status)} · ${p.completed_stages ?? 0}/8 ${text("stages")}</p>${p.mode==="mock"?`<p class="muted">${text("mockNote")}</p>`:""}${p.failure_code || p.code ? `<p>${text(p.failure_code || p.code)} ${esc(p.failure_type || p.type || "")}</p>`:""}${p.failures?.length?`<details><summary>${text("details")}</summary><pre class="identifier" lang="en">${esc(JSON.stringify(p.failures,null,2))}</pre></details>`:""}${p.status==="failed" && !p.id.startsWith("job/") ? button("resume","resume"):""}</div>${p.stages ? `<div class="summary"><div><b>${p.attempts} / ${p.max_calls}</b><small>${text("attempts")}</small></div><div><b>$${p.reserved_usd.toFixed(4)} / $${p.budget_usd.toFixed(2)}</b><small>${text("reserved")}</small></div><div><b>${p.human_verified_cases} / ${p.n}</b><small>${text("gold")} · ${p.human_verified_cases===p.n?text("verified"):text("unverified")}</small></div></div><ol class="stages">${p.stages.map((s,i)=>`<li><button data-action="stage" data-stage="${i}" aria-current="${state.stage===i?"step":"false"}">${i+1}. ${text("s"+i)}<small>${text(s.status)}</small></button></li>`).join("")}</ol>`:""}`;
+}
+function inspectView() {
+  const d = state.detail;
+  let html = selectedHeader("inspect");
+  if (!d) return html + `<p class="empty">${text("noSelection")}</p>`;
+  html += `<div id="progress">${progressView(d.progress)}</div>`;
+  if (!d.cases) return html;
+  html += `<label>${text("case")}<select id="select-case" lang="en">${d.cases.map(c=>`<option value="${esc(c.case_id)}" ${c.case_id===state.caseId?"selected":""}>${esc(c.surface_form)} · ${esc(c.case_id)}</option>`).join("")}</select></label>`;
+  const c = state.trace?.case;
+  if (c) html += `<p class="muted">${text("english")} · ${text("snapshot")}</p>${english(`<h2>${esc(c.surface_form)}</h2><p>${esc(c.context)}</p><p>${link(c.source_url,c.gold_label+" · "+c.gold_entity_id)}</p>`)}<p class="status">${c.verification_status==="human_verified"?text("verified"):text("unverified")}</p>`;
+  html += `<h2>${state.stage+1}. ${text("s"+state.stage)}</h2><p class="muted">${text("d"+state.stage)}</p>`;
+  if (state.stage===0) {
+    const rows=d.candidates[state.caseId]?.candidates || [];
+    html += rows.length ? english(`<div class="table-wrap"><table><tbody>${rows.map(c=>`<tr><td>${link("https://www.wikidata.org/wiki/"+c.entity_id,c.entity_id)}</td><td>${esc(c.label)}</td><td>${esc(c.description)}</td></tr>`).join("")}</tbody></table></div>`) : `<p>${text("notReady")}</p>`;
+  } else if (state.stage<=2) {
+    html += `<div class="grid">${["string","context"].map(m=>{const r=d[m][state.caseId];return `<section><h3>${text(m)}</h3>${r?english(`<p>${r.selected_entity_id?link("https://www.wikidata.org/wiki/"+r.selected_entity_id,r.selected_entity_id):text("none")}</p><p>${esc(r.short_rationale || r.error || "")}</p><p>${esc(r.confidence ?? "")}</p>`):text("notReady")}</section>`;}).join("")}</div>`;
+  } else if (state.stage<=5) {
+    if (!d.blind_complete) html += `<p class="muted">${text("blind")}</p>`;
+    html += (state.trace?.claims || []).map(r=>`<article class="claim">${english(`<span class="identifier">${esc(r.triple_id)}</span><p>${triple(r.triple)}</p>`)}${state.stage>=4?evidenceView(r.evidence,false):""}${state.stage===5 && r.judgment ? english(`<pre>${esc(JSON.stringify(r.judgment,null,2))}</pre>`):""}</article>`).join("") || `<p>${text("notReady")}</p>`;
+  } else if (state.stage===6) html += resultsView();
+  else html += exportList();
+  return html;
+}
+function triple(r) { return [r.subject,r.predicate,r.object].map(esc).join(" → "); }
+function evidenceView(rows, check) {
+  return (rows||[]).map((e,i)=>`<section class="evidence">${check?`<label><input type="checkbox" name="evidence" value="${esc(e.passage_id)}" ${state.packet?.rows[state.index]?.annotation?.evidence_ids.includes(e.passage_id)?"checked":""}> <span lang="en">${esc(e.passage_id)}</span></label>`:""}${english(`<p>${esc(e.text)}</p><small>${link(e.source_url,e.passage_id)} · ${esc(e.license)} · ${esc(e.revision_id || e.retrieved_at)}</small>`)}</section>`).join("") || `<p>${text("noData")}</p>`;
+}
+function resultsView() {
+  const d=state.detail, m=d.metrics;
+  if (!m?.entity) return `<p>${text("notReady")}</p>`;
+  return `<div class="summary">${["string","context"].map(k=>`<div><b>${rate(m.entity[k].top1_accuracy)}</b><small>${text(k)} · ${text("accuracy")}</small></div>`).join("")}<div><b>${rate(m.candidates.recall_at_k)}</b><small>${text("recall")}</small></div></div>${!d.blind_complete?`<p class="muted">${text("blind")}</p>`:`<h3>${text("comparison")}</h3><pre class="identifier" lang="en">${esc(JSON.stringify(d.comparison,null,2))}</pre>`}<details><summary>${text("details")}</summary><pre class="identifier" lang="en">${esc(JSON.stringify(m,null,2))}</pre></details>`;
+}
+function exportsView() { return selectedHeader("exports") + (state.detail?.cases ? exportList() : `<p class="empty">${text("noSelection")}</p>`); }
+function exportList() {
+  const d=state.detail;
+  if (!d) return "";
+  const files=[["summary.json","summaryExport",false],["manifest.json","manifestExport",false],["cases.json","casesExport",false],["annotation_packet.json","packetExport",false],["report.md","reportExport",true],["evaluate.json","metricsExport",true],["review-comparison.json","comparisonExport",true],["figures.zip","figuresExport",true]];
+  return `<p class="muted">${text("exportNote")}</p>${!d.blind_complete?`<p>${text("blind")}</p>`:""}<table><tbody>${files.filter(f=>!(f[0]==="figures.zip"&&d.progress.mode==="mock")).map(([name,key,gated])=>`<tr><td>${text(key)}<br><span class="identifier">${name}</span></td><td>${gated&&!d.blind_complete ? text("locked"):button("download","download","",`data-name="${name}"`)}</td></tr>`).join("")}</tbody></table>`;
+}
+function reviewView() {
+  let html=selectedHeader("review")+`<div class="actions rule">${button("goldReview","review-gold")}${button("factReview","review-facts")}</div>`;
+  if(state.reviewTab==="gold") return html+goldView();
+  if (!state.run || state.run.startsWith("job/")) return html+`<p>${text("noSelection")}</p>`;
+  if(state.run.startsWith("mock/")) return html+`<p>${text("mockReview")}</p>`;
+  const packet=state.packet;
+  if(!packet) return html+`<p>${text("notReady")}</p>`;
+  html+=`<p>${text("factOptional")}</p><p>${text("reviewed")}: ${packet.completed} / ${packet.sample_size} · ${text("population")}: ${packet.population_size}</p>`;
+  const r=packet.rows[state.index];
+  if(!r) return html+`<p>${text("noData")}</p>`;
+  const annotation=r.annotation;
+  return html+`<article class="claim"><p>${state.index+1} / ${packet.sample_size} · ${text("english")}</p>${english(`<span class="identifier">${esc(r.triple_id)}</span><h2>${triple(r.triple)}</h2>`)}${button("copy","copy")}<p>${text("citeInstruction")}</p>${evidenceView(r.evidence,true)}<fieldset><legend>${text("factReview")}</legend>${["entailed","contradicted","not_enough_information"].map(k=>`<label class="checkline"><input type="radio" name="human-label" value="${k}" ${annotation?.human_label===k?"checked":""}> ${text(k)}</label>`).join("")}</fieldset>${field("reviewer","annotator",annotation?.annotator_id || localStorage.getItem("llmka.reviewer") || "")}<label>${text("notes")}<textarea id="notes" rows="2">${esc(annotation?.annotator_notes || "")}</textarea></label><div class="actions">${button("prev","prev","",state.index===0?"disabled":"")}${button("saveAnnotation","annotate","primary")}${button("skip","next-fact","",state.index===packet.sample_size-1?"disabled":"")}</div></article>`;
+}
+function goldView() {
+  const q=state.queue;
+  let html=`<label>${text("scope")}<select id="scope"><option value="pilot" ${state.scope==="pilot"?"selected":""}>${text("pilot")}</option><option value="starter" ${state.scope==="starter"?"selected":""}>${text("starter")}</option></select></label>`;
+  if(!q) return html;
+  html+=`<p>${text("goldInstruction")}</p><p>${q.reviewed} / ${q.rows.length} ${text("confirmed")}</p><label class="checkline"><input type="checkbox" id="all-cases"> ${text("selectAll")}</label><div class="table-wrap"><table><thead><tr><th></th><th>${text("case")}</th><th>${text("gold")}</th><th>${text("source")}</th></tr></thead><tbody>${q.rows.map((c,i)=>`<tr><td><input type="checkbox" name="case-review" value="${i}" aria-label="${esc(c.case_id)}"></td><td class="case-source" lang="en"><b>${esc(c.surface_form)}</b><p>${esc(c.context)}</p><small>${esc(c.case_id)}</small></td><td class="case-source"><div lang="en">${link("https://www.wikidata.org/wiki/"+c.gold_entity_id,c.gold_label+" · "+c.gold_entity_id)}<p>${esc(c.gold_description)}</p></div><small>${c.verification_status==="human_verified"?text("verified"):text("unverified")}</small><details><summary>${text("override")}</summary>${[["goldId","gold_entity_id"],["goldLabel","gold_label"],["description","gold_description"],["sourceURL","source_url"]].map(([key,name])=>field(key,`case-${i}-${name}`,c[name])).join("")}</details></td><td>${link(c.source_url,t("source"))}</td></tr>`).join("")}</tbody></table></div><p class="muted">${text("batchNote")}</p>${field("reviewer","gold-reviewer",localStorage.getItem("llmka.reviewer") || "")}<label class="checkline"><input type="checkbox" id="confirm-batch"> ${text("confirmBatch")}</label>${button("batchSave","batch","primary")}`;
+  return html;
+}
+function wizardView() {
+  const w=state.wizard, b=w.body, p=w.preview;
+  const labels=["dataset","limits","models","credentials","approval"];
+  // 环境里是否已有可用凭据（决定「使用 .env」按钮是否可点）
+  const ambient=["resolver","generator","judge"].some(r=>p?.env_keys_available?.[r]);
+  let html=`<div class="wizard"><div class="toolbar"><h1>${text(w.resume?"resume":"newRun")}</h1>${button("cancel","cancel")}</div><ol class="wizard-steps">${labels.map((key,i)=>`<li aria-current="${i===w.step?"step":"false"}">${i+1}. ${text(key)}</li>`).join("")}</ol>`;
+  if(w.resume) html+=`<p class="identifier">${esc(w.resume)}</p>`;
+  if(w.step===0) html+=`<fieldset><legend>${text("mode")}</legend><label class="checkline"><input name="mode" type="radio" value="real" ${b.mode==="real"?"checked":""}> ${text("real")}</label><label class="checkline"><input name="mode" type="radio" value="mock" ${b.mode==="mock"?"checked":""}> ${text("mock")}</label></fieldset><div class="fields"><label>${text("dataset")}<select id="dataset"><option value="pilot" ${b.dataset==="pilot"?"selected":""}>${text("pilot")}</option><option value="starter" ${b.dataset==="starter"?"selected":""}>${text("starter")}</option></select></label>${field("caseLimit","case-limit",b.case_limit,"number",'min="1" max="12"')}</div><label class="checkline"><input id="gold-required" type="checkbox" ${b.require_human_verified?"checked":""}> ${text("goldRequired")}</label><p class="muted">${text("goldOptional")}</p>`;
+  if(w.step===1) html+=`${b.mode==="mock"?`<p>${text("mockNote")} ${text("offlineFree")}</p>`:""}<div class="fields">${field("budget","budget",b.budget_usd,"number",'min="0.01" max="10" step="0.01"')}${field("attemptCap","max-calls",b.max_calls,"number",'min="1"')}${field("triplesLimit","triples-limit",b.triples_per_entity,"number",'min="1" max="15"')}</div>${planSummary(p)}<p class="muted">${text("costNote")}</p>`;
+  if(w.step===2) html+= b.mode==="mock" ? `<p>${text("mockNote")}</p>` : `<p class="muted">${text("priceNote")}</p>${["resolver","generator","judge"].map(role=>`<section class="model"><h2>${text(role)}</h2><div class="grid">${field("model",role+"-model",b.models[role].model)}${field("endpoint",role+"-base_url",b.models[role].base_url,"url")}</div><div class="fields">${field("inputPrice",role+"-input_usd_per_million",b.models[role].input_usd_per_million,"number",'min="0.00001" step="any"')}${field("outputPrice",role+"-output_usd_per_million",b.models[role].output_usd_per_million,"number",'min="0.00001" step="any"')}${field("outputTokens",role+"-max_output_tokens",b.models[role].max_output_tokens,"number",'min="100" max="8000"')}</div></section>`).join("")}`;
+  if(w.step===3) html+= b.mode==="mock"?`<p>${text("mockNote")}</p>`:`<p>${text("keyNotice")}</p><section class="model"><h3>${text("envTitle")}</h3><p class="identifier" lang="en">${state.env?.path?esc(state.env.path):text("envNone")}</p>${state.env?.names?.length?`<p class="muted" lang="en">${esc(state.env.names.join(", "))}</p>`:""}<p class="muted">${text("envHint")}</p><div class="actions">${button("useEnv","use-env","",ambient?"":"disabled")}</div></section><p class="muted">${text("keyShared")}</p>${["resolver","generator","judge"].map(role=>`<section class="model"><h3>${text(role)}</h3><p class="identifier" lang="en">${esc(p.models[role].base_url)} · ${esc(p.models[role].model)}</p>${field("key",role+"-key","","password",'autocomplete="off" spellcheck="false"')}<small>${p.credentials_ready[role]?text("ready"):text("missing")}</small> <small>${p.env_keys_available?.[role]?text("envAvailable"):text("envMissing")}</small></section>`).join("")}<div class="actions">${button("saveKeys","keys")}${button("clearKeys","clear-keys")}</div>`;
+  if(w.step===4) html+=`${planSummary(p)}<div class="table-wrap"><table><tbody>${Object.entries(p.models).map(([role,m])=>`<tr><td>${text(role)}</td><td lang="en">${esc(m.model)}<br>${p.mode==="real"?esc(m.base_url):""}</td><td>${m.input_usd_per_million} / ${m.output_usd_per_million} USD / 1M</td></tr>`).join("")}</tbody></table></div><p>${p.cases.length-p.pending_review} / ${p.cases.length} · ${text("verified")}</p><p>${text("approvalNote")}</p>${b.mode==="real"?`<label class="checkline"><input id="approve-paid" type="checkbox"> ${text("approve")}</label>`:`<p>${text("mockNote")}</p>`}`;
+  html+=`<div class="actions">${w.step>0&&!w.resume?button("back","wizard-back"):""}${w.step<4?button("next","wizard-next","primary"):button(b.mode==="mock"?"startMock":"start","start","primary")}</div></div>`;
+  return html;
+}
+function planSummary(p) {
+  if(!p) return "";
+  return `<div class="summary"><div><b>${p.cases.length}</b><small>${text("cases")}</small></div><div><b>${p.max_logical_calls}</b><small>${text("logical")}</small></div><div><b>${p.max_http_attempts}</b><small>${text("attemptCap")}</small></div><div><b>$${p.budget_cap_usd}</b><small>${text("budget")}</small></div></div>${p.resume?`<p>${text("inherited")}: ${p.inherited_attempts} · $${p.inherited_reserved_usd.toFixed(4)}</p>`:""}`;
+}
+function readWizard() {
+  const w=state.wizard,b=w.body;
+  if(w.resume) return;
+  if(w.step===0) Object.assign(b,{mode:$("[name=mode]:checked").value,dataset:$("#dataset").value,case_limit:Number($("#case-limit").value),require_human_verified:$("#gold-required").checked});
+  if(w.step===1) Object.assign(b,{budget_usd:Number($("#budget").value),max_calls:Number($("#max-calls").value),triples_per_entity:Number($("#triples-limit").value)});
+  if(w.step===2&&b.mode==="real") for(const role of ["resolver","generator","judge"]) for(const key of ["model","base_url","input_usd_per_million","output_usd_per_million","max_output_tokens"]) b.models[role][key]=["model","base_url"].includes(key)?$("#"+role+"-"+key).value.trim():Number($("#"+role+"-"+key).value);
+}
+async function refreshRuns() { const data=await api("/api/state"); state.token=data.token; state.runs=data.runs; state.env=data.env??null; }
+async function openRun(run) {
+  state.run=run;
+  const p=await api("/api/progress?run="+encodeURIComponent(run));
+  if(p.id.startsWith("job/")) { state.detail={progress:p}; state.trace=null; return; }
+  state.run=p.id;
+  state.detail=await api("/api/run?run="+encodeURIComponent(state.run));
+  if(!state.detail.cases.some(c=>c.case_id===state.caseId)) state.caseId=state.detail.cases[0]?.case_id || "";
+  state.trace=state.caseId?await api("/api/trace?run="+encodeURIComponent(state.run)+"&case="+encodeURIComponent(state.caseId)):null;
+}
+async function loadReview() {
+  state.queue=await api("/api/cases?scope="+state.scope);
+  state.packet=null;
+  if(state.run.startsWith("real/")&&state.detail?.progress.completed_stages>=6) state.packet=await api("/api/review?run="+encodeURIComponent(state.run));
+}
+async function makeWizard(resume) {
+  const defaults=await api("/api/defaults"), models={};
+  for(const [r,m] of Object.entries(defaults.models)) models[r]=Object.fromEntries(["model","base_url","input_usd_per_million","output_usd_per_million","max_output_tokens"].map(k=>[k,m[k]]));
+  state.wizard={step:0,body:{mode:"real",dataset:"pilot",case_limit:5,require_human_verified:false,budget_usd:defaults.budget_usd,max_calls:defaults.max_calls,triples_per_entity:defaults.triples_per_entity,models}};
+  if(resume) { const p=await api("/api/preview",{resume}); Object.assign(state.wizard,{resume,step:3,preview:p}); state.wizard.body.mode=p.mode; }
+}
+async function saveKeys(clear=false) {
+  const keys={};
+  for(const r of ["resolver","generator","judge"]) keys[r]=clear?"":$("#"+r+"-key").value;
+  try { const output=await api("/api/credentials",{plan:state.wizard.preview.plan,keys,clear}); state.wizard.preview.credentials_ready=output.ready; }
+  finally { for(const r of Object.keys(keys)) { keys[r]=""; $("#"+r+"-key").value=""; } }
+}
+async function action(name, el) {
+  notice("");
+  if(name==="new") await makeWizard();
+  if(name==="cancel") state.wizard=null;
+  if(name==="open-run") { state.page="inspect"; await openRun(el.dataset.run); }
+  if(name==="resume") await makeWizard(state.run);
+  if(name==="stage") state.stage=Number(el.dataset.stage);
+  if(name==="wizard-back") { readWizard(); state.wizard.step--; }
+  if(name==="wizard-next") {
+    const w=state.wizard;
+    readWizard();
+    if(w.step===3&&w.body.mode==="real") await saveKeys();
+    if(w.step<3) w.preview=await api("/api/preview",w.body);
+    w.step++;
+  }
+  if(name==="keys"||name==="clear-keys") { await saveKeys(name==="clear-keys"); notice("saved"); }
+  if(name==="use-env") {
+    // 显式确认：服务端把进程环境里的密钥复制到本 plan 的密钥名下，值不回传浏览器
+    const output=await api("/api/credentials",{plan:state.wizard.preview.plan,use_env:true});
+    state.wizard.preview.credentials_ready=output.ready; notice("envApplied");
+  }
+  if(name==="start") {
+    const w=state.wizard;
+    const result=await api("/api/start",{plan:w.preview.plan,approve_paid:$("#approve-paid")?.checked===true});
+    state.wizard=null; state.page="inspect"; await refreshRuns(); await openRun(result.run);
+  }
+  if(name==="review-gold"||name==="review-facts") { state.reviewTab=name==="review-gold"?"gold":"facts"; await loadReview(); }
+  if(name==="batch") {
+    const reviewer=$("#gold-reviewer").value.trim();
+    const rows=[...document.querySelectorAll('[name="case-review"]:checked')].map(input=>{
+      const i=Number(input.value),c=state.queue.rows[i],overrides={};
+      for(const k of ["gold_entity_id","gold_label","gold_description","source_url"]) if($("#case-"+i+"-"+k).value!==c[k]) overrides[k]=$("#case-"+i+"-"+k).value;
+      return {case_id:c.case_id,revision:c.revision,overrides};
+    });
+    await api("/api/verify-batch",{scope:state.scope,reviewer,confirmed:$("#confirm-batch").checked,rows});
+    localStorage.setItem("llmka.reviewer",reviewer); await loadReview(); notice("saved");
+  }
+  if(name==="prev") state.index=Math.max(0,state.index-1);
+  if(name==="next-fact") state.index=Math.min(state.packet.rows.length-1,state.index+1);
+  if(name==="annotate") {
+    const label=$("[name=human-label]:checked")?.value,reviewer=$("#annotator").value.trim();
+    const ids=[...document.querySelectorAll('[name="evidence"]:checked')].map(e=>e.value);
+    if(!label) throw new Error("label_required");
+    if(label!=="not_enough_information"&&!ids.length) throw new Error("invalid_evidence");
+    await api("/api/annotate",{run:state.run,triple_id:state.packet.rows[state.index].triple_id,human_label:label,evidence_ids:ids,annotator_id:reviewer,annotator_notes:$("#notes").value});
+    localStorage.setItem("llmka.reviewer",reviewer); await loadReview(); await openRun(state.run); notice("saved");
+  }
+  if(name==="copy") { const r=state.packet.rows[state.index]; await navigator.clipboard.writeText(JSON.stringify({triple:r.triple,evidence:r.evidence},null,2)); notice("copied"); return; }
+  if(name==="download") {
+    const response=await fetch("/api/export?run="+encodeURIComponent(state.run)+"&name="+encodeURIComponent(el.dataset.name));
+    if(!response.ok) throw new Error((await response.json()).error);
+    const href=URL.createObjectURL(await response.blob()),a=document.createElement("a"); a.href=href; a.download=el.dataset.name; a.click(); setTimeout(()=>URL.revokeObjectURL(href),1000); return;
+  }
+  render();
+}
+document.addEventListener("click",async event=>{
+  const el=event.target.closest("button"); if(!el) return;
+  try {
+    el.disabled=true;
+    if(el.dataset.page) { state.page=el.dataset.page; state.wizard=null; notice(""); if(state.page==="review") await loadReview(); render(); }
+    else if(el.dataset.action) await action(el.dataset.action,el);
+  } catch(error) { notice(MESSAGES.en[error.message]?error.message:"invalid_request"); }
+  finally { el.disabled=false; }
+});
+document.addEventListener("change",async event=>{
+  const el=event.target;
+  try {
+    if(el.id==="language") {
+      // Preserve unsaved research form inputs on language change; credentials stay only in DOM.
+      if(state.wizard) readWizard();
+      const controls=[...document.querySelectorAll("main input, main textarea, main select")].map(e=>({id:e.id,name:e.name,value:e.value,checked:e.checked}));
+      state.lang=el.value; localStorage.setItem("llmka.language",state.lang); render();
+      for(const saved of controls) {
+        const nodes=saved.id?[document.getElementById(saved.id)]:[...document.getElementsByName(saved.name)].filter(e=>e.value===saved.value);
+        for(const node of nodes.filter(Boolean)) { node.value=saved.value; node.checked=saved.checked; }
+      }
+    }
+    if(el.id==="select-run") { if(el.value) await openRun(el.value); else {state.run="";state.detail=null;} if(state.page==="review") await loadReview(); render(); }
+    if(el.id==="select-case") { state.caseId=el.value; await openRun(state.run); render(); }
+    if(el.id==="scope") { state.scope=el.value; await loadReview(); render(); }
+    if(el.id==="all-cases") document.querySelectorAll('[name="case-review"]').forEach(input=>input.checked=el.checked);
+    if(el.id==="dataset") $("#case-limit").value=el.value==="pilot"?5:12;
+    if(["budget","max-calls","triples-limit"].includes(el.id) && state.wizard) {
+      readWizard(); state.wizard.preview=await api("/api/preview",state.wizard.body); render();
+    }
+  } catch(error) { notice(MESSAGES.en[error.message]?error.message:"invalid_request"); }
+});
+async function poll() {
+  try {
+    const previousRuns=JSON.stringify(state.runs);
+    await refreshRuns();
+    if(state.page==="runs"&&!state.wizard && previousRuns!==JSON.stringify(state.runs)) render();
+    if(state.run && state.detail?.progress.status==="running" && !state.wizard) {
+      const before=JSON.stringify(state.detail.progress); await openRun(state.run);
+      if(state.page==="inspect"&&before!==JSON.stringify(state.detail.progress)) render();
+    }
+  } catch { /* Transient polling failures do not discard edits or repeatedly announce errors. */ }
+  setTimeout(poll,2000);
+}
+(async()=>{ try { await refreshRuns(); render(); poll(); } catch(error) {render();notice(error.message);} })();

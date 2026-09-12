@@ -140,7 +140,7 @@ Pydantic 做什么？`confidence=-3` 或 `selected_entity_id="ABC"` 这样的结
 这不是百万级图遍历；所谓递归只是确保这几个有限步骤按依赖顺序完成。
 
 旧实验不会随 UI 核对记录而改写。工作台的新人工标签在 `data/reviews/`，
-即时对照使用已有 `agreement` 函数，不重跑模型。首次阅读可以完全跳过预算预留和缓存落盘细节。
+固定抽样全部标注后才开放对照；它使用已有 `agreement` 函数，不重跑模型。首次阅读可以完全跳过预算预留和缓存落盘细节。
 
 ## 9. UI 与核心代码的关系
 
@@ -149,12 +149,14 @@ Pydantic 做什么？`confidence=-3` 或 `selected_entity_id="ABC"` 这样的结
         ↓ 读取结果 / 提交你自己的复核
 workbench/server.py（只监听 127.0.0.1）
         ↓
-workbench/service.py（读取已保存的 JSON；离线演示调用 Pipeline）
+workbench/service.py（工件视图、盲评门、人工复核）
+workbench/runs.py（配置预览、内存凭据、审批、后台运行）
         ↓
 已有流水线和指标函数
 ```
 
-没有新增 Node 项目、React、数据库或部署需求。界面不能发起付费实验。
+没有新增 Node 项目、React、数据库或部署需求。真实与 mock 运行使用同一套向导；
+付费运行需要独立显式审批，密钥仅在进程环境变量中。详见 [控制台说明](workbench.md)。
 要定位一个 UI 显示问题才需要读 `workbench/`；讲清研究核心不需要背这些代码。
 
 ## 10. 面试练习：30 秒说明

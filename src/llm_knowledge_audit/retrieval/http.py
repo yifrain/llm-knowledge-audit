@@ -1,4 +1,8 @@
-"""Serial, rate-limited official API access with immutable response caching."""
+"""Serial, rate-limited official API access with immutable response caching.
+
+公开 API 的统一访问层：串行请求、限速、重试，
+以及"不可变的响应缓存"（命中缓存即离线可用）。
+"""
 
 from __future__ import annotations
 
@@ -14,10 +18,15 @@ from ..storage import Cache, digest, now
 
 
 class RetrievalError(RuntimeError):
-    pass
+    """公开数据检索失败的专用异常。"""
 
 
 def retry_delay(value: str | None) -> float:
+    """解析 HTTP Retry-After 响应头为等待秒数。
+
+    支持两种格式：纯秒数（如 "5"）或 HTTP 日期（如 "Wed, 11 Sep 2026 ..."）；
+    解析失败一律返回 0（立即重试）。
+    """
     if not value:
         return 0
     try:
@@ -30,15 +39,24 @@ def retry_delay(value: str | None) -> float:
 
 
 class PublicHTTP:
+    """公开知识库 API 的 HTTP 客户端：缓存 + 限速 + 重试 + 审计事件。"""
+
     def __init__(self, cfg: Config, transport: httpx.BaseTransport | None = None):
         self.cfg = cfg
+        # 两层缓存：cache 是整理后的响应，raw 是含来源与时间的原始记录
         self.cache = Cache(cfg.cache_dir / "public-http")
         self.raw = Cache(cfg.raw_dir / "http")
+        # transport 可注入（测试时使用 mock transport，全程不联网）
         self.transport = transport
         self.last_request = 0.0
         self.events: list[dict[str, Any]] = []
 
     def get(self, url: str, params: dict[str, Any]) -> dict[str, Any]:
+        """按 URL+参数寻址发起 GET：缓存命中直接返回，否则联网获取。
+
+        缓存条目一旦写入即不可变；offline 模式下缓存未命中直接报错。
+        每次调用都会向 events 追加一条审计记录（命中/失败/延迟/重试次数）。
+        """
         key = digest({"url": url, "params": params})
         cached = self.cache.get(key)
         if cached is not None:
@@ -76,6 +94,7 @@ class PublicHTTP:
                 follow_redirects=True,
             ) as client:
                 for attempt in range(self.cfg.max_attempts):
+                    # 串行限速：距离上一次请求至少间隔 request_interval 秒
                     time.sleep(
                         max(0, self.cfg.request_interval - (time.monotonic() - self.last_request))
                     )
@@ -85,6 +104,8 @@ class PublicHTTP:
                     try:
                         response = client.get(url, params=params)
                         retry_after = retry_delay(response.headers.get("Retry-After"))
+                        # 可重试的瞬时失败：超时/限流/服务端错误（含 MediaWiki 的
+                        # maxlag / ratelimited / readonly 业务错误码）
                         if response.status_code in {408, 429, 500, 502, 503, 504}:
                             raise httpx.ReadTimeout("Transient HTTP failure")
                         if not response.is_success:
@@ -100,6 +121,7 @@ class PublicHTTP:
                             raise httpx.ReadTimeout("Transient MediaWiki failure")
                         if "error" in data:
                             raise RetrievalError("Non-transient public API error")
+                        # 成功：整理成带来源 URL、抓取时间与内容哈希的记录，双写两层缓存
                         record = {
                             "data": data,
                             "source_url": str(response.url),
@@ -111,13 +133,16 @@ class PublicHTTP:
                         event["failure"] = False
                         return record
                     except (httpx.TimeoutException, httpx.NetworkError) as exc:
+                        # 网络类错误：指数退避（2^attempt 秒）与 Retry-After 取较大者，重试
                         if attempt + 1 == self.cfg.max_attempts:
                             raise RetrievalError("Public retrieval retries exhausted") from exc
                         event["retries"] += 1
                         time.sleep(max(2**attempt, retry_after))
                     except (httpx.HTTPError, ValueError) as exc:
+                        # 格式类错误（非 JSON 等）：重试无意义，直接失败
                         raise RetrievalError("Invalid public API response") from exc
             raise AssertionError("unreachable")
         finally:
+            # 无论成败都记录本次调用的耗时审计事件
             event["latency_seconds"] = time.perf_counter() - start
             self.events.append(event)
