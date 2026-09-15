@@ -5,27 +5,43 @@
 A small, reproducible research prototype: compare string-only entity linking with context-guided
 linking, then inspect the evidence behind factual claims about the selected entities.
 
-**New here? Start with [the Chinese learning guide](README_CN.md).** It explains the terminology,
-pipeline, code-reading order, exact review steps, provider choices, and interview talking points.
-The code and research-facing documents remain primarily English.
+## How it works
 
-## A manageable first experiment
+Each case is a surface form (e.g. "Mercury") plus the context in which it appears. Candidates are
+retrieved from Wikidata, two independent resolvers pick (or abstain on) an entity, the pipeline
+generates factual claims about the entities the resolvers actually selected, retrieves public
+evidence for each claim, and a separate judge classifies each claim against that evidence.
 
-The default learning path has been reduced at the owner's request. A complete large benchmark is
-not a prerequisite for understanding the project or discussing it in an interview.
+```text
+collect candidates (Wikidata search) → string baseline → context-guided resolver
+→ generate triples (about selected entities) → retrieve evidence (Wikipedia via sitelinks)
+→ judge claims (entailed / contradicted / not-enough-information) → evaluate → report
+```
 
-| Stage | Scope | Human effort |
+Key design points:
+
+- **Restricted baseline.** The string method receives only labels and aliases; it cannot see
+  candidate descriptions or the case context. The only variable between the two resolvers is context.
+- **NEI is not false.** Absence of evidence is not contradiction; retrieval misses and model errors
+  are measured separately. Triples without usable evidence are scored NEI without a model call.
+- **Audit what was actually selected.** Generation uses the union of the resolvers' real choices
+  (never the gold answer), so downstream claims expose disambiguation errors instead of hiding them.
+- **Blind human check.** A fixed random sample (seed 42, at most 20 triples) is annotated without
+  access to judge labels; judge outputs and comparison reports stay locked until the sample is complete.
+
+## Status and roadmap
+
+| Stage | Scope | Status |
 |---|---|---|
-| Learn | 12-case offline demonstration | No annotation |
-| First real pilot **(done 2026-09-14)** | 5 cases | Verified those 5 entities; approved and executed |
-| Optional judge check | Fixed random sample of at most 20 generated triples | Review the supplied evidence and choose labels |
-| Optional paired comparison | 12 cases: 6 homonym + 6 synonym | Review only the remaining cases |
-| Future extended study | Original 40 cases and 100+ generated-triple annotations | Optional, not the current task |
+| Offline demo | 12-case mock run, no annotation, no cost | Done |
+| First real pilot | 5 cases, human-verified gold | **Done 2026-09-14** (facts below) |
+| Optional judge check | Fixed random sample of at most 20 generated triples | Optional, not started |
+| Optional paired comparison | 12 cases: 6 homonym + 6 synonym pairs | Optional |
+| Extended study | Original 40 cases, 100+ generated-triple annotations | Future work |
 
 Twenty labels support a small diagnostic check, **not a general reliability claim**. The 113 existing
 public-KB practice claims do not need annotation and are not the model-generated evaluation set.
-No human labels or verification decisions have been fabricated. The first paid pilot was executed
-on 2026-09-14; its measured facts are summarized below.
+No human labels or verification decisions have been fabricated.
 
 ## Open the local workbench
 
@@ -54,7 +70,7 @@ blind-export rules and the distinction between original reports and later UI rev
 ## Run without a UI
 
 ```bash
-llmka run-all --config configs/learn.yaml   # 12-case offline learning run
+llmka run-all --config configs/learn.yaml   # 12-case offline mock run
 llmka run-all --config configs/mock.yaml    # optional original 40-case mock run
 llmka pilot-plan --config configs/pilot.yaml
 pytest
@@ -69,7 +85,7 @@ immutable directory. Workbench reviews are saved separately under `data/reviews/
 ## Research question and boundaries
 
 Does relational context help distinguish homonyms and merge synonymous mentions? Can an
- evidence-grounded judge produce defensible labels on a small independently reviewed subset?
+evidence-grounded judge produce defensible labels on a small independently reviewed subset?
 The string baseline sees only labels and aliases. The context method also sees context/source-triple
 information and candidate descriptions. Both use the same candidates and may abstain.
 Generation uses the union of their actual selected entities, preserving links to the method/case.
@@ -113,16 +129,6 @@ Judge labels, the human-model comparison and gated reports stay locked until the
 fixed-sample fact annotation (at most 20 triples) is completed; entity metrics are visible now.
 The 12-case paired comparison and the 40-case extended study remain future work.
 
-## Read in order
-
-1. [中文学习入口 / Start here](README_CN.md)
-2. [中文代码导读 / Code walkthrough](docs/code_walkthrough.zh-CN.md)
-3. When needed: [pilot proposal](docs/pilot_proposal.md), [metric definitions](docs/metrics.md),
-   [annotation reference](docs/annotation_guidelines.md), [technical reference](docs/technical_reference.md).
-
-The older detailed protocol and paper-style draft remain reference material; their expanded-study
-requirements are not the current learning checklist. No need to read all documents first.
-
 ## Research context and licensing
 
 Inspired by [Hu et al., ACL 2025](https://aclanthology.org/2025.acl-long.789/),
@@ -134,3 +140,5 @@ See [references.bib](docs/references.bib) for bibliographic entries.
 Independently written MIT code; Wikidata structured data are CC0, and Wikipedia text retains its own
 attribution and license. See [DATA_LICENSE.md](DATA_LICENSE.md). No proprietary employer material or
 neighboring GPTKB source was incorporated. No paid calls or automatic publication.
+
+*A learning-oriented Chinese guide is available at [README_CN.md](README_CN.md).*
