@@ -17,14 +17,15 @@ not a prerequisite for understanding the project or discussing it in an intervie
 | Stage | Scope | Human effort |
 |---|---|---|
 | Learn | 12-case offline demonstration | No annotation |
-| First real pilot | 5 cases | Verify those 5 entities; approve the provider/budget separately |
+| First real pilot **(done 2026-09-14)** | 5 cases | Verified those 5 entities; approved and executed |
 | Optional judge check | Fixed random sample of at most 20 generated triples | Review the supplied evidence and choose labels |
 | Optional paired comparison | 12 cases: 6 homonym + 6 synonym | Review only the remaining cases |
 | Future extended study | Original 40 cases and 100+ generated-triple annotations | Optional, not the current task |
 
 Twenty labels support a small diagnostic check, **not a general reliability claim**. The 113 existing
 public-KB practice claims do not need annotation and are not the model-generated evaluation set.
-No human labels or verification decisions have been fabricated. No paid experiment has been executed.
+No human labels or verification decisions have been fabricated. The first paid pilot was executed
+on 2026-09-14; its measured facts are summarized below.
 
 ## Open the local workbench
 
@@ -34,7 +35,7 @@ source .venv/bin/activate
 llmka ui --open-browser
 ```
 
-On macOS, after installation you can also double-click `打开工作台.command`.
+On macOS, after installation you can also double-click `start.command`.
 The workbench listens only at `http://127.0.0.1:8765`:
 
 - **Runs:** create real or mock runs through scope, limits, models, memory-only credentials,
@@ -91,9 +92,26 @@ no API call is authorized by opening the UI or verifying a case.
 The core pipeline, local UI, tests, public retrieval and report generation are implemented.
 Saved [mock results](docs/mock_demo/report.md) are software checks, not LLM performance findings.
 Public metadata and candidate searches exist for 40 proposed cases; 113 KB-derived claims are
-available as optional practice material. Human verification and real LLM measurements remain pending.
-The first paid pilot and any larger run require explicit approval. Human fact review is optional for
-the initial linking demonstration; RQ4 judge reliability remains unmeasured if it is skipped.
+available as optional practice material.
+
+**First real pilot — executed 2026-09-14** (run `real/20260914T224206-7f6439238793`, all five
+gold cases human-verified by the owner):
+
+- Entity accuracy: string baseline **0/5**, context-guided **5/5**; candidate recall 5/5.
+- The string failures are ranking failures, not retrieval failures: the live Wikidata search for
+  "Mercury" returns six entities with the exact label (car marque, French commune, planet, given
+  name, Roman god, and a description-less stub), and the deterministic QID lexicographic tie-break
+  landed on the stub. The same pattern hit "Java" (platform vs language) and "IBM" (disease
+  abbreviation vs company).
+- Generation produced 40 triples from 8 deduplicated seeds. The judge labeled 29 entailed,
+  1 contradicted and 10 not-enough-information; 5 triples without usable evidence were scored NEI
+  programmatically, without a model call.
+- Cost: 48 LLM calls with 21 judge-side retries; actual bill ≈ USD 0.20 against a conservative
+  USD 1.82 reservation of the USD 2.00 cap.
+
+Judge labels, the human-model comparison and gated reports stay locked until the optional
+fixed-sample fact annotation (at most 20 triples) is completed; entity metrics are visible now.
+The 12-case paired comparison and the 40-case extended study remain future work.
 
 ## Read in order
 
